@@ -46,8 +46,11 @@ architecture Behavioral of vga_module is
   end component;
   
   component Pixel_On_Text
+    generic (
+	   textLength: integer := 8
+	 );
 	 port (clk:            in std_logic;
-		    displayText:    in string (1 to 8) := (others => NUL);	-- Changed from string to a std_logic_vector
+		    displayText:    in string (1 to textLength) := (others => NUL);	-- Changed from string to a std_logic_vector
 		-- top left corner of the text
 		    position:       in point_2d := (0, 0);
 		-- current pixel postion

@@ -8,16 +8,16 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/jflinn18/Desktop/VGA_KYBD_LAB_SOLUTION/VGA_KYBD_LAB.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/jflinn18/Desktop/MIPS_CPU/VGA_KYBD_LAB_SOLUTION/VGA_KYBD_LAB.vhd&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/jflinn18/Desktop/VGA_KYBD_LAB_SOLUTION/XSA_LIB/ps2_kbd.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/jflinn18/Desktop/MIPS_CPU/VGA_KYBD_LAB_SOLUTION/XSA_LIB/ps2_kbd.vhd&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/jflinn18/Desktop/VGA_KYBD_LAB_SOLUTION/keybrd.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/jflinn18/Desktop/MIPS_CPU/VGA_KYBD_LAB_SOLUTION/keybrd.vhd&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/jflinn18/Desktop/VGA_KYBD_LAB_SOLUTION/vga.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/jflinn18/Desktop/MIPS_CPU/VGA_KYBD_LAB_SOLUTION/vga.vhd&quot; into library work</arg>
 </msg>
 
 </messages>

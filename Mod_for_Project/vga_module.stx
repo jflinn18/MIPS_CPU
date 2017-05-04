@@ -1,33 +1,43 @@
 Release 14.7 - xst P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
---> Parameter TMPDIR set to C:/Users/jflinn18/Desktop/Mod_for_Project/xst/projnav.tmp
+--> Parameter TMPDIR set to C:/Users/jflinn18/Desktop/MIPS_CPU/Mod_for_Project/xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.07 secs
+Total CPU time to Xst completion: 0.08 secs
  
---> Parameter xsthdpdir set to C:/Users/jflinn18/Desktop/Mod_for_Project/xst
+--> Parameter xsthdpdir set to C:/Users/jflinn18/Desktop/MIPS_CPU/Mod_for_Project/xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.07 secs
+Total CPU time to Xst completion: 0.08 secs
  
 --> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
 
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-Compiling vhdl file "C:/Users/jflinn18/Desktop/Mod_for_Project/commonPak.vhd" in Library work.
+WARNING:HDLParsers:3607 - Unit work/vga_module is now defined in a different file.  It was defined in "C:/Users/jflinn18/Desktop/Mod_for_Project/vga_module.vhd", and is now defined in "C:/Users/jflinn18/Desktop/MIPS_CPU/Mod_for_Project/vga_module.vhd".
+WARNING:HDLParsers:3607 - Unit work/vga_module/Behavioral is now defined in a different file.  It was defined in "C:/Users/jflinn18/Desktop/Mod_for_Project/vga_module.vhd", and is now defined in "C:/Users/jflinn18/Desktop/MIPS_CPU/Mod_for_Project/vga_module.vhd".
+WARNING:HDLParsers:3607 - Unit work/Pixel_On_Text is now defined in a different file.  It was defined in "C:/Users/jflinn18/Desktop/Mod_for_Project/Pixek_On_Text.vhd", and is now defined in "C:/Users/jflinn18/Desktop/MIPS_CPU/Mod_for_Project/Pixek_On_Text.vhd".
+WARNING:HDLParsers:3607 - Unit work/Pixel_On_Text/Behavioral is now defined in a different file.  It was defined in "C:/Users/jflinn18/Desktop/Mod_for_Project/Pixek_On_Text.vhd", and is now defined in "C:/Users/jflinn18/Desktop/MIPS_CPU/Mod_for_Project/Pixek_On_Text.vhd".
+WARNING:HDLParsers:3607 - Unit work/vga_mem is now defined in a different file.  It was defined in "C:/Users/jflinn18/Desktop/Mod_for_Project/vga_mem.vhd", and is now defined in "C:/Users/jflinn18/Desktop/MIPS_CPU/Mod_for_Project/vga_mem.vhd".
+WARNING:HDLParsers:3607 - Unit work/vga_mem/Behavioral is now defined in a different file.  It was defined in "C:/Users/jflinn18/Desktop/Mod_for_Project/vga_mem.vhd", and is now defined in "C:/Users/jflinn18/Desktop/MIPS_CPU/Mod_for_Project/vga_mem.vhd".
+WARNING:HDLParsers:3607 - Unit work/Font_Rom is now defined in a different file.  It was defined in "C:/Users/jflinn18/Desktop/Mod_for_Project/Font_Rom.vhd", and is now defined in "C:/Users/jflinn18/Desktop/MIPS_CPU/Mod_for_Project/Font_Rom.vhd".
+WARNING:HDLParsers:3607 - Unit work/Font_Rom/Behavioral is now defined in a different file.  It was defined in "C:/Users/jflinn18/Desktop/Mod_for_Project/Font_Rom.vhd", and is now defined in "C:/Users/jflinn18/Desktop/MIPS_CPU/Mod_for_Project/Font_Rom.vhd".
+WARNING:HDLParsers:3607 - Unit work/commonPak is now defined in a different file.  It was defined in "C:/Users/jflinn18/Desktop/Mod_for_Project/commonPak.vhd", and is now defined in "C:/Users/jflinn18/Desktop/MIPS_CPU/Mod_for_Project/commonPak.vhd".
+WARNING:HDLParsers:3607 - Unit work/commonPak is now defined in a different file.  It was defined in "C:/Users/jflinn18/Desktop/Mod_for_Project/commonPak.vhd", and is now defined in "C:/Users/jflinn18/Desktop/MIPS_CPU/Mod_for_Project/commonPak.vhd".
+Compiling vhdl file "C:/Users/jflinn18/Desktop/MIPS_CPU/Mod_for_Project/commonPak.vhd" in Library work.
 Architecture commonpak of Entity commonpak is up to date.
-Compiling vhdl file "C:/Users/jflinn18/Desktop/Mod_for_Project/Font_Rom.vhd" in Library work.
+Compiling vhdl file "C:/Users/jflinn18/Desktop/MIPS_CPU/Mod_for_Project/Font_Rom.vhd" in Library work.
 Architecture behavioral of Entity font_rom is up to date.
-Compiling vhdl file "C:/Users/jflinn18/Desktop/Mod_for_Project/vga_mem.vhd" in Library work.
+Compiling vhdl file "C:/Users/jflinn18/Desktop/MIPS_CPU/Mod_for_Project/vga_mem.vhd" in Library work.
 Architecture behavioral of Entity vga_mem is up to date.
-Compiling vhdl file "C:/Users/jflinn18/Desktop/Mod_for_Project/Pixek_On_Text.vhd" in Library work.
+Compiling vhdl file "C:/Users/jflinn18/Desktop/MIPS_CPU/Mod_for_Project/Pixek_On_Text.vhd" in Library work.
 Architecture behavioral of Entity pixel_on_text is up to date.
-Compiling vhdl file "C:/Users/jflinn18/Desktop/Mod_for_Project/vga_module.vhd" in Library work.
+Compiling vhdl file "C:/Users/jflinn18/Desktop/MIPS_CPU/Mod_for_Project/vga_module.vhd" in Library work.
 Entity <vga_module> compiled.
-Entity <vga_module> (Architecture <Behavioral>) compiled.
+Entity <vga_module> (Architecture <behavioral>) compiled.
 
 
 Total REAL time to Xst completion: 0.00 secs
@@ -35,9 +45,9 @@ Total CPU time to Xst completion: 0.23 secs
  
 --> 
 
-Total memory usage is 287336 kilobytes
+Total memory usage is 287356 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    1 (   0 filtered)
+Number of warnings :   11 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 

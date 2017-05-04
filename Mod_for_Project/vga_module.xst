@@ -1,5 +1,5 @@
-set -tmpdir "C:/Users/jflinn18/Desktop/Mod_for_Project/xst/projnav.tmp"
-set -xsthdpdir "C:/Users/jflinn18/Desktop/Mod_for_Project/xst"
+set -tmpdir "C:/Users/jflinn18/Desktop/MIPS_CPU/Mod_for_Project/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/jflinn18/Desktop/MIPS_CPU/Mod_for_Project/xst"
 elaborate
 -ifn vga_module.prj
 -ifmt mixed
