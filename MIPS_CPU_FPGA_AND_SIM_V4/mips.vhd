@@ -26,7 +26,8 @@ architecture struct of mips is
   component controller
     port(op, funct:          in  STD_LOGIC_VECTOR(5 downto 0);
          zero:               in  STD_LOGIC;
-         memtoreg, memwrite: out STD_LOGIC;
+         memtoreg:           out STD_LOGIC_VECTOR(1 downto 0);
+			memwrite:           out STD_LOGIC;
          pcsrc, alusrc:      out STD_LOGIC;
          regdst, regwrite:   out STD_LOGIC;
          jump:               out STD_LOGIC;
@@ -34,7 +35,8 @@ architecture struct of mips is
   end component;
   component datapath
     port(clk, reset:        in  STD_LOGIC;
-         memtoreg, pcsrc:   in  STD_LOGIC;
+         memtoreg:          in STD_LOGIC_VECTOR(1 downto 0);
+			pcsrc:             in  STD_LOGIC;
          alusrc, regdst:    in  STD_LOGIC;
          regwrite, jump:    in  STD_LOGIC;
          alucontrol:        in  STD_LOGIC_VECTOR(3 downto 0);
@@ -45,7 +47,8 @@ architecture struct of mips is
          readdata:          in  STD_LOGIC_VECTOR(31 downto 0);
 			shamt:             in STD_LOGIC_VECTOR(4 downto 0));
   end component;
-  signal memtoreg, alusrc, regdst, regwrite, jump, pcsrc: STD_LOGIC;
+  signal memtoreg: STD_LOGIC_VECTOR(1 downto 0);
+  signal alusrc, regdst, regwrite, jump, pcsrc: STD_LOGIC;
   signal zero: STD_LOGIC;
   signal alucontrol: STD_LOGIC_VECTOR(3 downto 0);
 begin

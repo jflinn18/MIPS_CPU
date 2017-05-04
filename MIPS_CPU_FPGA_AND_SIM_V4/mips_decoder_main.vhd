@@ -4,7 +4,8 @@ use IEEE.STD_LOGIC_1164.all;
 
 entity maindec is -- main control decoder
   port(op:                 in  STD_LOGIC_VECTOR(5 downto 0);
-       memtoreg, memwrite: out STD_LOGIC;
+       memtoreg:           out STD_LOGIC_VECTOR(1 downto 0); 
+		 memwrite:           out STD_LOGIC;
 		 branch:             out STD_LOGIC_VECTOR(1 downto 0);
        alusrc:             out STD_LOGIC;
        regdst, regwrite:   out STD_LOGIC;
