@@ -1,0 +1,767 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Reading design: mips_fpga_interface.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "mips_fpga_interface.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "mips_fpga_interface"
+Output Format                      : NGC
+Target Device                      : xc3s1000-5-ft256
+
+---- Source Options
+Top Module Name                    : mips_fpga_interface
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd" in Library work.
+Architecture behave of Entity regfile is up to date.
+Architecture behave of Entity adder is up to date.
+Architecture behave of Entity sl2 is up to date.
+Architecture behave of Entity signext is up to date.
+Architecture asynchronous of Entity flopr is up to date.
+Architecture behave of Entity mux2 is up to date.
+Architecture behave of Entity shiftleft is up to date.
+Architecture behave of Entity shiftright is up to date.
+Compiling vhdl file "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_alu.vhd" in Library work.
+Architecture behave of Entity alu is up to date.
+Compiling vhdl file "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_decoder_main.vhd" in Library work.
+Entity <maindec> compiled.
+Entity <maindec> (Architecture <behave>) compiled.
+Compiling vhdl file "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_decoder_alu.vhd" in Library work.
+Entity <aludec> compiled.
+Entity <aludec> (Architecture <behave>) compiled.
+Compiling vhdl file "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_controller.vhd" in Library work.
+Entity <controller> compiled.
+Entity <controller> (Architecture <struct>) compiled.
+Compiling vhdl file "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_datapath.vhd" in Library work.
+Entity <datapath> compiled.
+Entity <datapath> (Architecture <struct>) compiled.
+Compiling vhdl file "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips.vhd" in Library work.
+Entity <mips> compiled.
+Entity <mips> (Architecture <struct>) compiled.
+Compiling vhdl file "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" in Library work.
+Entity <dmem> compiled.
+Entity <dmem> (Architecture <behave>) compiled.
+Entity <imem> compiled.
+Entity <imem> (Architecture <behave>) compiled.
+Compiling vhdl file "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_top.vhd" in Library work.
+Architecture test of Entity top is up to date.
+Compiling vhdl file "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_fpga_interface.vhd" in Library work.
+Architecture test_fpga of Entity mips_fpga_interface is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <mips_fpga_interface> in library <work> (architecture <test_fpga>).
+
+Analyzing hierarchy for entity <top> in library <work> (architecture <test>).
+
+Analyzing hierarchy for entity <mips> in library <work> (architecture <struct>).
+
+Analyzing hierarchy for entity <imem> in library <work> (architecture <behave>).
+
+Analyzing hierarchy for entity <dmem> in library <work> (architecture <behave>).
+
+Analyzing hierarchy for entity <controller> in library <work> (architecture <struct>).
+
+Analyzing hierarchy for entity <datapath> in library <work> (architecture <struct>).
+
+Analyzing hierarchy for entity <maindec> in library <work> (architecture <behave>).
+
+Analyzing hierarchy for entity <aludec> in library <work> (architecture <behave>).
+
+Analyzing hierarchy for entity <flopr> in library <work> (architecture <asynchronous>) with generics.
+	width = 32
+
+Analyzing hierarchy for entity <adder> in library <work> (architecture <behave>).
+
+Analyzing hierarchy for entity <sl2> in library <work> (architecture <behave>).
+
+Analyzing hierarchy for entity <mux2> in library <work> (architecture <behave>) with generics.
+	width = 32
+
+Analyzing hierarchy for entity <regfile> in library <work> (architecture <behave>).
+
+Analyzing hierarchy for entity <mux2> in library <work> (architecture <behave>) with generics.
+	width = 5
+
+Analyzing hierarchy for entity <signext> in library <work> (architecture <behave>).
+
+Analyzing hierarchy for entity <alu> in library <work> (architecture <behave>).
+
+Analyzing hierarchy for entity <ShiftLeft> in library <work> (architecture <behave>).
+
+Analyzing hierarchy for entity <ShiftRight> in library <work> (architecture <behave>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <mips_fpga_interface> in library <work> (Architecture <test_fpga>).
+Entity <mips_fpga_interface> analyzed. Unit <mips_fpga_interface> generated.
+
+Analyzing Entity <top> in library <work> (Architecture <test>).
+Entity <top> analyzed. Unit <top> generated.
+
+Analyzing Entity <mips> in library <work> (Architecture <struct>).
+WARNING:Xst:1541 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips.vhd" line 55: Different binding for component: <datapath>. Port <shamt> does not match.
+Entity <mips> analyzed. Unit <mips> generated.
+
+Analyzing Entity <controller> in library <work> (Architecture <struct>).
+Entity <controller> analyzed. Unit <controller> generated.
+
+Analyzing Entity <maindec> in library <work> (Architecture <behave>).
+Entity <maindec> analyzed. Unit <maindec> generated.
+
+Analyzing Entity <aludec> in library <work> (Architecture <behave>).
+Entity <aludec> analyzed. Unit <aludec> generated.
+
+Analyzing Entity <datapath> in library <work> (Architecture <struct>).
+Entity <datapath> analyzed. Unit <datapath> generated.
+
+Analyzing generic Entity <flopr> in library <work> (Architecture <asynchronous>).
+	width = 32
+Entity <flopr> analyzed. Unit <flopr> generated.
+
+Analyzing Entity <adder> in library <work> (Architecture <behave>).
+Entity <adder> analyzed. Unit <adder> generated.
+
+Analyzing Entity <sl2> in library <work> (Architecture <behave>).
+Entity <sl2> analyzed. Unit <sl2> generated.
+
+Analyzing generic Entity <mux2.1> in library <work> (Architecture <behave>).
+	width = 32
+Entity <mux2.1> analyzed. Unit <mux2.1> generated.
+
+Analyzing Entity <regfile> in library <work> (Architecture <behave>).
+Entity <regfile> analyzed. Unit <regfile> generated.
+
+Analyzing generic Entity <mux2.2> in library <work> (Architecture <behave>).
+	width = 5
+Entity <mux2.2> analyzed. Unit <mux2.2> generated.
+
+Analyzing Entity <signext> in library <work> (Architecture <behave>).
+Entity <signext> analyzed. Unit <signext> generated.
+
+Analyzing Entity <alu> in library <work> (Architecture <behave>).
+Entity <alu> analyzed. Unit <alu> generated.
+
+Analyzing Entity <ShiftLeft> in library <work> (Architecture <behave>).
+INFO:Xst:1561 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd" line 164: Mux is complete : default of case is discarded
+Entity <ShiftLeft> analyzed. Unit <ShiftLeft> generated.
+
+Analyzing Entity <ShiftRight> in library <work> (Architecture <behave>).
+INFO:Xst:1561 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd" line 207: Mux is complete : default of case is discarded
+Entity <ShiftRight> analyzed. Unit <ShiftRight> generated.
+
+Analyzing Entity <imem> in library <work> (Architecture <behave>).
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:3
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:4
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:8
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:8
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:2
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:9
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:8
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:3
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:5
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:a
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:8
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:1
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:1
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:1
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:9
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:5
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:1
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:2
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:8
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:5
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:8
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:2
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:a
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:1
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:5
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:6
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:1
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:8
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:9
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:1
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:4
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:8
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:5
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:2
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:2
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:3
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:5
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:8
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:f
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:f
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:1
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:6
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:a
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:5
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:8
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:2
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:1
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:4
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:8
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:4
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:2
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:2
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:a
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:d
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:6
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:8
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:5
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:2
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:8
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 72: report: char:0
+Entity <imem> analyzed. Unit <imem> generated.
+
+Analyzing Entity <dmem> in library <work> (Architecture <behave>).
+Entity <dmem> analyzed. Unit <dmem> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <imem>.
+    Related source file is "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd".
+WARNING:Xst:1781 - Signal <mem> is used but never assigned. Tied to default value.
+    Found 64x32-bit ROM for signal <rd>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <imem> synthesized.
+
+
+Synthesizing Unit <dmem>.
+    Related source file is "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd".
+WARNING:Xst:647 - Input <a<31:8>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <a<1:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 32-bit 64-to-1 multiplexer for signal <rd>.
+    Found 2048-bit register for signal <mem>.
+INFO:Xst:738 - HDL ADVISOR - 2048 flip-flops were inferred for signal <mem>. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
+    Summary:
+	inferred 2048 D-type flip-flop(s).
+	inferred  32 Multiplexer(s).
+Unit <dmem> synthesized.
+
+
+Synthesizing Unit <maindec>.
+    Related source file is "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_decoder_main.vhd".
+Unit <maindec> synthesized.
+
+
+Synthesizing Unit <aludec>.
+    Related source file is "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_decoder_alu.vhd".
+Unit <aludec> synthesized.
+
+
+Synthesizing Unit <flopr>.
+    Related source file is "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd".
+    Found 32-bit register for signal <q>.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+Unit <flopr> synthesized.
+
+
+Synthesizing Unit <adder>.
+    Related source file is "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd".
+    Found 32-bit adder for signal <y>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <adder> synthesized.
+
+
+Synthesizing Unit <sl2>.
+    Related source file is "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd".
+WARNING:Xst:647 - Input <a<31:30>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <sl2> synthesized.
+
+
+Synthesizing Unit <mux2_1>.
+    Related source file is "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd".
+Unit <mux2_1> synthesized.
+
+
+Synthesizing Unit <regfile>.
+    Related source file is "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd".
+    Found 32x32-bit dual-port RAM <Mram_mem> for signal <mem>.
+    Found 32x32-bit dual-port RAM <Mram_mem_ren> for signal <mem>.
+    Summary:
+	inferred   2 RAM(s).
+Unit <regfile> synthesized.
+
+
+Synthesizing Unit <mux2_2>.
+    Related source file is "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd".
+Unit <mux2_2> synthesized.
+
+
+Synthesizing Unit <signext>.
+    Related source file is "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd".
+Unit <signext> synthesized.
+
+
+Synthesizing Unit <ShiftLeft>.
+    Related source file is "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd".
+    Found 32-bit shifter logical left for signal <c>.
+    Summary:
+	inferred   1 Combinational logic shifter(s).
+Unit <ShiftLeft> synthesized.
+
+
+Synthesizing Unit <ShiftRight>.
+    Related source file is "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd".
+    Found 32-bit shifter logical right for signal <c>.
+    Summary:
+	inferred   1 Combinational logic shifter(s).
+Unit <ShiftRight> synthesized.
+
+
+Synthesizing Unit <controller>.
+    Related source file is "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_controller.vhd".
+Unit <controller> synthesized.
+
+
+Synthesizing Unit <alu>.
+    Related source file is "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_alu.vhd".
+    Found 32-bit 8-to-1 multiplexer for signal <result>.
+    Found 32-bit xor2 for signal <result$xor0000> created at line 35.
+    Found 32-bit adder carry in for signal <sum>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  32 Multiplexer(s).
+Unit <alu> synthesized.
+
+
+Synthesizing Unit <datapath>.
+    Related source file is "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_datapath.vhd".
+WARNING:Xst:647 - Input <shamt> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <instr<31:26>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <datapath> synthesized.
+
+
+Synthesizing Unit <mips>.
+    Related source file is "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips.vhd".
+Unit <mips> synthesized.
+
+
+Synthesizing Unit <top>.
+    Related source file is "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_top.vhd".
+Unit <top> synthesized.
+
+
+Synthesizing Unit <mips_fpga_interface>.
+    Related source file is "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_fpga_interface.vhd".
+    Found 32-bit up counter for signal <cnt>.
+    Found 32-bit comparator greatequal for signal <cnt$cmp_ge0000> created at line 48.
+    Found 1-bit register for signal <mips_clk_input>.
+    Found 32-bit adder for signal <mips_clk_input$add0000> created at line 42.
+    Found 32-bit comparator less for signal <mips_clk_input$cmp_lt0000> created at line 46.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   2 Comparator(s).
+Unit <mips_fpga_interface> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 32x32-bit dual-port RAM                               : 2
+# ROMs                                                 : 1
+ 64x32-bit ROM                                         : 1
+# Adders/Subtractors                                   : 4
+ 32-bit adder                                          : 3
+ 32-bit adder carry in                                 : 1
+# Counters                                             : 1
+ 32-bit up counter                                     : 1
+# Registers                                            : 66
+ 1-bit register                                        : 1
+ 32-bit register                                       : 65
+# Comparators                                          : 2
+ 32-bit comparator greatequal                          : 1
+ 32-bit comparator less                                : 1
+# Multiplexers                                         : 2
+ 32-bit 64-to-1 multiplexer                            : 1
+ 32-bit 8-to-1 multiplexer                             : 1
+# Logic shifters                                       : 2
+ 32-bit shifter logical left                           : 1
+ 32-bit shifter logical right                          : 1
+# Xors                                                 : 1
+ 32-bit xor2                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <regfile>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_mem> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <we3>           | high     |
+    |     addrA          | connected to signal <wa3>           |          |
+    |     diA            | connected to signal <wd3>           |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     addrB          | connected to signal <ra1>           |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_mem_ren> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <we3>           | high     |
+    |     addrA          | connected to signal <wa3>           |          |
+    |     diA            | connected to signal <wd3>           |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 32-word x 32-bit                    |          |
+    |     addrB          | connected to signal <ra2>           |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <regfile> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 32x32-bit dual-port distributed RAM                   : 2
+# ROMs                                                 : 1
+ 64x32-bit ROM                                         : 1
+# Adders/Subtractors                                   : 4
+ 32-bit adder                                          : 3
+ 32-bit adder carry in                                 : 1
+# Counters                                             : 1
+ 32-bit up counter                                     : 1
+# Registers                                            : 2081
+ Flip-Flops                                            : 2081
+# Comparators                                          : 2
+ 32-bit comparator greatequal                          : 1
+ 32-bit comparator less                                : 1
+# Multiplexers                                         : 2
+ 32-bit 64-to-1 multiplexer                            : 1
+ 32-bit 8-to-1 multiplexer                             : 1
+# Logic shifters                                       : 2
+ 32-bit shifter logical left                           : 1
+ 32-bit shifter logical right                          : 1
+# Xors                                                 : 1
+ 32-bit xor2                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <mips_fpga_interface> ...
+
+Optimizing unit <dmem> ...
+
+Optimizing unit <flopr> ...
+
+Optimizing unit <regfile> ...
+
+Optimizing unit <alu> ...
+
+Optimizing unit <datapath> ...
+WARNING:Xst:1710 - FF/Latch <mips_cpu/mips1/dp/pcreg/q_0> (without init value) has a constant value of 0 in block <mips_fpga_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <mips_cpu/mips1/dp/pcreg/q_1> (without init value) has a constant value of 0 in block <mips_fpga_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/pcreg/q_8> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/pcreg/q_9> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/pcreg/q_10> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/pcreg/q_11> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/pcreg/q_12> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/pcreg/q_13> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/pcreg/q_14> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/pcreg/q_15> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/pcreg/q_16> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/pcreg/q_17> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/pcreg/q_18> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/pcreg/q_19> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/pcreg/q_20> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/pcreg/q_21> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/pcreg/q_22> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/pcreg/q_23> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/pcreg/q_24> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/pcreg/q_25> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/pcreg/q_26> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/pcreg/q_27> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/pcreg/q_28> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/pcreg/q_29> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/pcreg/q_30> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/mips1/dp/pcreg/q_31> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_35_31> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_35_30> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_35_29> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_35_28> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_35_27> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_35_26> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_35_25> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_35_24> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_35_23> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_35_22> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_35_21> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_35_20> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_35_19> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_35_18> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_35_17> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_35_16> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_35_15> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_35_14> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_35_13> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_35_12> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_35_11> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_35_10> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_35_9> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_35_8> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_35_7> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_35_6> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_35_5> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_35_4> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_35_3> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_35_2> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_35_1> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_35_0> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_40_31> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_40_30> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_40_29> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_40_28> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_40_27> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_40_26> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_40_25> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_40_24> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_40_23> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_40_22> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_40_21> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_40_20> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_40_19> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_40_18> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_40_17> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_40_16> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_40_15> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_40_14> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_40_13> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_40_12> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_40_11> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_40_10> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_40_9> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_40_8> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_40_7> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_40_6> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_40_5> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_40_4> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_40_3> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_40_2> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_40_1> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_40_0> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_3_31> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_3_30> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_3_29> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_3_28> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_3_27> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_3_26> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_3_25> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_3_24> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_3_23> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_3_22> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_3_21> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_3_20> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_3_19> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_3_18> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_3_17> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_3_16> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_3_15> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_3_14> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_3_13> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_3_12> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_3_11> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_3_10> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_3_9> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_3_8> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_3_7> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_3_6> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_3_5> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_3_4> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_3_3> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_3_2> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_3_1> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_3_0> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_29_31> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_29_30> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_29_29> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_29_28> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_29_27> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_29_26> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_29_25> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_29_24> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_29_23> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_29_22> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_29_21> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_29_20> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_29_19> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_29_18> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_29_17> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_29_16> of sequential type is unconnected in block <mips_fpga_interface>.
+WARNING:Xst:2677 - Node <mips_cpu/dmem1/mem_29_15> of sequential type is unconnected in block <mips_fpga_interface>.

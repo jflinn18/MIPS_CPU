@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips/xst"
+elaborate
+-ifn maindec.prj
+-ifmt mixed

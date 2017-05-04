@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/jflinn18/Desktop/Mod_for_Project/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/jflinn18/Desktop/Mod_for_Project/xst"
+elaborate
+-ifn Pixel_On_Text.prj
+-ifmt mixed

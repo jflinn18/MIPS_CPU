@@ -1,0 +1,9 @@
+AR ps2_kbd arch C:/Users/rsexton17/Desktop/VGA_KYBD_LAB_SOLUTION/XSA_LIB/ps2_kbd.vhd sub00/vhpl02 1493746960
+AR vga_kybd_lab behavioral C:/Users/rsexton17/Desktop/VGA_KYBD_LAB_SOLUTION/VGA_KYBD_LAB.vhd sub00/vhpl08 1493746966
+AR test_kbd arch C:/Users/rsexton17/Desktop/VGA_KYBD_LAB_SOLUTION/keybrd.vhd sub00/vhpl04 1493746962
+EN vga_kybd_lab NULL C:/Users/rsexton17/Desktop/VGA_KYBD_LAB_SOLUTION/VGA_KYBD_LAB.vhd sub00/vhpl05 1493746965
+AR vgatest behavioral C:/Users/rsexton17/Desktop/VGA_KYBD_LAB_SOLUTION/vga.vhd sub00/vhpl07 1493746964
+PH ps2_kbd_pckg NULL C:/Users/rsexton17/Desktop/VGA_KYBD_LAB_SOLUTION/XSA_LIB/ps2_kbd.vhd sub00/vhpl00 1493746958
+EN ps2_kbd NULL C:/Users/rsexton17/Desktop/VGA_KYBD_LAB_SOLUTION/XSA_LIB/ps2_kbd.vhd sub00/vhpl01 1493746959
+EN vgatest NULL C:/Users/rsexton17/Desktop/VGA_KYBD_LAB_SOLUTION/vga.vhd sub00/vhpl06 1493746963
+EN test_kbd NULL C:/Users/rsexton17/Desktop/VGA_KYBD_LAB_SOLUTION/keybrd.vhd sub00/vhpl03 1493746961

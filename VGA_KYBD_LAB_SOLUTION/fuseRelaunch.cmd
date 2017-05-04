@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/rsexton17/Desktop/VGA_KYBD_LAB_SOLUTION/VGA_KYBD_LAB_isim_beh.exe" -prj "C:/Users/rsexton17/Desktop/VGA_KYBD_LAB_SOLUTION/VGA_KYBD_LAB_beh.prj" "work.VGA_KYBD_LAB" 

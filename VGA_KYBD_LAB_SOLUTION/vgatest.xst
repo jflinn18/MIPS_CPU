@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/rsexton17/Desktop/VGA_KYBD_LAB_SOLUTION/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/rsexton17/Desktop/VGA_KYBD_LAB_SOLUTION/xst"
+elaborate
+-ifn vgatest.prj
+-ifmt mixed

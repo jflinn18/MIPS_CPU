@@ -1,0 +1,5 @@
+vhdl work "commonPak.vhd"
+vhdl work "Font_Rom.vhd"
+vhdl work "vga_mem.vhd"
+vhdl work "Pixek_On_Text.vhd"
+vhdl work "vga_module.vhd"

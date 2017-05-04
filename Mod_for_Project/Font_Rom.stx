@@ -1,0 +1,35 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:/Users/dhansen17/Desktop/Mod_for_Project/Mod_for_Project/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Parameter xsthdpdir set to C:/Users/dhansen17/Desktop/Mod_for_Project/Mod_for_Project/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/dhansen17/Desktop/Mod_for_Project/Mod_for_Project/Font_Rom.vhd" in Library work.
+ERROR:HDLParsers:3014 - "C:/Users/dhansen17/Desktop/Mod_for_Project/Mod_for_Project/Font_Rom.vhd" Line 52. Library unit commonPak is not available in library work.
+WARNING:HDLParsers:3481 - Library work has no units. Did not save reference file "C:/Users/dhansen17/Desktop/Mod_for_Project/Mod_for_Project/xst/work/hdllib.ref" for it.
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> 
+
+Total memory usage is 269904 kilobytes
+
+Number of errors   :    1 (   0 filtered)
+Number of warnings :    2 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

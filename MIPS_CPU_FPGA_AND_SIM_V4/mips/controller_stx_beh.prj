@@ -1,0 +1,3 @@
+vhdl isim_temp "../mips_decoder_main.vhd"
+vhdl isim_temp "../mips_decoder_alu.vhd"
+vhdl isim_temp "../mips_controller.vhd"
