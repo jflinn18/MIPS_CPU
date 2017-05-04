@@ -91,6 +91,11 @@ architecture struct of datapath is
   signal srca, srcb, result: STD_LOGIC_VECTOR(31 downto 0);
   
   signal temp: STD_LOGIC_VECTOR(31 downto 0);
+  signal ps2_clk: STD_LOGIC;
+  signal ps2_data: STD_LOGIC;
+  signal keyboard_result: STD_LOGIC_VECTOR(31 downto 0);
+  signal keyboard_scancode_bus: STD_LOGIC_VECTOR(31 downto 0);
+  
 begin
   temp <= "00000000000000000000000000000000";
   -- next PC logic
@@ -115,7 +120,7 @@ begin
   mainalu:  alu port map(srca, srcb, instr(10 downto 6), alucontrol, aluout, zero);
   
   
-  --test_kdb_object: test_kdb port map(clk, ps2_clk, );
+  test_kdb_object: test_kdb port map(clk, ps2_clk, ps2_data, keybaord_result, keyboard_scancode_bus);
 end;
 
 
