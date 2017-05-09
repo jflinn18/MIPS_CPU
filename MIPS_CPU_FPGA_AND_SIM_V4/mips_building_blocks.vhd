@@ -139,9 +139,9 @@ begin
   process(s, y, d0, d1, d2, d3) begin
 	case(s) is
 		when "00" => y <= d0;
-		when "01" => y <=d1;
-		when "10" => y <=d2;
-		when "11" => y <=d3;
+		when "01" => y <= d1;
+		when "10" => y <= d2;
+		when "11" => y <= d3;
 		when others => y <= "--------------------------------";
 	end case;
   end process;

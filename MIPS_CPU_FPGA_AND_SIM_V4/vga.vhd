@@ -1,28 +1,9 @@
-----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
--- 
--- Create Date:    11:28:41 05/02/2017 
--- Design Name: 
--- Module Name:    vga - Behavioral 
--- Project Name: 
--- Target Devices: 
--- Tool versions: 
--- Description: 
---
--- Dependencies: 
---
--- Revision: 
--- Revision 0.01 - File Created
--- Additional Comments: 
---
-----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
+use IEEE.NUMERIC_STD.ALL;
 
 -- Uncomment the following library declaration if instantiating
 -- any Xilinx primitives in this code.
@@ -30,19 +11,26 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity vga is
-  port(clk:          in STD_LOGIC);
+  port(clk:          in STD_LOGIC;
+       ra:           out STD_LOGIC_VECTOR(31 downto 0);
+		 rd:           out STD_LOGIC_VECTOR(31 downto 0));
 end;
 
 architecture Behavioral of vga is
-	component vga_mem
-	  port(clk, we:  in STD_LOGIC;
-       a, wd:    in STD_LOGIC_VECTOR(31 downto 0);
+	component vgaMem
+     port(clk, we:  in STD_LOGIC;
+       a, wa:    in STD_LOGIC_VECTOR(31 downto 0);
+		 wd:       in STD_LOGIC_VECTOR(31 downto 0);
        rd:       out STD_LOGIC_VECTOR(31 downto 0));
-	end component;
+   end component;
+	
+	signal vgaReadAdr: STD_LOGIC_VECTOR(31 downto 0);
 begin
-  if clk'event and clk = '1' then
-    
-  end if;
+
+  -- This is where we just continuously read from VGA???
+  for i in 0 to 7 loop
+    vgaReadAdr <= "111111111111111111111111" & std_logic_vector(to_unsigned(i)) & "00";
+  end loop;
 
 end Behavioral;
 

@@ -244,7 +244,7 @@
     </transform>
     <transform xil_pn:end_ts="1394595023" xil_pn:in_ck="-694152284988171350" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="1502724157172790344" xil_pn:start_ts="1394595016">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="NotReadyToRun"/>
+      <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
@@ -254,7 +254,7 @@
     </transform>
     <transform xil_pn:end_ts="1394595047" xil_pn:in_ck="-5370930007911714877" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="5592077876867041805" xil_pn:start_ts="1394595023">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="NotReadyToRun"/>
+      <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
@@ -263,7 +263,7 @@
     </transform>
     <transform xil_pn:end_ts="1394595059" xil_pn:in_ck="2431106888626950729" xil_pn:name="TRANEXT_bitFile_spartan3" xil_pn:prop_ck="4513092874982558118" xil_pn:start_ts="1394595047">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="NotReadyToRun"/>
+      <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
@@ -273,7 +273,7 @@
     </transform>
     <transform xil_pn:end_ts="1394595047" xil_pn:in_ck="-694152284988171482" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416187" xil_pn:start_ts="1394595042">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="NotReadyToRun"/>
+      <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>

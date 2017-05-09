@@ -1,5 +1,5 @@
-set -tmpdir "C:/CS401/mips_cpu_v3_fpga/mips/xst/projnav.tmp"
-set -xsthdpdir "C:/CS401/mips_cpu_v3_fpga/mips/xst"
+set -tmpdir "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips/xst"
 elaborate
 -ifn top.prj
 -ifmt mixed

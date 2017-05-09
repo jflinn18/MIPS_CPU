@@ -59,7 +59,7 @@ architecture struct of datapath is
          y:      out STD_LOGIC_VECTOR(width-1 downto 0));
   end component;
   component mux4 generic(width: integer);
-  port(d0, d1: in  STD_LOGIC_VECTOR(width-1 downto 0);
+  port(d0, d1, d2, d3: in  STD_LOGIC_VECTOR(width-1 downto 0);
          s:      in  STD_LOGIC;
          y:      out STD_LOGIC_VECTOR(width-1 downto 0));
   end component;
@@ -90,11 +90,11 @@ architecture struct of datapath is
   signal signimm, signimmsh: STD_LOGIC_VECTOR(31 downto 0);
   signal srca, srcb, result: STD_LOGIC_VECTOR(31 downto 0);
   
-  signal temp: STD_LOGIC_VECTOR(31 downto 0);
-  signal ps2_clk: STD_LOGIC;
-  signal ps2_data: STD_LOGIC;
-  signal keyboard_result: STD_LOGIC_VECTOR(31 downto 0);
-  signal keyboard_scancode_bus: STD_LOGIC_VECTOR(31 downto 0);
+  --signal temp: STD_LOGIC_VECTOR(31 downto 0);
+  --signal ps2_clk: STD_LOGIC;
+  --signal ps2_data: STD_LOGIC;
+  --signal keyboard_result: STD_LOGIC_VECTOR(31 downto 0);
+  --signal keyboard_scancode_bus: STD_LOGIC_VECTOR(31 downto 0);
   
 begin
   temp <= "00000000000000000000000000000000";
@@ -112,7 +112,8 @@ begin
               writereg, result, srca, writedata);
   wrmux: mux2 generic map(5) port map(instr(20 downto 16), instr(15 downto 11),
                                       regdst, writereg);
-  resmux: mux4 generic map(32) port map(aluout, readdata, , temp, memtoreg, result);
+  --resmux: mux4 generic map(32) port map(aluout, readdata, , temp, memtoreg, result);
+  resmux: mux4 generic map(32) port map(aluout, readdata, memtoreg, result);
   se: signext port map(instr(15 downto 0), signimm);
 
   -- ALU logic

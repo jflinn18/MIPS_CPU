@@ -29,6 +29,8 @@ begin
 end;
 
 
+
+
 ------------------------------------------------------------------------------
 -- VGA Memory
 ------------------------------------------------------------------------------
@@ -41,22 +43,40 @@ use IEEE.NUMERIC_STD.all;
 
 entity vgaMem is -- data memory
   port(clk, we:  in STD_LOGIC;
-       a, wd:    in STD_LOGIC_VECTOR(31 downto 0);
+       a, wa:    in STD_LOGIC_VECTOR(31 downto 0);
+		 wd:       in STD_LOGIC_VECTOR(31 downto 0);
        rd:       out STD_LOGIC_VECTOR(31 downto 0));
 end;
 
 architecture behave of vgaMem is
+  type ramtype is array (7 downto 0) of STD_LOGIC_VECTOR(31 downto 0);
+  variable mem: ramtype;
 begin
-  process ( clk, a ) is
-    type ramtype is array (9 downto 0) of STD_LOGIC_VECTOR(31 downto 0);
-    variable mem: ramtype;
-  begin
-      if clk'event and clk = '1' then
-          if (we = '1') then mem( to_integer(unsigned(a(7 downto 2))) ) := wd;
-          end if;
-      end if;
-      rd <= mem( to_integer(unsigned(a(7 downto 2))) ); -- word aligned
+  -- This is new and may not work...based on regfile
+  process(clk) begin
+    if clk'event and clk = '1' then
+       if we = '1' then mem(to_integer( unsigned(wa(4 downto 2)) )) <= wd;
+       end if;
+    end if;
   end process;
+  process(ra, mem) begin
+    if ( to_integer(unsigned(ra(4 downto 2))) = 0) then rd <= X"00000000"; -- register 0 holds 0
+    else rd <= mem(to_integer(unsigned(ra(4 downto 2))));
+    end if;
+  end process;
+  
+  
+  --process ( clk, a ) is
+  --  type ramtype is array (9 downto 0) of STD_LOGIC_VECTOR(31 downto 0);
+  --  variable mem: ramtype;
+  --begin
+  --    if clk'event and clk = '1' then
+  --        if (we = '1') then mem( to_integer(unsigned(a(7 downto 2))) ) := wd;
+  --        end if;
+  --    end if;
+  --    rd <= mem( to_integer(unsigned(a(7 downto 2))) ); -- word aligned
+  --end process;
+  
 end;
 
 

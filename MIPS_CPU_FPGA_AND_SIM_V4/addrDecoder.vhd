@@ -33,7 +33,7 @@ entity addrDecoder is
   port(address:            in STD_LOGIC_VECTOR(31 downto 0);
        memwrite:           in STD_LOGIC;
 		 vga_write:          out STD_LOGIC;
-		 mem_write:          out STD_LOGIC; );
+		 data_write:         out STD_LOGIC );
 end addrDecoder;
 
 architecture Behavioral of addrDecoder is
@@ -41,11 +41,11 @@ architecture Behavioral of addrDecoder is
   --signal keyboard_write: STD_LOGIC;      -- Don't need to write to the keyboard....(think about it)
 begin
   if memwrite = '0' then vga_write <= '0';
-  if memwrite = '0' then mem_write <= '0';
+  if memwrite = '0' then data_write <= '0';
   
-  process(address, vga_write, mem_write) begin
+  process(address, vga_write, data_write) begin
     case address is
-		when "11111111111111111111111111010100" => 
+		when "111111111111111111111111 11010100" => 
 			if memwrite = '1' then vga_write <= '1'; -- vga[0]
 		when "11111111111111111111111111011000" => 
 			if memwrite = '1' then vga_write <= '1'; -- vga[1]
@@ -62,14 +62,14 @@ begin
 		when "11111111111111111111111111110000" => 
 			if memwrite = '1' then vga_write <= '1'; -- vga[7]
 	 
-		when "11111111111111111111111111110100" => 
-			if memwrite = '1' then vga_write <= '1';  -- x
-		when "11111111111111111111111111111000" => 
-			if memwrite = '1' then vga_write <= '1';  -- y
+		--when "11111111111111111111111111110100" => 
+		--	if memwrite = '1' then vga_write <= '1';  -- x
+		--when "11111111111111111111111111111000" => 
+		--	if memwrite = '1' then vga_write <= '1';  -- y
 	 
 		
       when others => 
-			if memwrite = '1' then mem_write <= '1';
+			if memwrite = '1' then data_write <= '1';
 			
     end case;
   end process;

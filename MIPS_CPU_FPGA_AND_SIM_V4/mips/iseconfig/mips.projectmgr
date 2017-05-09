@@ -8,18 +8,20 @@
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
          <ClosedNode>/mips_fpga_interface - test_fpga C:|CS401|MIPS_CPU_FPGA_AND_SIM_V3|mips|mips_fpga_interface.vhd/mips_cpu - top - test/mips1 - mips - struct/dp - datapath - struct</ClosedNode>
+         <ClosedNode>/mips_fpga_interface - test_fpga C:|Users|jflinn18|Desktop|MIPS_CPU|MIPS_CPU_FPGA_AND_SIM_V4|mips_fpga_interface.vhd/mips_cpu - top - test/mips1 - mips - struct/cont - controller - struct</ClosedNode>
+         <ClosedNode>/mips_fpga_interface - test_fpga C:|Users|jflinn18|Desktop|MIPS_CPU|MIPS_CPU_FPGA_AND_SIM_V4|mips_fpga_interface.vhd/mips_cpu - top - test/mips1 - mips - struct/dp - datapath - struct/mainalu - alu - behave</ClosedNode>
          <ClosedNode>/mips_fpga_interface - test_fpga Z:|401_Computer_Architecture|Session_07_MIPS_Architecture|MIPS_CPU_FPGA_AND_SIM_V4|mips_fpga_interface.vhd/mips_cpu - top - test</ClosedNode>
          <ClosedNode>/top - test C:|CS401|mips_cpu_v2_sim_reorg|mips|mips_top.vhd/mips1 - mips - struct</ClosedNode>
          <ClosedNode>/top - test C:|CS401|mips_cpu_v2_sim_reorg|mips|mips_top.vhd/mips1 - mips - struct/cont - controller - struct</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>mips_fpga_interface - test_fpga (C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_fpga_interface.vhd)</SelectedItem>
+         <SelectedItem>vga1 - vga - Behavioral (C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/vga.vhd)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >3</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001d4000000020000000000000000000000000200000064ffffffff000000810000000300000002000001d40000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001ca000000020000000000000000000000000200000064ffffffff000000810000000300000002000001ca0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>mips_fpga_interface - test_fpga (C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_fpga_interface.vhd)</CurrentItem>
+      <CurrentItem>vga1 - vga - Behavioral (C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/vga.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -27,26 +29,24 @@
          <ClosedNode>Design Utilities</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem/>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <ItemView guiview="File" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
-      <SelectedItems>
-         <SelectedItem>mips_testbench.vhd</SelectedItem>
-      </SelectedItems>
+      <SelectedItems/>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000000000000000100000000000000000000000000000000000003a3000000040101000100000000000000000000000064ffffffff000000810000000000000004000001760000000100000000000000240000000100000000000000660000000100000000000001a30000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>mips_testbench.vhd</CurrentItem>
+      <CurrentItem>..\addrDecoder.vhd</CurrentItem>
    </ItemView>
    <ItemView guiview="Library" >
       <ClosedNodes>
@@ -68,13 +68,13 @@
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem>Check Syntax</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem>Check Syntax</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
@@ -137,12 +137,12 @@
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem/>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
+      <CurrentItem></CurrentItem>
    </ItemView>
 </Project>
