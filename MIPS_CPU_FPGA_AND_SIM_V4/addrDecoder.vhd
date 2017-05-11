@@ -53,7 +53,7 @@ begin
 			if memwrite = '1' then vga_write <= '1'; -- vga[0]
 			end if;
 		when "11111111111111111111111111100100" => 
-			if memwrite = '1' then vga_write <= '1'; -- vga[1]
+			if memwrite = '1' then vga_write <= '1'; -- vga[1] 
 			end if;
 		when "11111111111111111111111111101000" => 
 			if memwrite = '1' then vga_write <= '1'; -- vga[2]
