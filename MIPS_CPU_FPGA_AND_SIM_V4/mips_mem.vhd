@@ -50,7 +50,7 @@ end;
 
 architecture behave of vgaMem is
   type ramtype is array (7 downto 0) of STD_LOGIC_VECTOR(31 downto 0);
-  variable mem: ramtype;
+  signal mem: ramtype;
 begin
   -- This is new and may not work...based on regfile
   process(clk) begin
@@ -59,9 +59,9 @@ begin
        end if;
     end if;
   end process;
-  process(ra, mem) begin
-    if ( to_integer(unsigned(ra(4 downto 2))) = 0) then rd <= X"00000000"; -- register 0 holds 0
-    else rd <= mem(to_integer(unsigned(ra(4 downto 2))));
+  process(a) begin
+    if ( to_integer(unsigned(a(4 downto 2))) = 0) then rd <= X"00000000"; -- register 0 holds 0
+    else rd <= mem(to_integer(unsigned(a(4 downto 2))));
     end if;
   end process;
   

@@ -17,7 +17,7 @@ EN maindec NULL C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_decoder_
 AR mips struct C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips.vhd sub00/vhpl15 1490292885
 EN shiftright NULL C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd sub00/vhpl36 1494349283
 EN testbench NULL C:/CS401/mips_cpu_v2_sim_reorg/mips/mips_top.vhd sub00/vhpl30 1394402431
-EN vga NULL C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/vga.vhd sub00/vhpl39 1494354443
+EN vga NULL C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/vga.vhd sub00/vhpl39 1494519881
 AR zerodetect behave C:/CS401/mips_cpu_v2_sim_reorg/mips/mips_building_blocks.vhd sub00/vhpl19 1394402410
 EN top NULL C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_top.vhd sub00/vhpl31 1490292890
 AR imem behave C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd sub00/vhpl27 1490292889
@@ -25,7 +25,7 @@ AR maindec behave C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_decode
 AR sl2 behave C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd sub00/vhpl20 1494349286
 AR top test C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_top.vhd sub00/vhpl32 1490292891
 EN zerodetect NULL C:/CS401/mips_cpu_v2_sim_reorg/mips/mips_building_blocks.vhd sub00/vhpl10 1394402403
-AR vga behavioral C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips/vga.vhd sub00/vhpl40 1493914312
+AR vga behavioral C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/vga.vhd sub00/vhpl40 1494519882
 EN mips NULL C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips.vhd sub00/vhpl06 1490292884
 AR shiftleft behave C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd sub00/vhpl37 1494349290
 AR signext behave C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd sub00/vhpl21 1494349287

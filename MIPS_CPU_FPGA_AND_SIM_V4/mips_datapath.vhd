@@ -4,7 +4,7 @@ use IEEE.NUMERIC_STD.all;
 
 entity datapath is  -- MIPS datapath
   port(clk, reset:        in  STD_LOGIC;
-       memtoreg:          in STD_LOGIC_VECTOR(1 downto 0);
+       memtoreg:          in  STD_LOGIC;
 		 pcsrc:             in  STD_LOGIC;
        alusrc, regdst:    in  STD_LOGIC;
        regwrite, jump:    in  STD_LOGIC;
@@ -58,11 +58,11 @@ architecture struct of datapath is
          s:      in  STD_LOGIC;
          y:      out STD_LOGIC_VECTOR(width-1 downto 0));
   end component;
-  component mux4 generic(width: integer);
-  port(d0, d1, d2, d3: in  STD_LOGIC_VECTOR(width-1 downto 0);
-         s:      in  STD_LOGIC;
-         y:      out STD_LOGIC_VECTOR(width-1 downto 0));
-  end component;
+--  component mux4 generic(width: integer);
+--  port(d0, d1, d2, d3: in  STD_LOGIC_VECTOR(width-1 downto 0);
+--         s:      in  STD_LOGIC;
+--         y:      out STD_LOGIC_VECTOR(width-1 downto 0));
+--  end component;
   component ShiftLeft
 		port( a : in STD_LOGIC_VECTOR(31 downto 0);
 			shamt : in STD_LOGIC_VECTOR(4 downto 0);
@@ -97,7 +97,7 @@ architecture struct of datapath is
   --signal keyboard_scancode_bus: STD_LOGIC_VECTOR(31 downto 0);
   
 begin
-  temp <= "00000000000000000000000000000000";
+  --temp <= "00000000000000000000000000000000";
   -- next PC logic
   pcjump <= pcplus4(31 downto 28) & instr(25 downto 0) & "00";
   pcreg: flopr generic map(32) port map(clk, reset, pcnext, pc);
@@ -113,7 +113,7 @@ begin
   wrmux: mux2 generic map(5) port map(instr(20 downto 16), instr(15 downto 11),
                                       regdst, writereg);
   --resmux: mux4 generic map(32) port map(aluout, readdata, , temp, memtoreg, result);
-  resmux: mux4 generic map(32) port map(aluout, readdata, memtoreg, result);
+  resmux: mux2 generic map(32) port map(aluout, readdata, memtoreg, result);
   se: signext port map(instr(15 downto 0), signimm);
 
   -- ALU logic
@@ -121,7 +121,7 @@ begin
   mainalu:  alu port map(srca, srcb, instr(10 downto 6), alucontrol, aluout, zero);
   
   
-  test_kdb_object: test_kdb port map(clk, ps2_clk, ps2_data, keybaord_result, keyboard_scancode_bus);
+  --test_kdb_object: test_kdb port map(clk, ps2_clk, ps2_data, keybaord_result, keyboard_scancode_bus);
 end;
 
 

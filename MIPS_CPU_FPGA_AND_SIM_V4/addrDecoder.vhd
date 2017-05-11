@@ -40,27 +40,39 @@ architecture Behavioral of addrDecoder is
   signal controls: STD_LOGIC_VECTOR(10 downto 0);
   --signal keyboard_write: STD_LOGIC;      -- Don't need to write to the keyboard....(think about it)
 begin
-  if memwrite = '0' then vga_write <= '0';
-  if memwrite = '0' then data_write <= '0';
+  process(memwrite) begin
+    if (memwrite = '0') then vga_write <= '0';
+    end if;
+    if (memwrite = '0') then data_write <= '0';
+    end if;
+  end process;
   
-  process(address, vga_write, data_write) begin
+  process(address) begin
     case address is
-		when "111111111111111111111111 11010100" => 
+		when "11111111111111111111111111100000" => 
 			if memwrite = '1' then vga_write <= '1'; -- vga[0]
-		when "11111111111111111111111111011000" => 
-			if memwrite = '1' then vga_write <= '1'; -- vga[1]
-		when "11111111111111111111111111011100" => 
-			if memwrite = '1' then vga_write <= '1'; -- vga[2]
-		when "11111111111111111111111111000000" => 
-			if memwrite = '1' then vga_write <= '1'; -- vga[3]
+			end if;
 		when "11111111111111111111111111100100" => 
-			if memwrite = '1' then vga_write <= '1'; -- vga[4]
+			if memwrite = '1' then vga_write <= '1'; -- vga[1]
+			end if;
 		when "11111111111111111111111111101000" => 
-			if memwrite = '1' then vga_write <= '1'; -- vga[5]
+			if memwrite = '1' then vga_write <= '1'; -- vga[2]
+			end if;
 		when "11111111111111111111111111101100" => 
-			if memwrite = '1' then vga_write <= '1'; -- vga[6]
+			if memwrite = '1' then vga_write <= '1'; -- vga[3]
+			end if;
 		when "11111111111111111111111111110000" => 
+			if memwrite = '1' then vga_write <= '1'; -- vga[4]
+			end if;
+		when "11111111111111111111111111110100" => 
+			if memwrite = '1' then vga_write <= '1'; -- vga[5]
+			end if;
+		when "11111111111111111111111111111000" => 
+			if memwrite = '1' then vga_write <= '1'; -- vga[6]
+			end if;
+		when "11111111111111111111111111111100" => 
 			if memwrite = '1' then vga_write <= '1'; -- vga[7]
+			end if;
 	 
 		--when "11111111111111111111111111110100" => 
 		--	if memwrite = '1' then vga_write <= '1';  -- x
@@ -70,6 +82,7 @@ begin
 		
       when others => 
 			if memwrite = '1' then data_write <= '1';
+			end if;
 			
     end case;
   end process;

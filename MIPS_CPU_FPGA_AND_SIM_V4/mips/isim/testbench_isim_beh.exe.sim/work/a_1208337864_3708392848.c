@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_controller.vhd";
+static const char *ng0 = "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_controller.vhd";
 extern char *IEEE_P_2592010699;
 
 
@@ -44,7 +44,7 @@ static void work_a_1208337864_3708392848_p_0(char *t0)
     char *t14;
     char *t15;
 
-LAB0:    xsi_set_current_line(42, ng0);
+LAB0:    xsi_set_current_line(44, ng0);
 
 LAB3:    t1 = (t0 + 2952U);
     t2 = *((char **)t1);
@@ -52,7 +52,7 @@ LAB3:    t1 = (t0 + 2952U);
     t3 = *((char **)t1);
     t4 = *((unsigned char *)t3);
     t6 = ((IEEE_P_2592010699) + 4024);
-    t7 = (t0 + 8036U);
+    t7 = (t0 + 8216U);
     t1 = xsi_base_array_concat(t1, t5, t6, (char)97, t2, t7, (char)99, t4, (char)101);
     t8 = (2U + 1U);
     t9 = (3U != t8);
@@ -93,21 +93,21 @@ static void work_a_1208337864_3708392848_p_1(char *t0)
     char *t11;
     char *t12;
 
-LAB0:    xsi_set_current_line(45, ng0);
+LAB0:    xsi_set_current_line(47, ng0);
     t1 = (t0 + 3112U);
     t2 = *((char **)t1);
-    t1 = (t0 + 8097);
+    t1 = (t0 + 8277);
     t4 = xsi_mem_cmp(t1, t2, 3U);
     if (t4 == 1)
         goto LAB3;
 
-LAB6:    t5 = (t0 + 8100);
+LAB6:    t5 = (t0 + 8280);
     t7 = xsi_mem_cmp(t5, t2, 3U);
     if (t7 == 1)
         goto LAB4;
 
 LAB7:
-LAB5:    xsi_set_current_line(48, ng0);
+LAB5:    xsi_set_current_line(50, ng0);
     t1 = (t0 + 5000);
     t2 = (t1 + 56U);
     t3 = *((char **)t2);
@@ -120,7 +120,7 @@ LAB2:    t1 = (t0 + 4856);
     *((int *)t1) = 1;
 
 LAB1:    return;
-LAB3:    xsi_set_current_line(46, ng0);
+LAB3:    xsi_set_current_line(48, ng0);
     t8 = (t0 + 5000);
     t9 = (t8 + 56U);
     t10 = *((char **)t9);
@@ -130,7 +130,7 @@ LAB3:    xsi_set_current_line(46, ng0);
     xsi_driver_first_trans_fast_port(t8);
     goto LAB2;
 
-LAB4:    xsi_set_current_line(47, ng0);
+LAB4:    xsi_set_current_line(49, ng0);
     t1 = (t0 + 5000);
     t2 = (t1 + 56U);
     t3 = *((char **)t2);

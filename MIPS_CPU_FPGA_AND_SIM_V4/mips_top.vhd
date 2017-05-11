@@ -66,8 +66,8 @@ architecture test of top is
   
   component vga
     port(clk:     in STD_LOGIC;
-	      rd:      in STD_LOGIC_VECTOR(31 downto 0);
-		   ra:      out STD_LOGIC_VECTOR(31 downto 0));
+	      ra:      in STD_LOGIC_VECTOR(31 downto 0);
+		   rd:      out STD_LOGIC_VECTOR(31 downto 0));
   end component;
   
 
@@ -78,7 +78,7 @@ architecture test of top is
 begin
   -- instantiate processor and memories
   addrDecoder1: addrDecoder port map(dataadr, memwrite, vgaMem_write, dataMem_write);
-  vga1: vga port map (clk, readdata, dataadr_r);
+  vga1: vga port map (clk, vgaDataadr, vgaReadData);
   
   mips1: mips port map(clk, reset, pc, instr, memwrite, dataadr, writedata, readdata);
   imem1: imem port map(pc(7 downto 2), instr);
