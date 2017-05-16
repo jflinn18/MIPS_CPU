@@ -67,8 +67,8 @@ architecture Behavioral of vgaBoxes is
 
 begin
 -- We need to connect to vgamem in the MIPS cpu
---    This will be with some sort of clock that
---    is significantly slower than the MIPS clock (clk25)
+-- This will be with some sort of clock that
+-- is significantly slower than the MIPS clock (clk25)
 
 -- generate a 25Mhz clock
   process (clk50_in)

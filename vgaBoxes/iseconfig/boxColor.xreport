@@ -1,12 +1,21 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
+<<<<<<< HEAD
   <DateModified>2017-05-16T15:17:01</DateModified>
   <ModuleName>boxColor</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>C:/Users/dhansen17/Desktop/MIPS_CPU/vgaBoxes/iseconfig/boxColor.xreport</SavedFilePath>
   <ImplementationReportsDirectory>C:/Users/dhansen17/Desktop/MIPS_CPU/vgaBoxes</ImplementationReportsDirectory>
   <DateInitialized>2017-05-16T15:17:01</DateInitialized>
+=======
+  <DateModified>2017-05-16T15:09:48</DateModified>
+  <ModuleName>boxColor</ModuleName>
+  <SummaryTimeStamp>Unknown</SummaryTimeStamp>
+  <SavedFilePath>C:/Users/jflinn18/Desktop/MIPS_CPU/vgaBoxes/iseconfig/boxColor.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/jflinn18/Desktop/MIPS_CPU/vgaBoxes</ImplementationReportsDirectory>
+  <DateInitialized>2017-05-16T15:09:48</DateInitialized>
+>>>>>>> origin/master
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
  <body>
