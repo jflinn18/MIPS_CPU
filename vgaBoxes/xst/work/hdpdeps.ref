@@ -1,0 +1,7 @@
+V3 3
+FL //cs1/2017/dhansen17/cs401-1/vgaBoxes/box.vhd 2017/05/11.12:06:31 P.20131013
+EN work/boxColor 1494529595 FL //cs1/2017/dhansen17/cs401-1/vgaBoxes/box.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179 PB ieee/NUMERIC_STD 1381692181
+AR work/boxColor/behavioral 1494529596 \
+      FL //cs1/2017/dhansen17/cs401-1/vgaBoxes/box.vhd EN work/boxColor 1494529595

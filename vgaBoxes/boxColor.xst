@@ -1,0 +1,5 @@
+set -tmpdir "X:/vgaBoxes/xst/projnav.tmp"
+set -xsthdpdir "X:/vgaBoxes/xst"
+elaborate
+-ifn boxColor.prj
+-ifmt mixed
