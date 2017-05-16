@@ -56,8 +56,8 @@ architecture Behavioral of vgaBoxes is
 begin
 
 -- We need to connect to vgamem in the MIPS cpu
---    This will be with some sort of clock that
---    is significantly slower than the MIPS clock (clk25)
+-- This will be with some sort of clock that
+-- is significantly slower than the MIPS clock (clk25)
 
 box1: port map(vgamem(0), green_out1, red_out1, blue_out1);
 box2: port map(vgamem(1), green_out2, red_out2, blue_out2);
