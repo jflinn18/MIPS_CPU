@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/dhansen17/Desktop/MIPS_CPU/vgaBoxes/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/dhansen17/Desktop/MIPS_CPU/vgaBoxes/xst"
+elaborate
+-ifn vgaBoxes.prj
+-ifmt mixed
