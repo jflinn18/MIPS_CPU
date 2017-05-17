@@ -1,0 +1,64 @@
+Release 14.7 ngdbuild P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: C:\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe -intstyle ise
+-dd _ngo -nt timestamp -uc test1.ucf -p xc3s1000-ft256-4 boxColor.ngc
+boxColor.ngd
+
+Reading NGO file "C:/Users/dhansen17/Desktop/MIPS_CPU/vgaBoxes/boxColor.ngc" ...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "test1.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+ERROR:ConstraintSystem:59 - Constraint <NET "clk50_in"  LOC = "P8"  ;>
+   [test1.ucf(7)]: NET "clk50_in" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "clk50_in"  LOC = "P8"  ;> [test1.ucf(7)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "hs_out"  LOC = "b7"  ;>
+   [test1.ucf(11)]: NET "hs_out" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "hs_out"  LOC = "b7"  ;> [test1.ucf(11)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "vs_out"  LOC = "d8"  ;>
+   [test1.ucf(15)]: NET "vs_out" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "vs_out"  LOC = "d8"  ;> [test1.ucf(15)]' could not be found and so the
+   Locate constraint will be removed.
+
+Done...
+
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     3
+  Number of warnings:   3
+
+Total memory usage is 190252 kilobytes
+
+Total REAL time to NGDBUILD completion:  2 sec
+Total CPU time to NGDBUILD completion:   2 sec
+
+One or more errors were found during NGDBUILD.  No NGD file will be written.
+
+Writing NGDBUILD log file "boxColor.bld"...

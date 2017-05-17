@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "C:/Users/dhansen17/Desktop/MIPS_CPU/vgaBoxes/boxColor.xst" -ofn "C:/Users/dhansen17/Desktop/MIPS_CPU/vgaBoxes/boxColor.syr" 
+xst -intstyle ise -ifn "C:/Users/dhansen17/Desktop/MIPS_CPU/vgaBoxes/boxColor.xst" -ofn "C:/Users/dhansen17/Desktop/MIPS_CPU/vgaBoxes/boxColor.syr" 
+xst -intstyle ise -ifn "C:/Users/dhansen17/Desktop/MIPS_CPU/vgaBoxes/boxColor.xst" -ofn "C:/Users/dhansen17/Desktop/MIPS_CPU/vgaBoxes/boxColor.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc test1.ucf -p xc3s1000-ft256-4 boxColor.ngc boxColor.ngd  
+xst -intstyle ise -ifn "C:/Users/dhansen17/Desktop/MIPS_CPU/vgaBoxes/boxColor.xst" -ofn "C:/Users/dhansen17/Desktop/MIPS_CPU/vgaBoxes/boxColor.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc test1.ucf -p xc3s1000-ft256-4 boxColor.ngc boxColor.ngd  

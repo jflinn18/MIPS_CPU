@@ -24,52 +24,53 @@ begin
 
   process(lowerFour) begin
     case lowerFour is
+	 --need to change logic in when statements
 		when "0000" =>         -- 0
 		  green_out <= "111";
 		  red_out   <= "111";
 		  blue_out  <= "111";
 		  
-		when "0000" =>         -- 1
+		when "0001" =>         -- 1
 		  green_out <= "011";
 		  red_out   <= "000";
 		  blue_out  <= "111";
 		  
-		when "0000" =>         -- 2
+		when "0010" =>         -- 2
 		  green_out <= "000";
 		  red_out   <= "100";
 		  blue_out  <= "111";
 		  
-		when "0000" =>         -- 3
+		when "0011" =>         -- 3
 		  green_out <= "101";
 		  red_out   <= "111";
 		  blue_out  <= "111";
 		  
-		when "0000" =>         -- 4
+		when "0100" =>         -- 4
 		  green_out <= "001";
 		  red_out   <= "110";
 		  blue_out  <= "001";
 		  
-		when "0000" =>         -- 5
+		when "0101" =>         -- 5
 		  green_out <= "100";
 		  red_out   <= "111";
 		  blue_out  <= "001";
 
-		when "0000" =>         -- 6
+		when "0110" =>         -- 6
 		  green_out <= "110";
 		  red_out   <= "111";
 		  blue_out  <= "000";
 		  
-		when "0000" =>         -- 7
+		when "0111" =>         -- 7
 		  green_out <= "111";
 		  red_out   <= "110";
 		  blue_out  <= "000";
 		  
-		when "0000" =>         -- 8
+		when "1000" =>         -- 8
 		  green_out <= "101";
 		  red_out   <= "001";
 		  blue_out  <= "010";
 		  
-		when "0000" =>         -- 9
+		when "1001" =>         -- 9
 		  green_out <= "111";
 		  red_out   <= "000";
 		  blue_out  <= "111";
