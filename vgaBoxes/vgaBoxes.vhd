@@ -14,21 +14,17 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity vgaBoxes is port(
-clk50_in : in std_logic;
-red_out : in std_logic_vector(2 downto 0);
-green_out : in std_logic_vector(2 downto 0);
-blue_out : in std_logic_vector(2 downto 0);
-hs_out : out std_logic;
-vs_out : out std_logic
+  clk50_in :  in std_logic;
+  red_out :   in std_logic_vector(2 downto 0);
+  green_out : in std_logic_vector(2 downto 0);
+  blue_out :  in std_logic_vector(2 downto 0);
+  hs_out :    out std_logic;
+  vs_out :    out std_logic
 );
 end vgaBoxes;
 
 
 architecture Behavioral of vgaBoxes is
-  signal clk25  	 : std_logic;
-  signal hcounter  : integer range 0 to 800;
-  signal vcounter  : integer range 0 to 521;
-  signal color: std_logic_vector(8 downto 0);
   component boxColor
     port(number:     in STD_LOGIC_VECTOR(31 downto 0);
          green_out:  out STD_LOGIC_VECTOR(2 downto 0);
@@ -38,34 +34,38 @@ architecture Behavioral of vgaBoxes is
   end component;
 
 
---  signal green_out1: out STD_LOGIC_VECTOR(2 downto 0);
---  signal green_out2: out STD_LOGIC_VECTOR(2 downto 0);
---  signal green_out3: out STD_LOGIC_VECTOR(2 downto 0);
---  signal green_out4: out STD_LOGIC_VECTOR(2 downto 0);
---  signal green_out5: out STD_LOGIC_VECTOR(2 downto 0);
---  signal green_out6: out STD_LOGIC_VECTOR(2 downto 0);
---  signal green_out7: out STD_LOGIC_VECTOR(2 downto 0);
---  signal green_out8: out STD_LOGIC_VECTOR(2 downto 0);
---
---  signal red_out1: out STD_LOGIC_VECTOR(2 downto 0);
---  signal red_out2: out STD_LOGIC_VECTOR(2 downto 0);
---  signal red_out3: out STD_LOGIC_VECTOR(2 downto 0);
---  signal red_out4: out STD_LOGIC_VECTOR(2 downto 0);
---  signal red_out5: out STD_LOGIC_VECTOR(2 downto 0);
---  signal red_out6: out STD_LOGIC_VECTOR(2 downto 0);
---  signal red_out7: out STD_LOGIC_VECTOR(2 downto 0);
---  signal red_out8: out STD_LOGIC_VECTOR(2 downto 0);
---
---  signal blue_out1: out STD_LOGIC_VECTOR(2 downto 0);
---  signal blue_out2: out STD_LOGIC_VECTOR(2 downto 0);
---  signal blue_out3: out STD_LOGIC_VECTOR(2 downto 0);
---  signal blue_out4: out STD_LOGIC_VECTOR(2 downto 0);
---  signal blue_out5: out STD_LOGIC_VECTOR(2 downto 0);
---  signal blue_out6: out STD_LOGIC_VECTOR(2 downto 0);
---  signal blue_out7: out STD_LOGIC_VECTOR(2 downto 0);
---  signal blue_out8: out STD_LOGIC_VECTOR(2 downto 0);
---  
 
+  signal green_out1: STD_LOGIC_VECTOR(2 downto 0);
+  signal green_out2: STD_LOGIC_VECTOR(2 downto 0);
+  signal green_out3: STD_LOGIC_VECTOR(2 downto 0);
+  signal green_out4: STD_LOGIC_VECTOR(2 downto 0);
+  --signal green_out5: STD_LOGIC_VECTOR(2 downto 0);
+  --signal green_out6: STD_LOGIC_VECTOR(2 downto 0);
+  --signal green_out7: STD_LOGIC_VECTOR(2 downto 0);
+  --signal green_out8: STD_LOGIC_VECTOR(2 downto 0);
+
+  signal red_out1: STD_LOGIC_VECTOR(2 downto 0);
+  signal red_out2: STD_LOGIC_VECTOR(2 downto 0);
+  signal red_out3: STD_LOGIC_VECTOR(2 downto 0);
+  signal red_out4: STD_LOGIC_VECTOR(2 downto 0);
+  --signal red_out5: STD_LOGIC_VECTOR(2 downto 0);
+  --signal red_out6: STD_LOGIC_VECTOR(2 downto 0);
+  --signal red_out7: STD_LOGIC_VECTOR(2 downto 0);
+  --signal red_out8: STD_LOGIC_VECTOR(2 downto 0);
+
+  signal blue_out1: STD_LOGIC_VECTOR(2 downto 0);
+  signal blue_out2: STD_LOGIC_VECTOR(2 downto 0);
+  signal blue_out3: STD_LOGIC_VECTOR(2 downto 0);
+  signal blue_out4: STD_LOGIC_VECTOR(2 downto 0);
+  --signal blue_out5: STD_LOGIC_VECTOR(2 downto 0);
+  --signal blue_out6: STD_LOGIC_VECTOR(2 downto 0);
+  --signal blue_out7: STD_LOGIC_VECTOR(2 downto 0);
+  --signal blue_out8: STD_LOGIC_VECTOR(2 downto 0);
+  
+  signal clk25  	 : std_logic;
+  signal hcounter  : integer range 0 to 800;
+  signal vcounter  : integer range 0 to 521;
+  signal color: std_logic_vector(8 downto 0);
 
 begin
   
@@ -115,6 +115,10 @@ p2: process(clk25, hcounter, vcounter)
 		color(2 downto 0) <= "000";
     	end if;
 	
+
+
+
+
 	if hcounter > 0 and hcounter < 97 then
       	hs_out <= '0';
     	else
@@ -144,6 +148,7 @@ p2: process(clk25, hcounter, vcounter)
     	end if;
   end if;
 end process;
+
 --box1: port map(vgamem(0), green_out1, red_out1, blue_out1);
 --box2: port map(vgamem(1), green_out2, red_out2, blue_out2);
 --box3: port map(vgamem(2), green_out3, red_out3, blue_out3);

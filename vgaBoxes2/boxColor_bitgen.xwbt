@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\jflinn18\Desktop\MIPS_CPU\vgaBoxes2\boxColor.ncd
+OUTFILE=C:\Users\jflinn18\Desktop\MIPS_CPU\vgaBoxes2\boxColor.bit
+FAMILY=Spartan3
+PART=xc3s1000-4ft256
+WORKINGDIR=C:\Users\jflinn18\Desktop\MIPS_CPU\vgaBoxes2
+LICENSE=WebPack
+USER_INFO=177065750_177065752_0_914

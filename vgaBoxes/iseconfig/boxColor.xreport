@@ -1,11 +1,19 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
+<<<<<<< HEAD
+  <ImplementationReportsDirectory>C:/Users/jflinn18/Desktop/MIPS_CPU/vgaBoxes</ImplementationReportsDirectory>
+  <ModuleName>boxColor</ModuleName>
+  <DateModified>2017-05-17T08:25:34</DateModified>
+  <SavedFilePath>C:/Users/jflinn18/Desktop/MIPS_CPU/vgaBoxes/iseconfig/boxColor.xreport</SavedFilePath>
+  <DateInitialized>2017-05-17T08:25:33</DateInitialized>
+=======
   <ImplementationReportsDirectory>C:/Users/dhansen17/Desktop/MIPS_CPU/vgaBoxes</ImplementationReportsDirectory>
   <ModuleName>boxColor</ModuleName>
   <DateModified>2017-05-16T21:25:28</DateModified>
   <SavedFilePath>C:/Users/dhansen17/Desktop/MIPS_CPU/vgaBoxes/iseconfig/boxColor.xreport</SavedFilePath>
   <DateInitialized>2017-05-16T21:25:28</DateInitialized>
+>>>>>>> 65d4dec18430a78bcedee0229028e8201949e7f5
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
 </report-views>

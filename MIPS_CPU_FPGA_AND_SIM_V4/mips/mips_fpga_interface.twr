@@ -1,14 +1,14 @@
 --------------------------------------------------------------------------------
-Release 14.6 Trace  (nt64)
+Release 14.7 Trace  (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-C:\Xilinx\14.6\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 5
--n 3 -fastpaths -xml mips_fpga_interface.twx mips_fpga_interface.ncd -o
+C:\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 5 -n 3
+-fastpaths -xml mips_fpga_interface.twx mips_fpga_interface.ncd -o
 mips_fpga_interface.twr mips_fpga_interface.pcf
 
 Design file:              mips_fpga_interface.ncd
 Physical constraint file: mips_fpga_interface.pcf
-Device,package,speed:     xc3s1000,ft256,-5 (PRODUCTION 1.39 2013-06-08)
+Device,package,speed:     xc3s1000,ft256,-5 (PRODUCTION 1.39 2013-10-13)
 Report level:             verbose report
 
 Environment Variable      Effect 
@@ -39,866 +39,824 @@ For more information, see Period Analysis in the Timing Closure User Guide (UG61
 
  17265 paths analyzed, 111 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
- Minimum period is   9.912ns.
+ Minimum period is   9.589ns.
 --------------------------------------------------------------------------------
 
-Paths for end point cnt_16 (SLICE_X50Y8.SR), 507 paths
+Paths for end point cnt_4 (SLICE_X60Y2.SR), 507 paths
 --------------------------------------------------------------------------------
-Slack (setup path):     0.088ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               cnt_0 (FF)
-  Destination:          cnt_16 (FF)
+Slack (setup path):     0.411ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               cnt_1 (FF)
+  Destination:          cnt_4 (FF)
   Requirement:          10.000ns
-  Data Path Delay:      9.829ns (Levels of Logic = 18)
-  Clock Path Skew:      -0.083ns (0.178 - 0.261)
+  Data Path Delay:      9.569ns (Levels of Logic = 17)
+  Clock Path Skew:      -0.020ns (0.076 - 0.096)
   Source Clock:         clk_BUFGP rising at 0.000ns
   Destination Clock:    clk_BUFGP rising at 10.000ns
   Clock Uncertainty:    0.000ns
 
-  Maximum Data Path: cnt_0 to cnt_16
+  Maximum Data Path: cnt_1 to cnt_4
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X50Y0.XQ       Tcko                  0.626   cnt<0>
-                                                       cnt_0
-    SLICE_X51Y0.F2       net (fanout=2)        0.541   cnt<0>
-    SLICE_X51Y0.COUT     Topcyf                0.894   Madd_mips_clk_input_add0000_cy<1>
-                                                       Madd_mips_clk_input_add0000_lut<0>_INV_0
-                                                       Madd_mips_clk_input_add0000_cy<0>
+    SLICE_X60Y0.YQ       Tcko                  0.626   cnt<0>
+                                                       cnt_1
+    SLICE_X61Y0.G3       net (fanout=2)        0.394   cnt<1>
+    SLICE_X61Y0.COUT     Topcyg                0.904   Madd_mips_clk_input_add0000_cy<1>
+                                                       cnt<1>_rt.1
                                                        Madd_mips_clk_input_add0000_cy<1>
-    SLICE_X51Y1.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<1>
-    SLICE_X51Y1.COUT     Tbyp                  0.111   Madd_mips_clk_input_add0000_cy<3>
+    SLICE_X61Y1.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<1>
+    SLICE_X61Y1.COUT     Tbyp                  0.111   Madd_mips_clk_input_add0000_cy<3>
                                                        Madd_mips_clk_input_add0000_cy<2>
                                                        Madd_mips_clk_input_add0000_cy<3>
-    SLICE_X51Y2.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<3>
-    SLICE_X51Y2.COUT     Tbyp                  0.111   mips_clk_input_add0000<5>
+    SLICE_X61Y2.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<3>
+    SLICE_X61Y2.COUT     Tbyp                  0.111   mips_clk_input_add0000<5>
                                                        Madd_mips_clk_input_add0000_cy<4>
                                                        Madd_mips_clk_input_add0000_cy<5>
-    SLICE_X51Y3.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<5>
-    SLICE_X51Y3.COUT     Tbyp                  0.111   mips_clk_input_add0000<6>
+    SLICE_X61Y3.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<5>
+    SLICE_X61Y3.COUT     Tbyp                  0.111   mips_clk_input_add0000<6>
                                                        Madd_mips_clk_input_add0000_cy<6>
                                                        Madd_mips_clk_input_add0000_cy<7>
-    SLICE_X51Y4.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<7>
-    SLICE_X51Y4.COUT     Tbyp                  0.111   mips_clk_input_add0000<8>
+    SLICE_X61Y4.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<7>
+    SLICE_X61Y4.COUT     Tbyp                  0.111   mips_clk_input_add0000<8>
                                                        Madd_mips_clk_input_add0000_cy<8>
                                                        Madd_mips_clk_input_add0000_cy<9>
-    SLICE_X51Y5.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<9>
-    SLICE_X51Y5.COUT     Tbyp                  0.111   mips_clk_input_add0000<10>
+    SLICE_X61Y5.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<9>
+    SLICE_X61Y5.COUT     Tbyp                  0.111   mips_clk_input_add0000<10>
                                                        Madd_mips_clk_input_add0000_cy<10>
                                                        Madd_mips_clk_input_add0000_cy<11>
-    SLICE_X51Y6.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<11>
-    SLICE_X51Y6.COUT     Tbyp                  0.111   mips_clk_input_add0000<12>
+    SLICE_X61Y6.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<11>
+    SLICE_X61Y6.COUT     Tbyp                  0.111   mips_clk_input_add0000<12>
                                                        Madd_mips_clk_input_add0000_cy<12>
                                                        Madd_mips_clk_input_add0000_cy<13>
-    SLICE_X51Y7.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<13>
-    SLICE_X51Y7.COUT     Tbyp                  0.111   mips_clk_input_add0000<14>
+    SLICE_X61Y7.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<13>
+    SLICE_X61Y7.COUT     Tbyp                  0.111   mips_clk_input_add0000<14>
                                                        Madd_mips_clk_input_add0000_cy<14>
                                                        Madd_mips_clk_input_add0000_cy<15>
-    SLICE_X51Y8.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<15>
-    SLICE_X51Y8.COUT     Tbyp                  0.111   mips_clk_input_add0000<16>
+    SLICE_X61Y8.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<15>
+    SLICE_X61Y8.COUT     Tbyp                  0.111   mips_clk_input_add0000<16>
                                                        Madd_mips_clk_input_add0000_cy<16>
                                                        Madd_mips_clk_input_add0000_cy<17>
-    SLICE_X51Y9.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<17>
-    SLICE_X51Y9.COUT     Tbyp                  0.111   mips_clk_input_add0000<18>
+    SLICE_X61Y9.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<17>
+    SLICE_X61Y9.COUT     Tbyp                  0.111   mips_clk_input_add0000<18>
                                                        Madd_mips_clk_input_add0000_cy<18>
                                                        Madd_mips_clk_input_add0000_cy<19>
-    SLICE_X51Y10.CIN     net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<19>
-    SLICE_X51Y10.COUT    Tbyp                  0.111   mips_clk_input_add0000<20>
+    SLICE_X61Y10.CIN     net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<19>
+    SLICE_X61Y10.COUT    Tbyp                  0.111   mips_clk_input_add0000<20>
                                                        Madd_mips_clk_input_add0000_cy<20>
                                                        Madd_mips_clk_input_add0000_cy<21>
-    SLICE_X51Y11.CIN     net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<21>
-    SLICE_X51Y11.COUT    Tbyp                  0.111   mips_clk_input_add0000<22>
+    SLICE_X61Y11.CIN     net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<21>
+    SLICE_X61Y11.COUT    Tbyp                  0.111   mips_clk_input_add0000<22>
                                                        Madd_mips_clk_input_add0000_cy<22>
                                                        Madd_mips_clk_input_add0000_cy<23>
-    SLICE_X51Y12.CIN     net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<23>
-    SLICE_X51Y12.COUT    Tbyp                  0.111   mips_clk_input_add0000<24>
+    SLICE_X61Y12.CIN     net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<23>
+    SLICE_X61Y12.COUT    Tbyp                  0.111   mips_clk_input_add0000<24>
                                                        Madd_mips_clk_input_add0000_cy<24>
                                                        Madd_mips_clk_input_add0000_cy<25>
-    SLICE_X51Y13.CIN     net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<25>
-    SLICE_X51Y13.COUT    Tbyp                  0.111   mips_clk_input_add0000<26>
+    SLICE_X61Y13.CIN     net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<25>
+    SLICE_X61Y13.Y       Tciny                 0.803   mips_clk_input_add0000<26>
                                                        Madd_mips_clk_input_add0000_cy<26>
-                                                       Madd_mips_clk_input_add0000_cy<27>
-    SLICE_X51Y14.CIN     net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<27>
-    SLICE_X51Y14.Y       Tciny                 0.803   mips_clk_input_add0000<28>
-                                                       Madd_mips_clk_input_add0000_cy<28>
-                                                       Madd_mips_clk_input_add0000_xor<29>
-    SLICE_X52Y7.G1       net (fanout=2)        1.085   mips_clk_input_add0000<29>
-    SLICE_X52Y7.COUT     Topcyg                0.954   Mcompar_cnt_cmp_ge0000_cy<11>
-                                                       Mcompar_cnt_cmp_ge0000_lut<11>
-                                                       Mcompar_cnt_cmp_ge0000_cy<11>
-    SLICE_X52Y8.CIN      net (fanout=1)        0.000   Mcompar_cnt_cmp_ge0000_cy<11>
-    SLICE_X52Y8.XB       Tcinxb                0.383   cnt_cmp_ge0000
-                                                       Mcompar_cnt_cmp_ge0000_cy<12>
-    SLICE_X52Y9.G4       net (fanout=1)        0.402   cnt_cmp_ge0000
-    SLICE_X52Y9.Y        Tilo                  0.529   mips_clk_input_or0000
+                                                       Madd_mips_clk_input_add0000_xor<27>
+    SLICE_X63Y9.F1       net (fanout=2)        1.152   mips_clk_input_add0000<27>
+    SLICE_X63Y9.COUT     Topcyf                0.894   Mcompar_mips_clk_input_cmp_lt0000_cy<11>1
+                                                       Mcompar_mips_clk_input_cmp_lt0000_lut<10>1
+                                                       Mcompar_mips_clk_input_cmp_lt0000_cy<10>_0
+                                                       Mcompar_mips_clk_input_cmp_lt0000_cy<11>_0
+    SLICE_X63Y10.CIN     net (fanout=1)        0.000   Mcompar_mips_clk_input_cmp_lt0000_cy<11>1
+    SLICE_X63Y10.XB      Tcinxb                0.279   cnt_cmp_ge0000
+                                                       Mcompar_mips_clk_input_cmp_lt0000_cy<12>_0
+    SLICE_X63Y11.G4      net (fanout=1)        0.345   cnt_cmp_ge0000
+    SLICE_X63Y11.Y       Tilo                  0.479   mips_clk_input_or0000
                                                        cnt_or00001
-    SLICE_X50Y8.SR       net (fanout=16)       1.277   cnt_or0000
-    SLICE_X50Y8.CLK      Tsrck                 0.892   cnt<16>
-                                                       cnt_16
+    SLICE_X60Y2.SR       net (fanout=16)       1.469   cnt_or0000
+    SLICE_X60Y2.CLK      Tsrck                 0.892   cnt<4>
+                                                       cnt_4
     -------------------------------------------------  ---------------------------
-    Total                                      9.829ns (6.524ns logic, 3.305ns route)
-                                                       (66.4% logic, 33.6% route)
+    Total                                      9.569ns (6.209ns logic, 3.360ns route)
+                                                       (64.9% logic, 35.1% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     0.132ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               cnt_3 (FF)
-  Destination:          cnt_16 (FF)
+Slack (setup path):     0.411ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               cnt_2 (FF)
+  Destination:          cnt_4 (FF)
   Requirement:          10.000ns
-  Data Path Delay:      9.785ns (Levels of Logic = 17)
-  Clock Path Skew:      -0.083ns (0.178 - 0.261)
+  Data Path Delay:      9.569ns (Levels of Logic = 16)
+  Clock Path Skew:      -0.020ns (0.076 - 0.096)
   Source Clock:         clk_BUFGP rising at 0.000ns
   Destination Clock:    clk_BUFGP rising at 10.000ns
   Clock Uncertainty:    0.000ns
 
-  Maximum Data Path: cnt_3 to cnt_16
+  Maximum Data Path: cnt_2 to cnt_4
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X50Y1.YQ       Tcko                  0.626   cnt<2>
+    SLICE_X60Y1.XQ       Tcko                  0.626   cnt<2>
+                                                       cnt_2
+    SLICE_X61Y1.F1       net (fanout=2)        0.515   cnt<2>
+    SLICE_X61Y1.COUT     Topcyf                0.894   Madd_mips_clk_input_add0000_cy<3>
+                                                       cnt<2>_rt.1
+                                                       Madd_mips_clk_input_add0000_cy<2>
+                                                       Madd_mips_clk_input_add0000_cy<3>
+    SLICE_X61Y2.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<3>
+    SLICE_X61Y2.COUT     Tbyp                  0.111   mips_clk_input_add0000<5>
+                                                       Madd_mips_clk_input_add0000_cy<4>
+                                                       Madd_mips_clk_input_add0000_cy<5>
+    SLICE_X61Y3.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<5>
+    SLICE_X61Y3.COUT     Tbyp                  0.111   mips_clk_input_add0000<6>
+                                                       Madd_mips_clk_input_add0000_cy<6>
+                                                       Madd_mips_clk_input_add0000_cy<7>
+    SLICE_X61Y4.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<7>
+    SLICE_X61Y4.COUT     Tbyp                  0.111   mips_clk_input_add0000<8>
+                                                       Madd_mips_clk_input_add0000_cy<8>
+                                                       Madd_mips_clk_input_add0000_cy<9>
+    SLICE_X61Y5.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<9>
+    SLICE_X61Y5.COUT     Tbyp                  0.111   mips_clk_input_add0000<10>
+                                                       Madd_mips_clk_input_add0000_cy<10>
+                                                       Madd_mips_clk_input_add0000_cy<11>
+    SLICE_X61Y6.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<11>
+    SLICE_X61Y6.COUT     Tbyp                  0.111   mips_clk_input_add0000<12>
+                                                       Madd_mips_clk_input_add0000_cy<12>
+                                                       Madd_mips_clk_input_add0000_cy<13>
+    SLICE_X61Y7.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<13>
+    SLICE_X61Y7.COUT     Tbyp                  0.111   mips_clk_input_add0000<14>
+                                                       Madd_mips_clk_input_add0000_cy<14>
+                                                       Madd_mips_clk_input_add0000_cy<15>
+    SLICE_X61Y8.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<15>
+    SLICE_X61Y8.COUT     Tbyp                  0.111   mips_clk_input_add0000<16>
+                                                       Madd_mips_clk_input_add0000_cy<16>
+                                                       Madd_mips_clk_input_add0000_cy<17>
+    SLICE_X61Y9.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<17>
+    SLICE_X61Y9.COUT     Tbyp                  0.111   mips_clk_input_add0000<18>
+                                                       Madd_mips_clk_input_add0000_cy<18>
+                                                       Madd_mips_clk_input_add0000_cy<19>
+    SLICE_X61Y10.CIN     net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<19>
+    SLICE_X61Y10.COUT    Tbyp                  0.111   mips_clk_input_add0000<20>
+                                                       Madd_mips_clk_input_add0000_cy<20>
+                                                       Madd_mips_clk_input_add0000_cy<21>
+    SLICE_X61Y11.CIN     net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<21>
+    SLICE_X61Y11.COUT    Tbyp                  0.111   mips_clk_input_add0000<22>
+                                                       Madd_mips_clk_input_add0000_cy<22>
+                                                       Madd_mips_clk_input_add0000_cy<23>
+    SLICE_X61Y12.CIN     net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<23>
+    SLICE_X61Y12.COUT    Tbyp                  0.111   mips_clk_input_add0000<24>
+                                                       Madd_mips_clk_input_add0000_cy<24>
+                                                       Madd_mips_clk_input_add0000_cy<25>
+    SLICE_X61Y13.CIN     net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<25>
+    SLICE_X61Y13.Y       Tciny                 0.803   mips_clk_input_add0000<26>
+                                                       Madd_mips_clk_input_add0000_cy<26>
+                                                       Madd_mips_clk_input_add0000_xor<27>
+    SLICE_X63Y9.F1       net (fanout=2)        1.152   mips_clk_input_add0000<27>
+    SLICE_X63Y9.COUT     Topcyf                0.894   Mcompar_mips_clk_input_cmp_lt0000_cy<11>1
+                                                       Mcompar_mips_clk_input_cmp_lt0000_lut<10>1
+                                                       Mcompar_mips_clk_input_cmp_lt0000_cy<10>_0
+                                                       Mcompar_mips_clk_input_cmp_lt0000_cy<11>_0
+    SLICE_X63Y10.CIN     net (fanout=1)        0.000   Mcompar_mips_clk_input_cmp_lt0000_cy<11>1
+    SLICE_X63Y10.XB      Tcinxb                0.279   cnt_cmp_ge0000
+                                                       Mcompar_mips_clk_input_cmp_lt0000_cy<12>_0
+    SLICE_X63Y11.G4      net (fanout=1)        0.345   cnt_cmp_ge0000
+    SLICE_X63Y11.Y       Tilo                  0.479   mips_clk_input_or0000
+                                                       cnt_or00001
+    SLICE_X60Y2.SR       net (fanout=16)       1.469   cnt_or0000
+    SLICE_X60Y2.CLK      Tsrck                 0.892   cnt<4>
+                                                       cnt_4
+    -------------------------------------------------  ---------------------------
+    Total                                      9.569ns (6.088ns logic, 3.481ns route)
+                                                       (63.6% logic, 36.4% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     0.457ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               cnt_3 (FF)
+  Destination:          cnt_4 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      9.523ns (Levels of Logic = 16)
+  Clock Path Skew:      -0.020ns (0.076 - 0.096)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: cnt_3 to cnt_4
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X60Y1.YQ       Tcko                  0.626   cnt<2>
                                                        cnt_3
-    SLICE_X51Y1.G1       net (fanout=2)        0.598   cnt<3>
-    SLICE_X51Y1.COUT     Topcyg                0.904   Madd_mips_clk_input_add0000_cy<3>
+    SLICE_X61Y1.G2       net (fanout=2)        0.459   cnt<3>
+    SLICE_X61Y1.COUT     Topcyg                0.904   Madd_mips_clk_input_add0000_cy<3>
                                                        cnt<3>_rt.1
                                                        Madd_mips_clk_input_add0000_cy<3>
-    SLICE_X51Y2.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<3>
-    SLICE_X51Y2.COUT     Tbyp                  0.111   mips_clk_input_add0000<5>
+    SLICE_X61Y2.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<3>
+    SLICE_X61Y2.COUT     Tbyp                  0.111   mips_clk_input_add0000<5>
                                                        Madd_mips_clk_input_add0000_cy<4>
                                                        Madd_mips_clk_input_add0000_cy<5>
-    SLICE_X51Y3.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<5>
-    SLICE_X51Y3.COUT     Tbyp                  0.111   mips_clk_input_add0000<6>
+    SLICE_X61Y3.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<5>
+    SLICE_X61Y3.COUT     Tbyp                  0.111   mips_clk_input_add0000<6>
                                                        Madd_mips_clk_input_add0000_cy<6>
                                                        Madd_mips_clk_input_add0000_cy<7>
-    SLICE_X51Y4.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<7>
-    SLICE_X51Y4.COUT     Tbyp                  0.111   mips_clk_input_add0000<8>
+    SLICE_X61Y4.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<7>
+    SLICE_X61Y4.COUT     Tbyp                  0.111   mips_clk_input_add0000<8>
                                                        Madd_mips_clk_input_add0000_cy<8>
                                                        Madd_mips_clk_input_add0000_cy<9>
-    SLICE_X51Y5.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<9>
-    SLICE_X51Y5.COUT     Tbyp                  0.111   mips_clk_input_add0000<10>
+    SLICE_X61Y5.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<9>
+    SLICE_X61Y5.COUT     Tbyp                  0.111   mips_clk_input_add0000<10>
                                                        Madd_mips_clk_input_add0000_cy<10>
                                                        Madd_mips_clk_input_add0000_cy<11>
-    SLICE_X51Y6.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<11>
-    SLICE_X51Y6.COUT     Tbyp                  0.111   mips_clk_input_add0000<12>
+    SLICE_X61Y6.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<11>
+    SLICE_X61Y6.COUT     Tbyp                  0.111   mips_clk_input_add0000<12>
                                                        Madd_mips_clk_input_add0000_cy<12>
                                                        Madd_mips_clk_input_add0000_cy<13>
-    SLICE_X51Y7.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<13>
-    SLICE_X51Y7.COUT     Tbyp                  0.111   mips_clk_input_add0000<14>
+    SLICE_X61Y7.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<13>
+    SLICE_X61Y7.COUT     Tbyp                  0.111   mips_clk_input_add0000<14>
                                                        Madd_mips_clk_input_add0000_cy<14>
                                                        Madd_mips_clk_input_add0000_cy<15>
-    SLICE_X51Y8.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<15>
-    SLICE_X51Y8.COUT     Tbyp                  0.111   mips_clk_input_add0000<16>
+    SLICE_X61Y8.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<15>
+    SLICE_X61Y8.COUT     Tbyp                  0.111   mips_clk_input_add0000<16>
                                                        Madd_mips_clk_input_add0000_cy<16>
                                                        Madd_mips_clk_input_add0000_cy<17>
-    SLICE_X51Y9.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<17>
-    SLICE_X51Y9.COUT     Tbyp                  0.111   mips_clk_input_add0000<18>
+    SLICE_X61Y9.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<17>
+    SLICE_X61Y9.COUT     Tbyp                  0.111   mips_clk_input_add0000<18>
                                                        Madd_mips_clk_input_add0000_cy<18>
                                                        Madd_mips_clk_input_add0000_cy<19>
-    SLICE_X51Y10.CIN     net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<19>
-    SLICE_X51Y10.COUT    Tbyp                  0.111   mips_clk_input_add0000<20>
+    SLICE_X61Y10.CIN     net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<19>
+    SLICE_X61Y10.COUT    Tbyp                  0.111   mips_clk_input_add0000<20>
                                                        Madd_mips_clk_input_add0000_cy<20>
                                                        Madd_mips_clk_input_add0000_cy<21>
-    SLICE_X51Y11.CIN     net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<21>
-    SLICE_X51Y11.COUT    Tbyp                  0.111   mips_clk_input_add0000<22>
+    SLICE_X61Y11.CIN     net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<21>
+    SLICE_X61Y11.COUT    Tbyp                  0.111   mips_clk_input_add0000<22>
                                                        Madd_mips_clk_input_add0000_cy<22>
                                                        Madd_mips_clk_input_add0000_cy<23>
-    SLICE_X51Y12.CIN     net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<23>
-    SLICE_X51Y12.COUT    Tbyp                  0.111   mips_clk_input_add0000<24>
+    SLICE_X61Y12.CIN     net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<23>
+    SLICE_X61Y12.COUT    Tbyp                  0.111   mips_clk_input_add0000<24>
                                                        Madd_mips_clk_input_add0000_cy<24>
                                                        Madd_mips_clk_input_add0000_cy<25>
-    SLICE_X51Y13.CIN     net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<25>
-    SLICE_X51Y13.COUT    Tbyp                  0.111   mips_clk_input_add0000<26>
+    SLICE_X61Y13.CIN     net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<25>
+    SLICE_X61Y13.Y       Tciny                 0.803   mips_clk_input_add0000<26>
                                                        Madd_mips_clk_input_add0000_cy<26>
-                                                       Madd_mips_clk_input_add0000_cy<27>
-    SLICE_X51Y14.CIN     net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<27>
-    SLICE_X51Y14.Y       Tciny                 0.803   mips_clk_input_add0000<28>
-                                                       Madd_mips_clk_input_add0000_cy<28>
-                                                       Madd_mips_clk_input_add0000_xor<29>
-    SLICE_X52Y7.G1       net (fanout=2)        1.085   mips_clk_input_add0000<29>
-    SLICE_X52Y7.COUT     Topcyg                0.954   Mcompar_cnt_cmp_ge0000_cy<11>
-                                                       Mcompar_cnt_cmp_ge0000_lut<11>
-                                                       Mcompar_cnt_cmp_ge0000_cy<11>
-    SLICE_X52Y8.CIN      net (fanout=1)        0.000   Mcompar_cnt_cmp_ge0000_cy<11>
-    SLICE_X52Y8.XB       Tcinxb                0.383   cnt_cmp_ge0000
-                                                       Mcompar_cnt_cmp_ge0000_cy<12>
-    SLICE_X52Y9.G4       net (fanout=1)        0.402   cnt_cmp_ge0000
-    SLICE_X52Y9.Y        Tilo                  0.529   mips_clk_input_or0000
+                                                       Madd_mips_clk_input_add0000_xor<27>
+    SLICE_X63Y9.F1       net (fanout=2)        1.152   mips_clk_input_add0000<27>
+    SLICE_X63Y9.COUT     Topcyf                0.894   Mcompar_mips_clk_input_cmp_lt0000_cy<11>1
+                                                       Mcompar_mips_clk_input_cmp_lt0000_lut<10>1
+                                                       Mcompar_mips_clk_input_cmp_lt0000_cy<10>_0
+                                                       Mcompar_mips_clk_input_cmp_lt0000_cy<11>_0
+    SLICE_X63Y10.CIN     net (fanout=1)        0.000   Mcompar_mips_clk_input_cmp_lt0000_cy<11>1
+    SLICE_X63Y10.XB      Tcinxb                0.279   cnt_cmp_ge0000
+                                                       Mcompar_mips_clk_input_cmp_lt0000_cy<12>_0
+    SLICE_X63Y11.G4      net (fanout=1)        0.345   cnt_cmp_ge0000
+    SLICE_X63Y11.Y       Tilo                  0.479   mips_clk_input_or0000
                                                        cnt_or00001
-    SLICE_X50Y8.SR       net (fanout=16)       1.277   cnt_or0000
-    SLICE_X50Y8.CLK      Tsrck                 0.892   cnt<16>
-                                                       cnt_16
+    SLICE_X60Y2.SR       net (fanout=16)       1.469   cnt_or0000
+    SLICE_X60Y2.CLK      Tsrck                 0.892   cnt<4>
+                                                       cnt_4
     -------------------------------------------------  ---------------------------
-    Total                                      9.785ns (6.423ns logic, 3.362ns route)
-                                                       (65.6% logic, 34.4% route)
+    Total                                      9.523ns (6.098ns logic, 3.425ns route)
+                                                       (64.0% logic, 36.0% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     0.156ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               cnt_0 (FF)
-  Destination:          cnt_16 (FF)
+
+Paths for end point cnt_5 (SLICE_X60Y2.SR), 507 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     0.411ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               cnt_1 (FF)
+  Destination:          cnt_5 (FF)
   Requirement:          10.000ns
-  Data Path Delay:      9.761ns (Levels of Logic = 18)
-  Clock Path Skew:      -0.083ns (0.178 - 0.261)
+  Data Path Delay:      9.569ns (Levels of Logic = 17)
+  Clock Path Skew:      -0.020ns (0.076 - 0.096)
   Source Clock:         clk_BUFGP rising at 0.000ns
   Destination Clock:    clk_BUFGP rising at 10.000ns
   Clock Uncertainty:    0.000ns
 
-  Maximum Data Path: cnt_0 to cnt_16
+  Maximum Data Path: cnt_1 to cnt_5
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X50Y0.XQ       Tcko                  0.626   cnt<0>
-                                                       cnt_0
-    SLICE_X51Y0.F2       net (fanout=2)        0.541   cnt<0>
-    SLICE_X51Y0.COUT     Topcyf                0.894   Madd_mips_clk_input_add0000_cy<1>
-                                                       Madd_mips_clk_input_add0000_lut<0>_INV_0
-                                                       Madd_mips_clk_input_add0000_cy<0>
+    SLICE_X60Y0.YQ       Tcko                  0.626   cnt<0>
+                                                       cnt_1
+    SLICE_X61Y0.G3       net (fanout=2)        0.394   cnt<1>
+    SLICE_X61Y0.COUT     Topcyg                0.904   Madd_mips_clk_input_add0000_cy<1>
+                                                       cnt<1>_rt.1
                                                        Madd_mips_clk_input_add0000_cy<1>
-    SLICE_X51Y1.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<1>
-    SLICE_X51Y1.COUT     Tbyp                  0.111   Madd_mips_clk_input_add0000_cy<3>
+    SLICE_X61Y1.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<1>
+    SLICE_X61Y1.COUT     Tbyp                  0.111   Madd_mips_clk_input_add0000_cy<3>
                                                        Madd_mips_clk_input_add0000_cy<2>
                                                        Madd_mips_clk_input_add0000_cy<3>
-    SLICE_X51Y2.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<3>
-    SLICE_X51Y2.COUT     Tbyp                  0.111   mips_clk_input_add0000<5>
+    SLICE_X61Y2.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<3>
+    SLICE_X61Y2.COUT     Tbyp                  0.111   mips_clk_input_add0000<5>
                                                        Madd_mips_clk_input_add0000_cy<4>
                                                        Madd_mips_clk_input_add0000_cy<5>
-    SLICE_X51Y3.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<5>
-    SLICE_X51Y3.COUT     Tbyp                  0.111   mips_clk_input_add0000<6>
+    SLICE_X61Y3.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<5>
+    SLICE_X61Y3.COUT     Tbyp                  0.111   mips_clk_input_add0000<6>
                                                        Madd_mips_clk_input_add0000_cy<6>
                                                        Madd_mips_clk_input_add0000_cy<7>
-    SLICE_X51Y4.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<7>
-    SLICE_X51Y4.COUT     Tbyp                  0.111   mips_clk_input_add0000<8>
+    SLICE_X61Y4.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<7>
+    SLICE_X61Y4.COUT     Tbyp                  0.111   mips_clk_input_add0000<8>
                                                        Madd_mips_clk_input_add0000_cy<8>
                                                        Madd_mips_clk_input_add0000_cy<9>
-    SLICE_X51Y5.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<9>
-    SLICE_X51Y5.COUT     Tbyp                  0.111   mips_clk_input_add0000<10>
+    SLICE_X61Y5.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<9>
+    SLICE_X61Y5.COUT     Tbyp                  0.111   mips_clk_input_add0000<10>
                                                        Madd_mips_clk_input_add0000_cy<10>
                                                        Madd_mips_clk_input_add0000_cy<11>
-    SLICE_X51Y6.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<11>
-    SLICE_X51Y6.COUT     Tbyp                  0.111   mips_clk_input_add0000<12>
+    SLICE_X61Y6.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<11>
+    SLICE_X61Y6.COUT     Tbyp                  0.111   mips_clk_input_add0000<12>
                                                        Madd_mips_clk_input_add0000_cy<12>
                                                        Madd_mips_clk_input_add0000_cy<13>
-    SLICE_X51Y7.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<13>
-    SLICE_X51Y7.COUT     Tbyp                  0.111   mips_clk_input_add0000<14>
+    SLICE_X61Y7.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<13>
+    SLICE_X61Y7.COUT     Tbyp                  0.111   mips_clk_input_add0000<14>
                                                        Madd_mips_clk_input_add0000_cy<14>
                                                        Madd_mips_clk_input_add0000_cy<15>
-    SLICE_X51Y8.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<15>
-    SLICE_X51Y8.COUT     Tbyp                  0.111   mips_clk_input_add0000<16>
+    SLICE_X61Y8.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<15>
+    SLICE_X61Y8.COUT     Tbyp                  0.111   mips_clk_input_add0000<16>
                                                        Madd_mips_clk_input_add0000_cy<16>
                                                        Madd_mips_clk_input_add0000_cy<17>
-    SLICE_X51Y9.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<17>
-    SLICE_X51Y9.COUT     Tbyp                  0.111   mips_clk_input_add0000<18>
+    SLICE_X61Y9.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<17>
+    SLICE_X61Y9.COUT     Tbyp                  0.111   mips_clk_input_add0000<18>
                                                        Madd_mips_clk_input_add0000_cy<18>
                                                        Madd_mips_clk_input_add0000_cy<19>
-    SLICE_X51Y10.CIN     net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<19>
-    SLICE_X51Y10.COUT    Tbyp                  0.111   mips_clk_input_add0000<20>
+    SLICE_X61Y10.CIN     net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<19>
+    SLICE_X61Y10.COUT    Tbyp                  0.111   mips_clk_input_add0000<20>
                                                        Madd_mips_clk_input_add0000_cy<20>
                                                        Madd_mips_clk_input_add0000_cy<21>
-    SLICE_X51Y11.CIN     net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<21>
-    SLICE_X51Y11.COUT    Tbyp                  0.111   mips_clk_input_add0000<22>
+    SLICE_X61Y11.CIN     net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<21>
+    SLICE_X61Y11.COUT    Tbyp                  0.111   mips_clk_input_add0000<22>
                                                        Madd_mips_clk_input_add0000_cy<22>
                                                        Madd_mips_clk_input_add0000_cy<23>
-    SLICE_X51Y12.CIN     net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<23>
-    SLICE_X51Y12.COUT    Tbyp                  0.111   mips_clk_input_add0000<24>
+    SLICE_X61Y12.CIN     net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<23>
+    SLICE_X61Y12.COUT    Tbyp                  0.111   mips_clk_input_add0000<24>
                                                        Madd_mips_clk_input_add0000_cy<24>
                                                        Madd_mips_clk_input_add0000_cy<25>
-    SLICE_X51Y13.CIN     net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<25>
-    SLICE_X51Y13.COUT    Tbyp                  0.111   mips_clk_input_add0000<26>
+    SLICE_X61Y13.CIN     net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<25>
+    SLICE_X61Y13.Y       Tciny                 0.803   mips_clk_input_add0000<26>
                                                        Madd_mips_clk_input_add0000_cy<26>
-                                                       Madd_mips_clk_input_add0000_cy<27>
-    SLICE_X51Y14.CIN     net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<27>
-    SLICE_X51Y14.X       Tcinx                 0.786   mips_clk_input_add0000<28>
-                                                       Madd_mips_clk_input_add0000_xor<28>
-    SLICE_X52Y7.F4       net (fanout=2)        1.044   mips_clk_input_add0000<28>
-    SLICE_X52Y7.COUT     Topcyf                0.944   Mcompar_cnt_cmp_ge0000_cy<11>
-                                                       Mcompar_cnt_cmp_ge0000_lut<10>
-                                                       Mcompar_cnt_cmp_ge0000_cy<10>
-                                                       Mcompar_cnt_cmp_ge0000_cy<11>
-    SLICE_X52Y8.CIN      net (fanout=1)        0.000   Mcompar_cnt_cmp_ge0000_cy<11>
-    SLICE_X52Y8.XB       Tcinxb                0.383   cnt_cmp_ge0000
-                                                       Mcompar_cnt_cmp_ge0000_cy<12>
-    SLICE_X52Y9.G4       net (fanout=1)        0.402   cnt_cmp_ge0000
-    SLICE_X52Y9.Y        Tilo                  0.529   mips_clk_input_or0000
+                                                       Madd_mips_clk_input_add0000_xor<27>
+    SLICE_X63Y9.F1       net (fanout=2)        1.152   mips_clk_input_add0000<27>
+    SLICE_X63Y9.COUT     Topcyf                0.894   Mcompar_mips_clk_input_cmp_lt0000_cy<11>1
+                                                       Mcompar_mips_clk_input_cmp_lt0000_lut<10>1
+                                                       Mcompar_mips_clk_input_cmp_lt0000_cy<10>_0
+                                                       Mcompar_mips_clk_input_cmp_lt0000_cy<11>_0
+    SLICE_X63Y10.CIN     net (fanout=1)        0.000   Mcompar_mips_clk_input_cmp_lt0000_cy<11>1
+    SLICE_X63Y10.XB      Tcinxb                0.279   cnt_cmp_ge0000
+                                                       Mcompar_mips_clk_input_cmp_lt0000_cy<12>_0
+    SLICE_X63Y11.G4      net (fanout=1)        0.345   cnt_cmp_ge0000
+    SLICE_X63Y11.Y       Tilo                  0.479   mips_clk_input_or0000
                                                        cnt_or00001
-    SLICE_X50Y8.SR       net (fanout=16)       1.277   cnt_or0000
-    SLICE_X50Y8.CLK      Tsrck                 0.892   cnt<16>
-                                                       cnt_16
+    SLICE_X60Y2.SR       net (fanout=16)       1.469   cnt_or0000
+    SLICE_X60Y2.CLK      Tsrck                 0.892   cnt<4>
+                                                       cnt_5
     -------------------------------------------------  ---------------------------
-    Total                                      9.761ns (6.497ns logic, 3.264ns route)
-                                                       (66.6% logic, 33.4% route)
+    Total                                      9.569ns (6.209ns logic, 3.360ns route)
+                                                       (64.9% logic, 35.1% route)
 
 --------------------------------------------------------------------------------
-
-Paths for end point cnt_17 (SLICE_X50Y8.SR), 507 paths
---------------------------------------------------------------------------------
-Slack (setup path):     0.088ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               cnt_0 (FF)
-  Destination:          cnt_17 (FF)
+Slack (setup path):     0.411ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               cnt_2 (FF)
+  Destination:          cnt_5 (FF)
   Requirement:          10.000ns
-  Data Path Delay:      9.829ns (Levels of Logic = 18)
-  Clock Path Skew:      -0.083ns (0.178 - 0.261)
+  Data Path Delay:      9.569ns (Levels of Logic = 16)
+  Clock Path Skew:      -0.020ns (0.076 - 0.096)
   Source Clock:         clk_BUFGP rising at 0.000ns
   Destination Clock:    clk_BUFGP rising at 10.000ns
   Clock Uncertainty:    0.000ns
 
-  Maximum Data Path: cnt_0 to cnt_17
+  Maximum Data Path: cnt_2 to cnt_5
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X50Y0.XQ       Tcko                  0.626   cnt<0>
-                                                       cnt_0
-    SLICE_X51Y0.F2       net (fanout=2)        0.541   cnt<0>
-    SLICE_X51Y0.COUT     Topcyf                0.894   Madd_mips_clk_input_add0000_cy<1>
-                                                       Madd_mips_clk_input_add0000_lut<0>_INV_0
-                                                       Madd_mips_clk_input_add0000_cy<0>
-                                                       Madd_mips_clk_input_add0000_cy<1>
-    SLICE_X51Y1.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<1>
-    SLICE_X51Y1.COUT     Tbyp                  0.111   Madd_mips_clk_input_add0000_cy<3>
+    SLICE_X60Y1.XQ       Tcko                  0.626   cnt<2>
+                                                       cnt_2
+    SLICE_X61Y1.F1       net (fanout=2)        0.515   cnt<2>
+    SLICE_X61Y1.COUT     Topcyf                0.894   Madd_mips_clk_input_add0000_cy<3>
+                                                       cnt<2>_rt.1
                                                        Madd_mips_clk_input_add0000_cy<2>
                                                        Madd_mips_clk_input_add0000_cy<3>
-    SLICE_X51Y2.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<3>
-    SLICE_X51Y2.COUT     Tbyp                  0.111   mips_clk_input_add0000<5>
+    SLICE_X61Y2.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<3>
+    SLICE_X61Y2.COUT     Tbyp                  0.111   mips_clk_input_add0000<5>
                                                        Madd_mips_clk_input_add0000_cy<4>
                                                        Madd_mips_clk_input_add0000_cy<5>
-    SLICE_X51Y3.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<5>
-    SLICE_X51Y3.COUT     Tbyp                  0.111   mips_clk_input_add0000<6>
+    SLICE_X61Y3.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<5>
+    SLICE_X61Y3.COUT     Tbyp                  0.111   mips_clk_input_add0000<6>
                                                        Madd_mips_clk_input_add0000_cy<6>
                                                        Madd_mips_clk_input_add0000_cy<7>
-    SLICE_X51Y4.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<7>
-    SLICE_X51Y4.COUT     Tbyp                  0.111   mips_clk_input_add0000<8>
+    SLICE_X61Y4.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<7>
+    SLICE_X61Y4.COUT     Tbyp                  0.111   mips_clk_input_add0000<8>
                                                        Madd_mips_clk_input_add0000_cy<8>
                                                        Madd_mips_clk_input_add0000_cy<9>
-    SLICE_X51Y5.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<9>
-    SLICE_X51Y5.COUT     Tbyp                  0.111   mips_clk_input_add0000<10>
+    SLICE_X61Y5.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<9>
+    SLICE_X61Y5.COUT     Tbyp                  0.111   mips_clk_input_add0000<10>
                                                        Madd_mips_clk_input_add0000_cy<10>
                                                        Madd_mips_clk_input_add0000_cy<11>
-    SLICE_X51Y6.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<11>
-    SLICE_X51Y6.COUT     Tbyp                  0.111   mips_clk_input_add0000<12>
+    SLICE_X61Y6.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<11>
+    SLICE_X61Y6.COUT     Tbyp                  0.111   mips_clk_input_add0000<12>
                                                        Madd_mips_clk_input_add0000_cy<12>
                                                        Madd_mips_clk_input_add0000_cy<13>
-    SLICE_X51Y7.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<13>
-    SLICE_X51Y7.COUT     Tbyp                  0.111   mips_clk_input_add0000<14>
+    SLICE_X61Y7.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<13>
+    SLICE_X61Y7.COUT     Tbyp                  0.111   mips_clk_input_add0000<14>
                                                        Madd_mips_clk_input_add0000_cy<14>
                                                        Madd_mips_clk_input_add0000_cy<15>
-    SLICE_X51Y8.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<15>
-    SLICE_X51Y8.COUT     Tbyp                  0.111   mips_clk_input_add0000<16>
+    SLICE_X61Y8.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<15>
+    SLICE_X61Y8.COUT     Tbyp                  0.111   mips_clk_input_add0000<16>
                                                        Madd_mips_clk_input_add0000_cy<16>
                                                        Madd_mips_clk_input_add0000_cy<17>
-    SLICE_X51Y9.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<17>
-    SLICE_X51Y9.COUT     Tbyp                  0.111   mips_clk_input_add0000<18>
+    SLICE_X61Y9.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<17>
+    SLICE_X61Y9.COUT     Tbyp                  0.111   mips_clk_input_add0000<18>
                                                        Madd_mips_clk_input_add0000_cy<18>
                                                        Madd_mips_clk_input_add0000_cy<19>
-    SLICE_X51Y10.CIN     net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<19>
-    SLICE_X51Y10.COUT    Tbyp                  0.111   mips_clk_input_add0000<20>
+    SLICE_X61Y10.CIN     net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<19>
+    SLICE_X61Y10.COUT    Tbyp                  0.111   mips_clk_input_add0000<20>
                                                        Madd_mips_clk_input_add0000_cy<20>
                                                        Madd_mips_clk_input_add0000_cy<21>
-    SLICE_X51Y11.CIN     net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<21>
-    SLICE_X51Y11.COUT    Tbyp                  0.111   mips_clk_input_add0000<22>
+    SLICE_X61Y11.CIN     net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<21>
+    SLICE_X61Y11.COUT    Tbyp                  0.111   mips_clk_input_add0000<22>
                                                        Madd_mips_clk_input_add0000_cy<22>
                                                        Madd_mips_clk_input_add0000_cy<23>
-    SLICE_X51Y12.CIN     net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<23>
-    SLICE_X51Y12.COUT    Tbyp                  0.111   mips_clk_input_add0000<24>
+    SLICE_X61Y12.CIN     net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<23>
+    SLICE_X61Y12.COUT    Tbyp                  0.111   mips_clk_input_add0000<24>
                                                        Madd_mips_clk_input_add0000_cy<24>
                                                        Madd_mips_clk_input_add0000_cy<25>
-    SLICE_X51Y13.CIN     net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<25>
-    SLICE_X51Y13.COUT    Tbyp                  0.111   mips_clk_input_add0000<26>
+    SLICE_X61Y13.CIN     net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<25>
+    SLICE_X61Y13.Y       Tciny                 0.803   mips_clk_input_add0000<26>
                                                        Madd_mips_clk_input_add0000_cy<26>
-                                                       Madd_mips_clk_input_add0000_cy<27>
-    SLICE_X51Y14.CIN     net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<27>
-    SLICE_X51Y14.Y       Tciny                 0.803   mips_clk_input_add0000<28>
-                                                       Madd_mips_clk_input_add0000_cy<28>
-                                                       Madd_mips_clk_input_add0000_xor<29>
-    SLICE_X52Y7.G1       net (fanout=2)        1.085   mips_clk_input_add0000<29>
-    SLICE_X52Y7.COUT     Topcyg                0.954   Mcompar_cnt_cmp_ge0000_cy<11>
-                                                       Mcompar_cnt_cmp_ge0000_lut<11>
-                                                       Mcompar_cnt_cmp_ge0000_cy<11>
-    SLICE_X52Y8.CIN      net (fanout=1)        0.000   Mcompar_cnt_cmp_ge0000_cy<11>
-    SLICE_X52Y8.XB       Tcinxb                0.383   cnt_cmp_ge0000
-                                                       Mcompar_cnt_cmp_ge0000_cy<12>
-    SLICE_X52Y9.G4       net (fanout=1)        0.402   cnt_cmp_ge0000
-    SLICE_X52Y9.Y        Tilo                  0.529   mips_clk_input_or0000
+                                                       Madd_mips_clk_input_add0000_xor<27>
+    SLICE_X63Y9.F1       net (fanout=2)        1.152   mips_clk_input_add0000<27>
+    SLICE_X63Y9.COUT     Topcyf                0.894   Mcompar_mips_clk_input_cmp_lt0000_cy<11>1
+                                                       Mcompar_mips_clk_input_cmp_lt0000_lut<10>1
+                                                       Mcompar_mips_clk_input_cmp_lt0000_cy<10>_0
+                                                       Mcompar_mips_clk_input_cmp_lt0000_cy<11>_0
+    SLICE_X63Y10.CIN     net (fanout=1)        0.000   Mcompar_mips_clk_input_cmp_lt0000_cy<11>1
+    SLICE_X63Y10.XB      Tcinxb                0.279   cnt_cmp_ge0000
+                                                       Mcompar_mips_clk_input_cmp_lt0000_cy<12>_0
+    SLICE_X63Y11.G4      net (fanout=1)        0.345   cnt_cmp_ge0000
+    SLICE_X63Y11.Y       Tilo                  0.479   mips_clk_input_or0000
                                                        cnt_or00001
-    SLICE_X50Y8.SR       net (fanout=16)       1.277   cnt_or0000
-    SLICE_X50Y8.CLK      Tsrck                 0.892   cnt<16>
-                                                       cnt_17
+    SLICE_X60Y2.SR       net (fanout=16)       1.469   cnt_or0000
+    SLICE_X60Y2.CLK      Tsrck                 0.892   cnt<4>
+                                                       cnt_5
     -------------------------------------------------  ---------------------------
-    Total                                      9.829ns (6.524ns logic, 3.305ns route)
-                                                       (66.4% logic, 33.6% route)
+    Total                                      9.569ns (6.088ns logic, 3.481ns route)
+                                                       (63.6% logic, 36.4% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     0.132ns (requirement - (data path - clock path skew + uncertainty))
+Slack (setup path):     0.457ns (requirement - (data path - clock path skew + uncertainty))
   Source:               cnt_3 (FF)
-  Destination:          cnt_17 (FF)
+  Destination:          cnt_5 (FF)
   Requirement:          10.000ns
-  Data Path Delay:      9.785ns (Levels of Logic = 17)
-  Clock Path Skew:      -0.083ns (0.178 - 0.261)
+  Data Path Delay:      9.523ns (Levels of Logic = 16)
+  Clock Path Skew:      -0.020ns (0.076 - 0.096)
   Source Clock:         clk_BUFGP rising at 0.000ns
   Destination Clock:    clk_BUFGP rising at 10.000ns
   Clock Uncertainty:    0.000ns
 
-  Maximum Data Path: cnt_3 to cnt_17
+  Maximum Data Path: cnt_3 to cnt_5
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X50Y1.YQ       Tcko                  0.626   cnt<2>
+    SLICE_X60Y1.YQ       Tcko                  0.626   cnt<2>
                                                        cnt_3
-    SLICE_X51Y1.G1       net (fanout=2)        0.598   cnt<3>
-    SLICE_X51Y1.COUT     Topcyg                0.904   Madd_mips_clk_input_add0000_cy<3>
+    SLICE_X61Y1.G2       net (fanout=2)        0.459   cnt<3>
+    SLICE_X61Y1.COUT     Topcyg                0.904   Madd_mips_clk_input_add0000_cy<3>
                                                        cnt<3>_rt.1
                                                        Madd_mips_clk_input_add0000_cy<3>
-    SLICE_X51Y2.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<3>
-    SLICE_X51Y2.COUT     Tbyp                  0.111   mips_clk_input_add0000<5>
+    SLICE_X61Y2.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<3>
+    SLICE_X61Y2.COUT     Tbyp                  0.111   mips_clk_input_add0000<5>
                                                        Madd_mips_clk_input_add0000_cy<4>
                                                        Madd_mips_clk_input_add0000_cy<5>
-    SLICE_X51Y3.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<5>
-    SLICE_X51Y3.COUT     Tbyp                  0.111   mips_clk_input_add0000<6>
+    SLICE_X61Y3.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<5>
+    SLICE_X61Y3.COUT     Tbyp                  0.111   mips_clk_input_add0000<6>
                                                        Madd_mips_clk_input_add0000_cy<6>
                                                        Madd_mips_clk_input_add0000_cy<7>
-    SLICE_X51Y4.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<7>
-    SLICE_X51Y4.COUT     Tbyp                  0.111   mips_clk_input_add0000<8>
+    SLICE_X61Y4.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<7>
+    SLICE_X61Y4.COUT     Tbyp                  0.111   mips_clk_input_add0000<8>
                                                        Madd_mips_clk_input_add0000_cy<8>
                                                        Madd_mips_clk_input_add0000_cy<9>
-    SLICE_X51Y5.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<9>
-    SLICE_X51Y5.COUT     Tbyp                  0.111   mips_clk_input_add0000<10>
+    SLICE_X61Y5.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<9>
+    SLICE_X61Y5.COUT     Tbyp                  0.111   mips_clk_input_add0000<10>
                                                        Madd_mips_clk_input_add0000_cy<10>
                                                        Madd_mips_clk_input_add0000_cy<11>
-    SLICE_X51Y6.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<11>
-    SLICE_X51Y6.COUT     Tbyp                  0.111   mips_clk_input_add0000<12>
+    SLICE_X61Y6.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<11>
+    SLICE_X61Y6.COUT     Tbyp                  0.111   mips_clk_input_add0000<12>
                                                        Madd_mips_clk_input_add0000_cy<12>
                                                        Madd_mips_clk_input_add0000_cy<13>
-    SLICE_X51Y7.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<13>
-    SLICE_X51Y7.COUT     Tbyp                  0.111   mips_clk_input_add0000<14>
+    SLICE_X61Y7.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<13>
+    SLICE_X61Y7.COUT     Tbyp                  0.111   mips_clk_input_add0000<14>
                                                        Madd_mips_clk_input_add0000_cy<14>
                                                        Madd_mips_clk_input_add0000_cy<15>
-    SLICE_X51Y8.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<15>
-    SLICE_X51Y8.COUT     Tbyp                  0.111   mips_clk_input_add0000<16>
+    SLICE_X61Y8.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<15>
+    SLICE_X61Y8.COUT     Tbyp                  0.111   mips_clk_input_add0000<16>
                                                        Madd_mips_clk_input_add0000_cy<16>
                                                        Madd_mips_clk_input_add0000_cy<17>
-    SLICE_X51Y9.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<17>
-    SLICE_X51Y9.COUT     Tbyp                  0.111   mips_clk_input_add0000<18>
+    SLICE_X61Y9.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<17>
+    SLICE_X61Y9.COUT     Tbyp                  0.111   mips_clk_input_add0000<18>
                                                        Madd_mips_clk_input_add0000_cy<18>
                                                        Madd_mips_clk_input_add0000_cy<19>
-    SLICE_X51Y10.CIN     net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<19>
-    SLICE_X51Y10.COUT    Tbyp                  0.111   mips_clk_input_add0000<20>
+    SLICE_X61Y10.CIN     net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<19>
+    SLICE_X61Y10.COUT    Tbyp                  0.111   mips_clk_input_add0000<20>
                                                        Madd_mips_clk_input_add0000_cy<20>
                                                        Madd_mips_clk_input_add0000_cy<21>
-    SLICE_X51Y11.CIN     net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<21>
-    SLICE_X51Y11.COUT    Tbyp                  0.111   mips_clk_input_add0000<22>
+    SLICE_X61Y11.CIN     net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<21>
+    SLICE_X61Y11.COUT    Tbyp                  0.111   mips_clk_input_add0000<22>
                                                        Madd_mips_clk_input_add0000_cy<22>
                                                        Madd_mips_clk_input_add0000_cy<23>
-    SLICE_X51Y12.CIN     net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<23>
-    SLICE_X51Y12.COUT    Tbyp                  0.111   mips_clk_input_add0000<24>
+    SLICE_X61Y12.CIN     net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<23>
+    SLICE_X61Y12.COUT    Tbyp                  0.111   mips_clk_input_add0000<24>
                                                        Madd_mips_clk_input_add0000_cy<24>
                                                        Madd_mips_clk_input_add0000_cy<25>
-    SLICE_X51Y13.CIN     net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<25>
-    SLICE_X51Y13.COUT    Tbyp                  0.111   mips_clk_input_add0000<26>
+    SLICE_X61Y13.CIN     net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<25>
+    SLICE_X61Y13.Y       Tciny                 0.803   mips_clk_input_add0000<26>
                                                        Madd_mips_clk_input_add0000_cy<26>
-                                                       Madd_mips_clk_input_add0000_cy<27>
-    SLICE_X51Y14.CIN     net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<27>
-    SLICE_X51Y14.Y       Tciny                 0.803   mips_clk_input_add0000<28>
-                                                       Madd_mips_clk_input_add0000_cy<28>
-                                                       Madd_mips_clk_input_add0000_xor<29>
-    SLICE_X52Y7.G1       net (fanout=2)        1.085   mips_clk_input_add0000<29>
-    SLICE_X52Y7.COUT     Topcyg                0.954   Mcompar_cnt_cmp_ge0000_cy<11>
-                                                       Mcompar_cnt_cmp_ge0000_lut<11>
-                                                       Mcompar_cnt_cmp_ge0000_cy<11>
-    SLICE_X52Y8.CIN      net (fanout=1)        0.000   Mcompar_cnt_cmp_ge0000_cy<11>
-    SLICE_X52Y8.XB       Tcinxb                0.383   cnt_cmp_ge0000
-                                                       Mcompar_cnt_cmp_ge0000_cy<12>
-    SLICE_X52Y9.G4       net (fanout=1)        0.402   cnt_cmp_ge0000
-    SLICE_X52Y9.Y        Tilo                  0.529   mips_clk_input_or0000
+                                                       Madd_mips_clk_input_add0000_xor<27>
+    SLICE_X63Y9.F1       net (fanout=2)        1.152   mips_clk_input_add0000<27>
+    SLICE_X63Y9.COUT     Topcyf                0.894   Mcompar_mips_clk_input_cmp_lt0000_cy<11>1
+                                                       Mcompar_mips_clk_input_cmp_lt0000_lut<10>1
+                                                       Mcompar_mips_clk_input_cmp_lt0000_cy<10>_0
+                                                       Mcompar_mips_clk_input_cmp_lt0000_cy<11>_0
+    SLICE_X63Y10.CIN     net (fanout=1)        0.000   Mcompar_mips_clk_input_cmp_lt0000_cy<11>1
+    SLICE_X63Y10.XB      Tcinxb                0.279   cnt_cmp_ge0000
+                                                       Mcompar_mips_clk_input_cmp_lt0000_cy<12>_0
+    SLICE_X63Y11.G4      net (fanout=1)        0.345   cnt_cmp_ge0000
+    SLICE_X63Y11.Y       Tilo                  0.479   mips_clk_input_or0000
                                                        cnt_or00001
-    SLICE_X50Y8.SR       net (fanout=16)       1.277   cnt_or0000
-    SLICE_X50Y8.CLK      Tsrck                 0.892   cnt<16>
-                                                       cnt_17
+    SLICE_X60Y2.SR       net (fanout=16)       1.469   cnt_or0000
+    SLICE_X60Y2.CLK      Tsrck                 0.892   cnt<4>
+                                                       cnt_5
     -------------------------------------------------  ---------------------------
-    Total                                      9.785ns (6.423ns logic, 3.362ns route)
-                                                       (65.6% logic, 34.4% route)
+    Total                                      9.523ns (6.098ns logic, 3.425ns route)
+                                                       (64.0% logic, 36.0% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     0.156ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               cnt_0 (FF)
-  Destination:          cnt_17 (FF)
+
+Paths for end point cnt_20 (SLICE_X60Y10.SR), 507 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     0.537ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               cnt_1 (FF)
+  Destination:          cnt_20 (FF)
   Requirement:          10.000ns
-  Data Path Delay:      9.761ns (Levels of Logic = 18)
-  Clock Path Skew:      -0.083ns (0.178 - 0.261)
+  Data Path Delay:      9.407ns (Levels of Logic = 17)
+  Clock Path Skew:      -0.056ns (0.170 - 0.226)
   Source Clock:         clk_BUFGP rising at 0.000ns
   Destination Clock:    clk_BUFGP rising at 10.000ns
   Clock Uncertainty:    0.000ns
 
-  Maximum Data Path: cnt_0 to cnt_17
+  Maximum Data Path: cnt_1 to cnt_20
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X50Y0.XQ       Tcko                  0.626   cnt<0>
-                                                       cnt_0
-    SLICE_X51Y0.F2       net (fanout=2)        0.541   cnt<0>
-    SLICE_X51Y0.COUT     Topcyf                0.894   Madd_mips_clk_input_add0000_cy<1>
-                                                       Madd_mips_clk_input_add0000_lut<0>_INV_0
-                                                       Madd_mips_clk_input_add0000_cy<0>
+    SLICE_X60Y0.YQ       Tcko                  0.626   cnt<0>
+                                                       cnt_1
+    SLICE_X61Y0.G3       net (fanout=2)        0.394   cnt<1>
+    SLICE_X61Y0.COUT     Topcyg                0.904   Madd_mips_clk_input_add0000_cy<1>
+                                                       cnt<1>_rt.1
                                                        Madd_mips_clk_input_add0000_cy<1>
-    SLICE_X51Y1.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<1>
-    SLICE_X51Y1.COUT     Tbyp                  0.111   Madd_mips_clk_input_add0000_cy<3>
+    SLICE_X61Y1.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<1>
+    SLICE_X61Y1.COUT     Tbyp                  0.111   Madd_mips_clk_input_add0000_cy<3>
                                                        Madd_mips_clk_input_add0000_cy<2>
                                                        Madd_mips_clk_input_add0000_cy<3>
-    SLICE_X51Y2.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<3>
-    SLICE_X51Y2.COUT     Tbyp                  0.111   mips_clk_input_add0000<5>
+    SLICE_X61Y2.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<3>
+    SLICE_X61Y2.COUT     Tbyp                  0.111   mips_clk_input_add0000<5>
                                                        Madd_mips_clk_input_add0000_cy<4>
                                                        Madd_mips_clk_input_add0000_cy<5>
-    SLICE_X51Y3.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<5>
-    SLICE_X51Y3.COUT     Tbyp                  0.111   mips_clk_input_add0000<6>
+    SLICE_X61Y3.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<5>
+    SLICE_X61Y3.COUT     Tbyp                  0.111   mips_clk_input_add0000<6>
                                                        Madd_mips_clk_input_add0000_cy<6>
                                                        Madd_mips_clk_input_add0000_cy<7>
-    SLICE_X51Y4.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<7>
-    SLICE_X51Y4.COUT     Tbyp                  0.111   mips_clk_input_add0000<8>
+    SLICE_X61Y4.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<7>
+    SLICE_X61Y4.COUT     Tbyp                  0.111   mips_clk_input_add0000<8>
                                                        Madd_mips_clk_input_add0000_cy<8>
                                                        Madd_mips_clk_input_add0000_cy<9>
-    SLICE_X51Y5.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<9>
-    SLICE_X51Y5.COUT     Tbyp                  0.111   mips_clk_input_add0000<10>
+    SLICE_X61Y5.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<9>
+    SLICE_X61Y5.COUT     Tbyp                  0.111   mips_clk_input_add0000<10>
                                                        Madd_mips_clk_input_add0000_cy<10>
                                                        Madd_mips_clk_input_add0000_cy<11>
-    SLICE_X51Y6.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<11>
-    SLICE_X51Y6.COUT     Tbyp                  0.111   mips_clk_input_add0000<12>
+    SLICE_X61Y6.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<11>
+    SLICE_X61Y6.COUT     Tbyp                  0.111   mips_clk_input_add0000<12>
                                                        Madd_mips_clk_input_add0000_cy<12>
                                                        Madd_mips_clk_input_add0000_cy<13>
-    SLICE_X51Y7.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<13>
-    SLICE_X51Y7.COUT     Tbyp                  0.111   mips_clk_input_add0000<14>
+    SLICE_X61Y7.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<13>
+    SLICE_X61Y7.COUT     Tbyp                  0.111   mips_clk_input_add0000<14>
                                                        Madd_mips_clk_input_add0000_cy<14>
                                                        Madd_mips_clk_input_add0000_cy<15>
-    SLICE_X51Y8.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<15>
-    SLICE_X51Y8.COUT     Tbyp                  0.111   mips_clk_input_add0000<16>
+    SLICE_X61Y8.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<15>
+    SLICE_X61Y8.COUT     Tbyp                  0.111   mips_clk_input_add0000<16>
                                                        Madd_mips_clk_input_add0000_cy<16>
                                                        Madd_mips_clk_input_add0000_cy<17>
-    SLICE_X51Y9.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<17>
-    SLICE_X51Y9.COUT     Tbyp                  0.111   mips_clk_input_add0000<18>
+    SLICE_X61Y9.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<17>
+    SLICE_X61Y9.COUT     Tbyp                  0.111   mips_clk_input_add0000<18>
                                                        Madd_mips_clk_input_add0000_cy<18>
                                                        Madd_mips_clk_input_add0000_cy<19>
-    SLICE_X51Y10.CIN     net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<19>
-    SLICE_X51Y10.COUT    Tbyp                  0.111   mips_clk_input_add0000<20>
+    SLICE_X61Y10.CIN     net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<19>
+    SLICE_X61Y10.COUT    Tbyp                  0.111   mips_clk_input_add0000<20>
                                                        Madd_mips_clk_input_add0000_cy<20>
                                                        Madd_mips_clk_input_add0000_cy<21>
-    SLICE_X51Y11.CIN     net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<21>
-    SLICE_X51Y11.COUT    Tbyp                  0.111   mips_clk_input_add0000<22>
+    SLICE_X61Y11.CIN     net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<21>
+    SLICE_X61Y11.COUT    Tbyp                  0.111   mips_clk_input_add0000<22>
                                                        Madd_mips_clk_input_add0000_cy<22>
                                                        Madd_mips_clk_input_add0000_cy<23>
-    SLICE_X51Y12.CIN     net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<23>
-    SLICE_X51Y12.COUT    Tbyp                  0.111   mips_clk_input_add0000<24>
+    SLICE_X61Y12.CIN     net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<23>
+    SLICE_X61Y12.COUT    Tbyp                  0.111   mips_clk_input_add0000<24>
                                                        Madd_mips_clk_input_add0000_cy<24>
                                                        Madd_mips_clk_input_add0000_cy<25>
-    SLICE_X51Y13.CIN     net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<25>
-    SLICE_X51Y13.COUT    Tbyp                  0.111   mips_clk_input_add0000<26>
+    SLICE_X61Y13.CIN     net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<25>
+    SLICE_X61Y13.Y       Tciny                 0.803   mips_clk_input_add0000<26>
                                                        Madd_mips_clk_input_add0000_cy<26>
-                                                       Madd_mips_clk_input_add0000_cy<27>
-    SLICE_X51Y14.CIN     net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<27>
-    SLICE_X51Y14.X       Tcinx                 0.786   mips_clk_input_add0000<28>
-                                                       Madd_mips_clk_input_add0000_xor<28>
-    SLICE_X52Y7.F4       net (fanout=2)        1.044   mips_clk_input_add0000<28>
-    SLICE_X52Y7.COUT     Topcyf                0.944   Mcompar_cnt_cmp_ge0000_cy<11>
-                                                       Mcompar_cnt_cmp_ge0000_lut<10>
-                                                       Mcompar_cnt_cmp_ge0000_cy<10>
-                                                       Mcompar_cnt_cmp_ge0000_cy<11>
-    SLICE_X52Y8.CIN      net (fanout=1)        0.000   Mcompar_cnt_cmp_ge0000_cy<11>
-    SLICE_X52Y8.XB       Tcinxb                0.383   cnt_cmp_ge0000
-                                                       Mcompar_cnt_cmp_ge0000_cy<12>
-    SLICE_X52Y9.G4       net (fanout=1)        0.402   cnt_cmp_ge0000
-    SLICE_X52Y9.Y        Tilo                  0.529   mips_clk_input_or0000
+                                                       Madd_mips_clk_input_add0000_xor<27>
+    SLICE_X63Y9.F1       net (fanout=2)        1.152   mips_clk_input_add0000<27>
+    SLICE_X63Y9.COUT     Topcyf                0.894   Mcompar_mips_clk_input_cmp_lt0000_cy<11>1
+                                                       Mcompar_mips_clk_input_cmp_lt0000_lut<10>1
+                                                       Mcompar_mips_clk_input_cmp_lt0000_cy<10>_0
+                                                       Mcompar_mips_clk_input_cmp_lt0000_cy<11>_0
+    SLICE_X63Y10.CIN     net (fanout=1)        0.000   Mcompar_mips_clk_input_cmp_lt0000_cy<11>1
+    SLICE_X63Y10.XB      Tcinxb                0.279   cnt_cmp_ge0000
+                                                       Mcompar_mips_clk_input_cmp_lt0000_cy<12>_0
+    SLICE_X63Y11.G4      net (fanout=1)        0.345   cnt_cmp_ge0000
+    SLICE_X63Y11.Y       Tilo                  0.479   mips_clk_input_or0000
                                                        cnt_or00001
-    SLICE_X50Y8.SR       net (fanout=16)       1.277   cnt_or0000
-    SLICE_X50Y8.CLK      Tsrck                 0.892   cnt<16>
-                                                       cnt_17
+    SLICE_X60Y10.SR      net (fanout=16)       1.307   cnt_or0000
+    SLICE_X60Y10.CLK     Tsrck                 0.892   cnt<20>
+                                                       cnt_20
     -------------------------------------------------  ---------------------------
-    Total                                      9.761ns (6.497ns logic, 3.264ns route)
-                                                       (66.6% logic, 33.4% route)
+    Total                                      9.407ns (6.209ns logic, 3.198ns route)
+                                                       (66.0% logic, 34.0% route)
 
 --------------------------------------------------------------------------------
-
-Paths for end point cnt_18 (SLICE_X50Y9.SR), 507 paths
---------------------------------------------------------------------------------
-Slack (setup path):     0.088ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               cnt_0 (FF)
-  Destination:          cnt_18 (FF)
+Slack (setup path):     0.537ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               cnt_2 (FF)
+  Destination:          cnt_20 (FF)
   Requirement:          10.000ns
-  Data Path Delay:      9.829ns (Levels of Logic = 18)
-  Clock Path Skew:      -0.083ns (0.178 - 0.261)
+  Data Path Delay:      9.407ns (Levels of Logic = 16)
+  Clock Path Skew:      -0.056ns (0.170 - 0.226)
   Source Clock:         clk_BUFGP rising at 0.000ns
   Destination Clock:    clk_BUFGP rising at 10.000ns
   Clock Uncertainty:    0.000ns
 
-  Maximum Data Path: cnt_0 to cnt_18
+  Maximum Data Path: cnt_2 to cnt_20
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X50Y0.XQ       Tcko                  0.626   cnt<0>
-                                                       cnt_0
-    SLICE_X51Y0.F2       net (fanout=2)        0.541   cnt<0>
-    SLICE_X51Y0.COUT     Topcyf                0.894   Madd_mips_clk_input_add0000_cy<1>
-                                                       Madd_mips_clk_input_add0000_lut<0>_INV_0
-                                                       Madd_mips_clk_input_add0000_cy<0>
-                                                       Madd_mips_clk_input_add0000_cy<1>
-    SLICE_X51Y1.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<1>
-    SLICE_X51Y1.COUT     Tbyp                  0.111   Madd_mips_clk_input_add0000_cy<3>
+    SLICE_X60Y1.XQ       Tcko                  0.626   cnt<2>
+                                                       cnt_2
+    SLICE_X61Y1.F1       net (fanout=2)        0.515   cnt<2>
+    SLICE_X61Y1.COUT     Topcyf                0.894   Madd_mips_clk_input_add0000_cy<3>
+                                                       cnt<2>_rt.1
                                                        Madd_mips_clk_input_add0000_cy<2>
                                                        Madd_mips_clk_input_add0000_cy<3>
-    SLICE_X51Y2.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<3>
-    SLICE_X51Y2.COUT     Tbyp                  0.111   mips_clk_input_add0000<5>
+    SLICE_X61Y2.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<3>
+    SLICE_X61Y2.COUT     Tbyp                  0.111   mips_clk_input_add0000<5>
                                                        Madd_mips_clk_input_add0000_cy<4>
                                                        Madd_mips_clk_input_add0000_cy<5>
-    SLICE_X51Y3.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<5>
-    SLICE_X51Y3.COUT     Tbyp                  0.111   mips_clk_input_add0000<6>
+    SLICE_X61Y3.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<5>
+    SLICE_X61Y3.COUT     Tbyp                  0.111   mips_clk_input_add0000<6>
                                                        Madd_mips_clk_input_add0000_cy<6>
                                                        Madd_mips_clk_input_add0000_cy<7>
-    SLICE_X51Y4.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<7>
-    SLICE_X51Y4.COUT     Tbyp                  0.111   mips_clk_input_add0000<8>
+    SLICE_X61Y4.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<7>
+    SLICE_X61Y4.COUT     Tbyp                  0.111   mips_clk_input_add0000<8>
                                                        Madd_mips_clk_input_add0000_cy<8>
                                                        Madd_mips_clk_input_add0000_cy<9>
-    SLICE_X51Y5.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<9>
-    SLICE_X51Y5.COUT     Tbyp                  0.111   mips_clk_input_add0000<10>
+    SLICE_X61Y5.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<9>
+    SLICE_X61Y5.COUT     Tbyp                  0.111   mips_clk_input_add0000<10>
                                                        Madd_mips_clk_input_add0000_cy<10>
                                                        Madd_mips_clk_input_add0000_cy<11>
-    SLICE_X51Y6.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<11>
-    SLICE_X51Y6.COUT     Tbyp                  0.111   mips_clk_input_add0000<12>
+    SLICE_X61Y6.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<11>
+    SLICE_X61Y6.COUT     Tbyp                  0.111   mips_clk_input_add0000<12>
                                                        Madd_mips_clk_input_add0000_cy<12>
                                                        Madd_mips_clk_input_add0000_cy<13>
-    SLICE_X51Y7.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<13>
-    SLICE_X51Y7.COUT     Tbyp                  0.111   mips_clk_input_add0000<14>
+    SLICE_X61Y7.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<13>
+    SLICE_X61Y7.COUT     Tbyp                  0.111   mips_clk_input_add0000<14>
                                                        Madd_mips_clk_input_add0000_cy<14>
                                                        Madd_mips_clk_input_add0000_cy<15>
-    SLICE_X51Y8.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<15>
-    SLICE_X51Y8.COUT     Tbyp                  0.111   mips_clk_input_add0000<16>
+    SLICE_X61Y8.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<15>
+    SLICE_X61Y8.COUT     Tbyp                  0.111   mips_clk_input_add0000<16>
                                                        Madd_mips_clk_input_add0000_cy<16>
                                                        Madd_mips_clk_input_add0000_cy<17>
-    SLICE_X51Y9.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<17>
-    SLICE_X51Y9.COUT     Tbyp                  0.111   mips_clk_input_add0000<18>
+    SLICE_X61Y9.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<17>
+    SLICE_X61Y9.COUT     Tbyp                  0.111   mips_clk_input_add0000<18>
                                                        Madd_mips_clk_input_add0000_cy<18>
                                                        Madd_mips_clk_input_add0000_cy<19>
-    SLICE_X51Y10.CIN     net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<19>
-    SLICE_X51Y10.COUT    Tbyp                  0.111   mips_clk_input_add0000<20>
+    SLICE_X61Y10.CIN     net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<19>
+    SLICE_X61Y10.COUT    Tbyp                  0.111   mips_clk_input_add0000<20>
                                                        Madd_mips_clk_input_add0000_cy<20>
                                                        Madd_mips_clk_input_add0000_cy<21>
-    SLICE_X51Y11.CIN     net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<21>
-    SLICE_X51Y11.COUT    Tbyp                  0.111   mips_clk_input_add0000<22>
+    SLICE_X61Y11.CIN     net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<21>
+    SLICE_X61Y11.COUT    Tbyp                  0.111   mips_clk_input_add0000<22>
                                                        Madd_mips_clk_input_add0000_cy<22>
                                                        Madd_mips_clk_input_add0000_cy<23>
-    SLICE_X51Y12.CIN     net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<23>
-    SLICE_X51Y12.COUT    Tbyp                  0.111   mips_clk_input_add0000<24>
+    SLICE_X61Y12.CIN     net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<23>
+    SLICE_X61Y12.COUT    Tbyp                  0.111   mips_clk_input_add0000<24>
                                                        Madd_mips_clk_input_add0000_cy<24>
                                                        Madd_mips_clk_input_add0000_cy<25>
-    SLICE_X51Y13.CIN     net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<25>
-    SLICE_X51Y13.COUT    Tbyp                  0.111   mips_clk_input_add0000<26>
+    SLICE_X61Y13.CIN     net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<25>
+    SLICE_X61Y13.Y       Tciny                 0.803   mips_clk_input_add0000<26>
                                                        Madd_mips_clk_input_add0000_cy<26>
-                                                       Madd_mips_clk_input_add0000_cy<27>
-    SLICE_X51Y14.CIN     net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<27>
-    SLICE_X51Y14.Y       Tciny                 0.803   mips_clk_input_add0000<28>
-                                                       Madd_mips_clk_input_add0000_cy<28>
-                                                       Madd_mips_clk_input_add0000_xor<29>
-    SLICE_X52Y7.G1       net (fanout=2)        1.085   mips_clk_input_add0000<29>
-    SLICE_X52Y7.COUT     Topcyg                0.954   Mcompar_cnt_cmp_ge0000_cy<11>
-                                                       Mcompar_cnt_cmp_ge0000_lut<11>
-                                                       Mcompar_cnt_cmp_ge0000_cy<11>
-    SLICE_X52Y8.CIN      net (fanout=1)        0.000   Mcompar_cnt_cmp_ge0000_cy<11>
-    SLICE_X52Y8.XB       Tcinxb                0.383   cnt_cmp_ge0000
-                                                       Mcompar_cnt_cmp_ge0000_cy<12>
-    SLICE_X52Y9.G4       net (fanout=1)        0.402   cnt_cmp_ge0000
-    SLICE_X52Y9.Y        Tilo                  0.529   mips_clk_input_or0000
+                                                       Madd_mips_clk_input_add0000_xor<27>
+    SLICE_X63Y9.F1       net (fanout=2)        1.152   mips_clk_input_add0000<27>
+    SLICE_X63Y9.COUT     Topcyf                0.894   Mcompar_mips_clk_input_cmp_lt0000_cy<11>1
+                                                       Mcompar_mips_clk_input_cmp_lt0000_lut<10>1
+                                                       Mcompar_mips_clk_input_cmp_lt0000_cy<10>_0
+                                                       Mcompar_mips_clk_input_cmp_lt0000_cy<11>_0
+    SLICE_X63Y10.CIN     net (fanout=1)        0.000   Mcompar_mips_clk_input_cmp_lt0000_cy<11>1
+    SLICE_X63Y10.XB      Tcinxb                0.279   cnt_cmp_ge0000
+                                                       Mcompar_mips_clk_input_cmp_lt0000_cy<12>_0
+    SLICE_X63Y11.G4      net (fanout=1)        0.345   cnt_cmp_ge0000
+    SLICE_X63Y11.Y       Tilo                  0.479   mips_clk_input_or0000
                                                        cnt_or00001
-    SLICE_X50Y9.SR       net (fanout=16)       1.277   cnt_or0000
-    SLICE_X50Y9.CLK      Tsrck                 0.892   cnt<18>
-                                                       cnt_18
+    SLICE_X60Y10.SR      net (fanout=16)       1.307   cnt_or0000
+    SLICE_X60Y10.CLK     Tsrck                 0.892   cnt<20>
+                                                       cnt_20
     -------------------------------------------------  ---------------------------
-    Total                                      9.829ns (6.524ns logic, 3.305ns route)
-                                                       (66.4% logic, 33.6% route)
+    Total                                      9.407ns (6.088ns logic, 3.319ns route)
+                                                       (64.7% logic, 35.3% route)
 
 --------------------------------------------------------------------------------
-Slack (setup path):     0.132ns (requirement - (data path - clock path skew + uncertainty))
+Slack (setup path):     0.583ns (requirement - (data path - clock path skew + uncertainty))
   Source:               cnt_3 (FF)
-  Destination:          cnt_18 (FF)
+  Destination:          cnt_20 (FF)
   Requirement:          10.000ns
-  Data Path Delay:      9.785ns (Levels of Logic = 17)
-  Clock Path Skew:      -0.083ns (0.178 - 0.261)
+  Data Path Delay:      9.361ns (Levels of Logic = 16)
+  Clock Path Skew:      -0.056ns (0.170 - 0.226)
   Source Clock:         clk_BUFGP rising at 0.000ns
   Destination Clock:    clk_BUFGP rising at 10.000ns
   Clock Uncertainty:    0.000ns
 
-  Maximum Data Path: cnt_3 to cnt_18
+  Maximum Data Path: cnt_3 to cnt_20
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X50Y1.YQ       Tcko                  0.626   cnt<2>
+    SLICE_X60Y1.YQ       Tcko                  0.626   cnt<2>
                                                        cnt_3
-    SLICE_X51Y1.G1       net (fanout=2)        0.598   cnt<3>
-    SLICE_X51Y1.COUT     Topcyg                0.904   Madd_mips_clk_input_add0000_cy<3>
+    SLICE_X61Y1.G2       net (fanout=2)        0.459   cnt<3>
+    SLICE_X61Y1.COUT     Topcyg                0.904   Madd_mips_clk_input_add0000_cy<3>
                                                        cnt<3>_rt.1
                                                        Madd_mips_clk_input_add0000_cy<3>
-    SLICE_X51Y2.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<3>
-    SLICE_X51Y2.COUT     Tbyp                  0.111   mips_clk_input_add0000<5>
+    SLICE_X61Y2.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<3>
+    SLICE_X61Y2.COUT     Tbyp                  0.111   mips_clk_input_add0000<5>
                                                        Madd_mips_clk_input_add0000_cy<4>
                                                        Madd_mips_clk_input_add0000_cy<5>
-    SLICE_X51Y3.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<5>
-    SLICE_X51Y3.COUT     Tbyp                  0.111   mips_clk_input_add0000<6>
+    SLICE_X61Y3.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<5>
+    SLICE_X61Y3.COUT     Tbyp                  0.111   mips_clk_input_add0000<6>
                                                        Madd_mips_clk_input_add0000_cy<6>
                                                        Madd_mips_clk_input_add0000_cy<7>
-    SLICE_X51Y4.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<7>
-    SLICE_X51Y4.COUT     Tbyp                  0.111   mips_clk_input_add0000<8>
+    SLICE_X61Y4.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<7>
+    SLICE_X61Y4.COUT     Tbyp                  0.111   mips_clk_input_add0000<8>
                                                        Madd_mips_clk_input_add0000_cy<8>
                                                        Madd_mips_clk_input_add0000_cy<9>
-    SLICE_X51Y5.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<9>
-    SLICE_X51Y5.COUT     Tbyp                  0.111   mips_clk_input_add0000<10>
+    SLICE_X61Y5.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<9>
+    SLICE_X61Y5.COUT     Tbyp                  0.111   mips_clk_input_add0000<10>
                                                        Madd_mips_clk_input_add0000_cy<10>
                                                        Madd_mips_clk_input_add0000_cy<11>
-    SLICE_X51Y6.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<11>
-    SLICE_X51Y6.COUT     Tbyp                  0.111   mips_clk_input_add0000<12>
+    SLICE_X61Y6.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<11>
+    SLICE_X61Y6.COUT     Tbyp                  0.111   mips_clk_input_add0000<12>
                                                        Madd_mips_clk_input_add0000_cy<12>
                                                        Madd_mips_clk_input_add0000_cy<13>
-    SLICE_X51Y7.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<13>
-    SLICE_X51Y7.COUT     Tbyp                  0.111   mips_clk_input_add0000<14>
+    SLICE_X61Y7.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<13>
+    SLICE_X61Y7.COUT     Tbyp                  0.111   mips_clk_input_add0000<14>
                                                        Madd_mips_clk_input_add0000_cy<14>
                                                        Madd_mips_clk_input_add0000_cy<15>
-    SLICE_X51Y8.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<15>
-    SLICE_X51Y8.COUT     Tbyp                  0.111   mips_clk_input_add0000<16>
+    SLICE_X61Y8.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<15>
+    SLICE_X61Y8.COUT     Tbyp                  0.111   mips_clk_input_add0000<16>
                                                        Madd_mips_clk_input_add0000_cy<16>
                                                        Madd_mips_clk_input_add0000_cy<17>
-    SLICE_X51Y9.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<17>
-    SLICE_X51Y9.COUT     Tbyp                  0.111   mips_clk_input_add0000<18>
+    SLICE_X61Y9.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<17>
+    SLICE_X61Y9.COUT     Tbyp                  0.111   mips_clk_input_add0000<18>
                                                        Madd_mips_clk_input_add0000_cy<18>
                                                        Madd_mips_clk_input_add0000_cy<19>
-    SLICE_X51Y10.CIN     net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<19>
-    SLICE_X51Y10.COUT    Tbyp                  0.111   mips_clk_input_add0000<20>
+    SLICE_X61Y10.CIN     net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<19>
+    SLICE_X61Y10.COUT    Tbyp                  0.111   mips_clk_input_add0000<20>
                                                        Madd_mips_clk_input_add0000_cy<20>
                                                        Madd_mips_clk_input_add0000_cy<21>
-    SLICE_X51Y11.CIN     net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<21>
-    SLICE_X51Y11.COUT    Tbyp                  0.111   mips_clk_input_add0000<22>
+    SLICE_X61Y11.CIN     net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<21>
+    SLICE_X61Y11.COUT    Tbyp                  0.111   mips_clk_input_add0000<22>
                                                        Madd_mips_clk_input_add0000_cy<22>
                                                        Madd_mips_clk_input_add0000_cy<23>
-    SLICE_X51Y12.CIN     net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<23>
-    SLICE_X51Y12.COUT    Tbyp                  0.111   mips_clk_input_add0000<24>
+    SLICE_X61Y12.CIN     net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<23>
+    SLICE_X61Y12.COUT    Tbyp                  0.111   mips_clk_input_add0000<24>
                                                        Madd_mips_clk_input_add0000_cy<24>
                                                        Madd_mips_clk_input_add0000_cy<25>
-    SLICE_X51Y13.CIN     net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<25>
-    SLICE_X51Y13.COUT    Tbyp                  0.111   mips_clk_input_add0000<26>
+    SLICE_X61Y13.CIN     net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<25>
+    SLICE_X61Y13.Y       Tciny                 0.803   mips_clk_input_add0000<26>
                                                        Madd_mips_clk_input_add0000_cy<26>
-                                                       Madd_mips_clk_input_add0000_cy<27>
-    SLICE_X51Y14.CIN     net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<27>
-    SLICE_X51Y14.Y       Tciny                 0.803   mips_clk_input_add0000<28>
-                                                       Madd_mips_clk_input_add0000_cy<28>
-                                                       Madd_mips_clk_input_add0000_xor<29>
-    SLICE_X52Y7.G1       net (fanout=2)        1.085   mips_clk_input_add0000<29>
-    SLICE_X52Y7.COUT     Topcyg                0.954   Mcompar_cnt_cmp_ge0000_cy<11>
-                                                       Mcompar_cnt_cmp_ge0000_lut<11>
-                                                       Mcompar_cnt_cmp_ge0000_cy<11>
-    SLICE_X52Y8.CIN      net (fanout=1)        0.000   Mcompar_cnt_cmp_ge0000_cy<11>
-    SLICE_X52Y8.XB       Tcinxb                0.383   cnt_cmp_ge0000
-                                                       Mcompar_cnt_cmp_ge0000_cy<12>
-    SLICE_X52Y9.G4       net (fanout=1)        0.402   cnt_cmp_ge0000
-    SLICE_X52Y9.Y        Tilo                  0.529   mips_clk_input_or0000
+                                                       Madd_mips_clk_input_add0000_xor<27>
+    SLICE_X63Y9.F1       net (fanout=2)        1.152   mips_clk_input_add0000<27>
+    SLICE_X63Y9.COUT     Topcyf                0.894   Mcompar_mips_clk_input_cmp_lt0000_cy<11>1
+                                                       Mcompar_mips_clk_input_cmp_lt0000_lut<10>1
+                                                       Mcompar_mips_clk_input_cmp_lt0000_cy<10>_0
+                                                       Mcompar_mips_clk_input_cmp_lt0000_cy<11>_0
+    SLICE_X63Y10.CIN     net (fanout=1)        0.000   Mcompar_mips_clk_input_cmp_lt0000_cy<11>1
+    SLICE_X63Y10.XB      Tcinxb                0.279   cnt_cmp_ge0000
+                                                       Mcompar_mips_clk_input_cmp_lt0000_cy<12>_0
+    SLICE_X63Y11.G4      net (fanout=1)        0.345   cnt_cmp_ge0000
+    SLICE_X63Y11.Y       Tilo                  0.479   mips_clk_input_or0000
                                                        cnt_or00001
-    SLICE_X50Y9.SR       net (fanout=16)       1.277   cnt_or0000
-    SLICE_X50Y9.CLK      Tsrck                 0.892   cnt<18>
-                                                       cnt_18
+    SLICE_X60Y10.SR      net (fanout=16)       1.307   cnt_or0000
+    SLICE_X60Y10.CLK     Tsrck                 0.892   cnt<20>
+                                                       cnt_20
     -------------------------------------------------  ---------------------------
-    Total                                      9.785ns (6.423ns logic, 3.362ns route)
-                                                       (65.6% logic, 34.4% route)
-
---------------------------------------------------------------------------------
-Slack (setup path):     0.156ns (requirement - (data path - clock path skew + uncertainty))
-  Source:               cnt_0 (FF)
-  Destination:          cnt_18 (FF)
-  Requirement:          10.000ns
-  Data Path Delay:      9.761ns (Levels of Logic = 18)
-  Clock Path Skew:      -0.083ns (0.178 - 0.261)
-  Source Clock:         clk_BUFGP rising at 0.000ns
-  Destination Clock:    clk_BUFGP rising at 10.000ns
-  Clock Uncertainty:    0.000ns
-
-  Maximum Data Path: cnt_0 to cnt_18
-    Location             Delay type         Delay(ns)  Physical Resource
-                                                       Logical Resource(s)
-    -------------------------------------------------  -------------------
-    SLICE_X50Y0.XQ       Tcko                  0.626   cnt<0>
-                                                       cnt_0
-    SLICE_X51Y0.F2       net (fanout=2)        0.541   cnt<0>
-    SLICE_X51Y0.COUT     Topcyf                0.894   Madd_mips_clk_input_add0000_cy<1>
-                                                       Madd_mips_clk_input_add0000_lut<0>_INV_0
-                                                       Madd_mips_clk_input_add0000_cy<0>
-                                                       Madd_mips_clk_input_add0000_cy<1>
-    SLICE_X51Y1.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<1>
-    SLICE_X51Y1.COUT     Tbyp                  0.111   Madd_mips_clk_input_add0000_cy<3>
-                                                       Madd_mips_clk_input_add0000_cy<2>
-                                                       Madd_mips_clk_input_add0000_cy<3>
-    SLICE_X51Y2.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<3>
-    SLICE_X51Y2.COUT     Tbyp                  0.111   mips_clk_input_add0000<5>
-                                                       Madd_mips_clk_input_add0000_cy<4>
-                                                       Madd_mips_clk_input_add0000_cy<5>
-    SLICE_X51Y3.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<5>
-    SLICE_X51Y3.COUT     Tbyp                  0.111   mips_clk_input_add0000<6>
-                                                       Madd_mips_clk_input_add0000_cy<6>
-                                                       Madd_mips_clk_input_add0000_cy<7>
-    SLICE_X51Y4.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<7>
-    SLICE_X51Y4.COUT     Tbyp                  0.111   mips_clk_input_add0000<8>
-                                                       Madd_mips_clk_input_add0000_cy<8>
-                                                       Madd_mips_clk_input_add0000_cy<9>
-    SLICE_X51Y5.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<9>
-    SLICE_X51Y5.COUT     Tbyp                  0.111   mips_clk_input_add0000<10>
-                                                       Madd_mips_clk_input_add0000_cy<10>
-                                                       Madd_mips_clk_input_add0000_cy<11>
-    SLICE_X51Y6.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<11>
-    SLICE_X51Y6.COUT     Tbyp                  0.111   mips_clk_input_add0000<12>
-                                                       Madd_mips_clk_input_add0000_cy<12>
-                                                       Madd_mips_clk_input_add0000_cy<13>
-    SLICE_X51Y7.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<13>
-    SLICE_X51Y7.COUT     Tbyp                  0.111   mips_clk_input_add0000<14>
-                                                       Madd_mips_clk_input_add0000_cy<14>
-                                                       Madd_mips_clk_input_add0000_cy<15>
-    SLICE_X51Y8.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<15>
-    SLICE_X51Y8.COUT     Tbyp                  0.111   mips_clk_input_add0000<16>
-                                                       Madd_mips_clk_input_add0000_cy<16>
-                                                       Madd_mips_clk_input_add0000_cy<17>
-    SLICE_X51Y9.CIN      net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<17>
-    SLICE_X51Y9.COUT     Tbyp                  0.111   mips_clk_input_add0000<18>
-                                                       Madd_mips_clk_input_add0000_cy<18>
-                                                       Madd_mips_clk_input_add0000_cy<19>
-    SLICE_X51Y10.CIN     net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<19>
-    SLICE_X51Y10.COUT    Tbyp                  0.111   mips_clk_input_add0000<20>
-                                                       Madd_mips_clk_input_add0000_cy<20>
-                                                       Madd_mips_clk_input_add0000_cy<21>
-    SLICE_X51Y11.CIN     net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<21>
-    SLICE_X51Y11.COUT    Tbyp                  0.111   mips_clk_input_add0000<22>
-                                                       Madd_mips_clk_input_add0000_cy<22>
-                                                       Madd_mips_clk_input_add0000_cy<23>
-    SLICE_X51Y12.CIN     net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<23>
-    SLICE_X51Y12.COUT    Tbyp                  0.111   mips_clk_input_add0000<24>
-                                                       Madd_mips_clk_input_add0000_cy<24>
-                                                       Madd_mips_clk_input_add0000_cy<25>
-    SLICE_X51Y13.CIN     net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<25>
-    SLICE_X51Y13.COUT    Tbyp                  0.111   mips_clk_input_add0000<26>
-                                                       Madd_mips_clk_input_add0000_cy<26>
-                                                       Madd_mips_clk_input_add0000_cy<27>
-    SLICE_X51Y14.CIN     net (fanout=1)        0.000   Madd_mips_clk_input_add0000_cy<27>
-    SLICE_X51Y14.X       Tcinx                 0.786   mips_clk_input_add0000<28>
-                                                       Madd_mips_clk_input_add0000_xor<28>
-    SLICE_X52Y7.F4       net (fanout=2)        1.044   mips_clk_input_add0000<28>
-    SLICE_X52Y7.COUT     Topcyf                0.944   Mcompar_cnt_cmp_ge0000_cy<11>
-                                                       Mcompar_cnt_cmp_ge0000_lut<10>
-                                                       Mcompar_cnt_cmp_ge0000_cy<10>
-                                                       Mcompar_cnt_cmp_ge0000_cy<11>
-    SLICE_X52Y8.CIN      net (fanout=1)        0.000   Mcompar_cnt_cmp_ge0000_cy<11>
-    SLICE_X52Y8.XB       Tcinxb                0.383   cnt_cmp_ge0000
-                                                       Mcompar_cnt_cmp_ge0000_cy<12>
-    SLICE_X52Y9.G4       net (fanout=1)        0.402   cnt_cmp_ge0000
-    SLICE_X52Y9.Y        Tilo                  0.529   mips_clk_input_or0000
-                                                       cnt_or00001
-    SLICE_X50Y9.SR       net (fanout=16)       1.277   cnt_or0000
-    SLICE_X50Y9.CLK      Tsrck                 0.892   cnt<18>
-                                                       cnt_18
-    -------------------------------------------------  ---------------------------
-    Total                                      9.761ns (6.497ns logic, 3.264ns route)
-                                                       (66.6% logic, 33.4% route)
+    Total                                      9.361ns (6.098ns logic, 3.263ns route)
+                                                       (65.1% logic, 34.9% route)
 
 --------------------------------------------------------------------------------
 
 Hold Paths: TS_clk = PERIOD TIMEGRP "clk" 10 ns HIGH 50%;
 --------------------------------------------------------------------------------
 
-Paths for end point cnt_14 (SLICE_X50Y7.F4), 1 path
+Paths for end point cnt_2 (SLICE_X60Y1.F4), 1 path
 --------------------------------------------------------------------------------
 Slack (hold path):      1.161ns (requirement - (clock path skew + uncertainty - data path))
-  Source:               cnt_14 (FF)
-  Destination:          cnt_14 (FF)
+  Source:               cnt_2 (FF)
+  Destination:          cnt_2 (FF)
   Requirement:          0.000ns
   Data Path Delay:      1.161ns (Levels of Logic = 1)
   Clock Path Skew:      0.000ns
@@ -906,28 +864,28 @@ Slack (hold path):      1.161ns (requirement - (clock path skew + uncertainty - 
   Destination Clock:    clk_BUFGP rising at 10.000ns
   Clock Uncertainty:    0.000ns
 
-  Minimum Data Path: cnt_14 to cnt_14
+  Minimum Data Path: cnt_2 to cnt_2
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X50Y7.XQ       Tcko                  0.501   cnt<14>
-                                                       cnt_14
-    SLICE_X50Y7.F4       net (fanout=2)        0.278   cnt<14>
-    SLICE_X50Y7.CLK      Tckf        (-Th)    -0.382   cnt<14>
-                                                       cnt<14>_rt
-                                                       Mcount_cnt_xor<14>
-                                                       cnt_14
+    SLICE_X60Y1.XQ       Tcko                  0.501   cnt<2>
+                                                       cnt_2
+    SLICE_X60Y1.F4       net (fanout=2)        0.278   cnt<2>
+    SLICE_X60Y1.CLK      Tckf        (-Th)    -0.382   cnt<2>
+                                                       cnt<2>_rt
+                                                       Mcount_cnt_xor<2>
+                                                       cnt_2
     -------------------------------------------------  ---------------------------
     Total                                      1.161ns (0.883ns logic, 0.278ns route)
                                                        (76.1% logic, 23.9% route)
 
 --------------------------------------------------------------------------------
 
-Paths for end point cnt_22 (SLICE_X50Y11.F4), 1 path
+Paths for end point cnt_8 (SLICE_X60Y4.F4), 1 path
 --------------------------------------------------------------------------------
 Slack (hold path):      1.161ns (requirement - (clock path skew + uncertainty - data path))
-  Source:               cnt_22 (FF)
-  Destination:          cnt_22 (FF)
+  Source:               cnt_8 (FF)
+  Destination:          cnt_8 (FF)
   Requirement:          0.000ns
   Data Path Delay:      1.161ns (Levels of Logic = 1)
   Clock Path Skew:      0.000ns
@@ -935,28 +893,28 @@ Slack (hold path):      1.161ns (requirement - (clock path skew + uncertainty - 
   Destination Clock:    clk_BUFGP rising at 10.000ns
   Clock Uncertainty:    0.000ns
 
-  Minimum Data Path: cnt_22 to cnt_22
+  Minimum Data Path: cnt_8 to cnt_8
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X50Y11.XQ      Tcko                  0.501   cnt<22>
-                                                       cnt_22
-    SLICE_X50Y11.F4      net (fanout=2)        0.278   cnt<22>
-    SLICE_X50Y11.CLK     Tckf        (-Th)    -0.382   cnt<22>
-                                                       cnt<22>_rt
-                                                       Mcount_cnt_xor<22>
-                                                       cnt_22
+    SLICE_X60Y4.XQ       Tcko                  0.501   cnt<8>
+                                                       cnt_8
+    SLICE_X60Y4.F4       net (fanout=2)        0.278   cnt<8>
+    SLICE_X60Y4.CLK      Tckf        (-Th)    -0.382   cnt<8>
+                                                       cnt<8>_rt
+                                                       Mcount_cnt_xor<8>
+                                                       cnt_8
     -------------------------------------------------  ---------------------------
     Total                                      1.161ns (0.883ns logic, 0.278ns route)
                                                        (76.1% logic, 23.9% route)
 
 --------------------------------------------------------------------------------
 
-Paths for end point cnt_26 (SLICE_X50Y13.F4), 1 path
+Paths for end point cnt_12 (SLICE_X60Y6.F4), 1 path
 --------------------------------------------------------------------------------
 Slack (hold path):      1.161ns (requirement - (clock path skew + uncertainty - data path))
-  Source:               cnt_26 (FF)
-  Destination:          cnt_26 (FF)
+  Source:               cnt_12 (FF)
+  Destination:          cnt_12 (FF)
   Requirement:          0.000ns
   Data Path Delay:      1.161ns (Levels of Logic = 1)
   Clock Path Skew:      0.000ns
@@ -964,17 +922,17 @@ Slack (hold path):      1.161ns (requirement - (clock path skew + uncertainty - 
   Destination Clock:    clk_BUFGP rising at 10.000ns
   Clock Uncertainty:    0.000ns
 
-  Minimum Data Path: cnt_26 to cnt_26
+  Minimum Data Path: cnt_12 to cnt_12
     Location             Delay type         Delay(ns)  Physical Resource
                                                        Logical Resource(s)
     -------------------------------------------------  -------------------
-    SLICE_X50Y13.XQ      Tcko                  0.501   cnt<26>
-                                                       cnt_26
-    SLICE_X50Y13.F4      net (fanout=2)        0.278   cnt<26>
-    SLICE_X50Y13.CLK     Tckf        (-Th)    -0.382   cnt<26>
-                                                       cnt<26>_rt
-                                                       Mcount_cnt_xor<26>
-                                                       cnt_26
+    SLICE_X60Y6.XQ       Tcko                  0.501   cnt<12>
+                                                       cnt_12
+    SLICE_X60Y6.F4       net (fanout=2)        0.278   cnt<12>
+    SLICE_X60Y6.CLK      Tckf        (-Th)    -0.382   cnt<12>
+                                                       cnt<12>_rt
+                                                       Mcount_cnt_xor<12>
+                                                       cnt_12
     -------------------------------------------------  ---------------------------
     Total                                      1.161ns (0.883ns logic, 0.278ns route)
                                                        (76.1% logic, 23.9% route)
@@ -989,7 +947,7 @@ Slack: 8.634ns (period - (min low pulse limit / (low pulse / period)))
   Low pulse limit: 0.683ns (Tcl)
   Physical resource: cnt<0>/CLK
   Logical resource: cnt_0/CK
-  Location pin: SLICE_X50Y0.CLK
+  Location pin: SLICE_X60Y0.CLK
   Clock network: clk_BUFGP
 --------------------------------------------------------------------------------
 Slack: 8.634ns (period - (min high pulse limit / (high pulse / period)))
@@ -998,7 +956,7 @@ Slack: 8.634ns (period - (min high pulse limit / (high pulse / period)))
   High pulse limit: 0.683ns (Tch)
   Physical resource: cnt<0>/CLK
   Logical resource: cnt_0/CK
-  Location pin: SLICE_X50Y0.CLK
+  Location pin: SLICE_X60Y0.CLK
   Clock network: clk_BUFGP
 --------------------------------------------------------------------------------
 Slack: 8.634ns (period - min period limit)
@@ -1006,7 +964,7 @@ Slack: 8.634ns (period - min period limit)
   Min period limit: 1.366ns (732.064MHz) (Tcp)
   Physical resource: cnt<0>/CLK
   Logical resource: cnt_0/CK
-  Location pin: SLICE_X50Y0.CLK
+  Location pin: SLICE_X60Y0.CLK
   Clock network: clk_BUFGP
 --------------------------------------------------------------------------------
 
@@ -1023,7 +981,7 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    9.912|         |         |         |
+clk            |    9.589|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
@@ -1035,20 +993,20 @@ Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
 Constraints cover 17265 paths, 0 nets, and 196 connections
 
 Design statistics:
-   Minimum period:   9.912ns{1}   (Maximum frequency: 100.888MHz)
+   Minimum period:   9.589ns{1}   (Maximum frequency: 104.286MHz)
 
 
 ------------------------------------Footnotes-----------------------------------
 1)  The minimum period statistic assumes all single cycle delays.
 
-Analysis completed Tue Mar 11 20:30:45 2014 
+Analysis completed Wed May 17 12:09:23 2017 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 191 MB
+Peak Memory Usage: 199 MB
 
 
 

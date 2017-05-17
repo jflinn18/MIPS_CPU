@@ -64,10 +64,15 @@ architecture test of top is
 		   data_write:         out STD_LOGIC );
   end component;
   
-  component vga
-    port(clk:     in STD_LOGIC;
-	      ra:      in STD_LOGIC_VECTOR(31 downto 0);
-		   rd:      out STD_LOGIC_VECTOR(31 downto 0));
+  component vgaBoxes
+    port(
+      clk50_in :  in std_logic;
+      red_out :   out std_logic_vector(2 downto 0);
+      green_out : out std_logic_vector(2 downto 0);
+      blue_out :  out std_logic_vector(2 downto 0);
+      hs_out :    out std_logic;
+      vs_out :    out std_logic
+    );
   end component;
   
 
@@ -78,12 +83,14 @@ architecture test of top is
 begin
   -- instantiate processor and memories
   addrDecoder1: addrDecoder port map(dataadr, memwrite, vgaMem_write, dataMem_write);
-  vga1: vga port map (clk, vgaDataadr, vgaReadData);
+--  vga1: vga port map (clk, vgaDataadr, vgaReadData);
   
   mips1: mips port map(clk, reset, pc, instr, memwrite, dataadr, writedata, readdata);
   imem1: imem port map(pc(7 downto 2), instr);
   dmem1: dmem port map(clk, dataMem_write, dataadr, writedata, readdata);
   vgaMem1: vgaMem port map(clk, vgaMem_write, vgaDataadr, dataadr, writedata, vgaReadData);
+  
+  vgaBoxes1: vgaBoxes port map(clk50_in, red_out, green_out, blue_out, hs_out, vs_out);
 
 end;
 

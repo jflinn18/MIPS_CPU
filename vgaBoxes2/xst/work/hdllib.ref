@@ -1,0 +1,6 @@
+EN boxcolor NULL C:/Users/jflinn18/Desktop/MIPS_CPU/vgaBoxes2/box.vhd sub00/vhpl02 1495038971
+AR vgaboxes behavioral C:/Users/jflinn18/Desktop/MIPS_CPU/vgaBoxes2/vgaBoxes.vhd sub00/vhpl01 1495038974
+AR vgatest behavioral C:/Users/jflinn18/Desktop/MIPS_CPU/vgaBoxes2/vgaTest.vhd sub00/vhpl05 1495037410
+EN vgatest NULL C:/Users/jflinn18/Desktop/MIPS_CPU/vgaBoxes2/vgaTest.vhd sub00/vhpl04 1495037641
+AR boxcolor behavioral C:/Users/jflinn18/Desktop/MIPS_CPU/vgaBoxes2/box.vhd sub00/vhpl03 1495038972
+EN vgaboxes NULL C:/Users/jflinn18/Desktop/MIPS_CPU/vgaBoxes2/vgaBoxes.vhd sub00/vhpl00 1495038973

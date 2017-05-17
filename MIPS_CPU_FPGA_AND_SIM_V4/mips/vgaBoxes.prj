@@ -1,0 +1,3 @@
+vhdl work "../mips_mem.vhd"
+vhdl work "../box.vhd"
+vhdl work "../vgaBoxes.vhd"
