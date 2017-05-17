@@ -1,0 +1,435 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: vgaBoxes.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "vgaBoxes.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "vgaBoxes"
+Output Format                      : NGC
+Target Device                      : xc3s1000-4-ft256
+
+---- Source Options
+Top Module Name                    : vgaBoxes
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/jflinn18/Desktop/MIPS_CPU/vgaBoxes2/box.vhd" in Library work.
+Architecture behavioral of Entity boxcolor is up to date.
+Compiling vhdl file "C:/Users/jflinn18/Desktop/MIPS_CPU/vgaBoxes2/vgaBoxes.vhd" in Library work.
+Architecture behavioral of Entity vgaboxes is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <vgaBoxes> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <boxColor> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <vgaBoxes> in library <work> (Architecture <behavioral>).
+Entity <vgaBoxes> analyzed. Unit <vgaBoxes> generated.
+
+Analyzing Entity <boxColor> in library <work> (Architecture <behavioral>).
+Entity <boxColor> analyzed. Unit <boxColor> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <boxColor>.
+    Related source file is "C:/Users/jflinn18/Desktop/MIPS_CPU/vgaBoxes2/box.vhd".
+WARNING:Xst:647 - Input <number<31:4>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 16x9-bit ROM for signal <lowerFour$rom0000>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <boxColor> synthesized.
+
+
+Synthesizing Unit <vgaBoxes>.
+    Related source file is "C:/Users/jflinn18/Desktop/MIPS_CPU/vgaBoxes2/vgaBoxes.vhd".
+WARNING:Xst:1780 - Signal <color> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found 3-bit register for signal <red_out>.
+    Found 3-bit register for signal <green_out>.
+    Found 3-bit register for signal <blue_out>.
+    Found 1-bit register for signal <hs_out>.
+    Found 1-bit register for signal <vs_out>.
+    Found 1-bit register for signal <clk25>.
+    Found 10-bit up counter for signal <hcounter>.
+    Found 10-bit comparator greater for signal <hs_out$cmp_gt0000> created at line 156.
+    Found 10-bit comparator less for signal <hs_out$cmp_lt0000> created at line 156.
+    Found 10-bit comparator greater for signal <red_out$cmp_gt0000> created at line 126.
+    Found 9-bit comparator greater for signal <red_out$cmp_gt0001> created at line 126.
+    Found 10-bit comparator greater for signal <red_out$cmp_gt0002> created at line 129.
+    Found 10-bit comparator greater for signal <red_out$cmp_gt0003> created at line 134.
+    Found 10-bit comparator greater for signal <red_out$cmp_gt0004> created at line 139.
+    Found 10-bit comparator less for signal <red_out$cmp_lt0000> created at line 126.
+    Found 9-bit comparator less for signal <red_out$cmp_lt0001> created at line 126.
+    Found 10-bit comparator less for signal <red_out$cmp_lt0002> created at line 129.
+    Found 10-bit comparator less for signal <red_out$cmp_lt0003> created at line 134.
+    Found 10-bit comparator less for signal <red_out$cmp_lt0004> created at line 139.
+    Found 10-bit subtractor for signal <red_out$sub0000> created at line 121.
+    Found 9-bit subtractor for signal <red_out$sub0001> created at line 122.
+    Found 10-bit up counter for signal <vcounter>.
+    Found 10-bit comparator greater for signal <vs_out$cmp_gt0000> created at line 168.
+    Found 10-bit comparator less for signal <vs_out$cmp_lt0000> created at line 168.
+    Summary:
+	inferred   2 Counter(s).
+	inferred  12 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred  14 Comparator(s).
+Unit <vgaBoxes> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 4
+ 16x9-bit ROM                                          : 4
+# Adders/Subtractors                                   : 2
+ 10-bit subtractor                                     : 1
+ 9-bit subtractor                                      : 1
+# Counters                                             : 2
+ 10-bit up counter                                     : 2
+# Registers                                            : 6
+ 1-bit register                                        : 3
+ 3-bit register                                        : 3
+# Comparators                                          : 14
+ 10-bit comparator greater                             : 6
+ 10-bit comparator less                                : 6
+ 9-bit comparator greater                              : 1
+ 9-bit comparator less                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 4
+ 16x9-bit ROM                                          : 4
+# Adders/Subtractors                                   : 2
+ 10-bit subtractor                                     : 1
+ 9-bit subtractor                                      : 1
+# Counters                                             : 2
+ 10-bit up counter                                     : 2
+# Registers                                            : 12
+ Flip-Flops                                            : 12
+# Comparators                                          : 14
+ 10-bit comparator greater                             : 6
+ 10-bit comparator less                                : 6
+ 9-bit comparator greater                              : 1
+ 9-bit comparator less                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <red_out_0> in Unit <vgaBoxes> is equivalent to the following FF/Latch, which will be removed : <green_out_2> 
+INFO:Xst:2261 - The FF/Latch <blue_out_1> in Unit <vgaBoxes> is equivalent to the following FF/Latch, which will be removed : <blue_out_2> 
+
+Optimizing unit <vgaBoxes> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block vgaBoxes, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 30
+ Flip-Flops                                            : 30
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : vgaBoxes.ngr
+Top Level Output File Name         : vgaBoxes
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 12
+
+Cell Usage :
+# BELS                             : 113
+#      GND                         : 1
+#      INV                         : 2
+#      LUT1                        : 18
+#      LUT2                        : 7
+#      LUT3                        : 8
+#      LUT3_D                      : 1
+#      LUT3_L                      : 6
+#      LUT4                        : 23
+#      LUT4_D                      : 1
+#      LUT4_L                      : 7
+#      MUXCY                       : 18
+#      VCC                         : 1
+#      XORCY                       : 20
+# FlipFlops/Latches                : 30
+#      FD                          : 1
+#      FDR                         : 15
+#      FDRE                        : 10
+#      FDRS                        : 1
+#      FDS                         : 3
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 11
+#      OBUF                        : 11
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s1000ft256-4 
+
+ Number of Slices:                       40  out of   7680     0%  
+ Number of Slice Flip Flops:             30  out of  15360     0%  
+ Number of 4 input LUTs:                 73  out of  15360     0%  
+ Number of IOs:                          12
+ Number of bonded IOBs:                  12  out of    173     6%  
+ Number of GCLKs:                         2  out of      8    25%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk50_in                           | BUFGP                  | 1     |
+clk251                             | BUFG                   | 29    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 8.218ns (Maximum Frequency: 121.684MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 7.241ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk50_in'
+  Clock period: 2.623ns (frequency: 381.243MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               2.623ns (Levels of Logic = 0)
+  Source:            clk25 (FF)
+  Destination:       clk25 (FF)
+  Source Clock:      clk50_in rising
+  Destination Clock: clk50_in rising
+
+  Data Path: clk25 to clk25
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.720   0.877  clk25 (clk251)
+     FDR:R                     1.026          clk25
+    ----------------------------------------
+    Total                      2.623ns (1.746ns logic, 0.877ns route)
+                                       (66.6% logic, 33.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk251'
+  Clock period: 8.218ns (frequency: 121.684MHz)
+  Total number of paths / destination ports: 1155 / 66
+-------------------------------------------------------------------------
+Delay:               8.218ns (Levels of Logic = 4)
+  Source:            vcounter_4 (FF)
+  Destination:       blue_out_0 (FF)
+  Source Clock:      clk251 rising
+  Destination Clock: clk251 rising
+
+  Data Path: vcounter_4 to blue_out_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             5   0.720   1.260  vcounter_4 (vcounter_4)
+     LUT3:I0->O            1   0.551   0.827  red_out_and0003269_SW0 (N01)
+     LUT4_L:I3->LO         1   0.551   0.168  red_out_and0003269 (red_out_and0003269)
+     LUT4:I2->O            5   0.551   0.947  red_out_and0003276 (N34)
+     LUT4:I3->O            7   0.551   1.066  red_out_and000092 (red_out_and0000)
+     FDS:S                     1.026          blue_out_0
+    ----------------------------------------
+    Total                      8.218ns (3.950ns logic, 4.268ns route)
+                                       (48.1% logic, 51.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk251'
+  Total number of paths / destination ports: 11 / 11
+-------------------------------------------------------------------------
+Offset:              7.241ns (Levels of Logic = 1)
+  Source:            blue_out_1 (FF)
+  Destination:       blue_out<2> (PAD)
+  Source Clock:      clk251 rising
+
+  Data Path: blue_out_1 to blue_out<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDS:C->Q              2   0.720   0.877  blue_out_1 (blue_out_1)
+     OBUF:I->O                 5.644          blue_out_2_OBUF (blue_out<2>)
+    ----------------------------------------
+    Total                      7.241ns (6.364ns logic, 0.877ns route)
+                                       (87.9% logic, 12.1% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 4.17 secs
+ 
+--> 
+
+Total memory usage is 306408 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    2 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

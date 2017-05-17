@@ -1,4 +1,4 @@
-Release 14.6 Map P.68d (nt64)
+Release 14.7 Map P.20131013 (nt64)
 Xilinx Map Application Log File for Design 'mips_fpga_interface'
 
 Design Information
@@ -10,10 +10,31 @@ Target Device  : xc3s1000
 Target Package : ft256
 Target Speed   : -5
 Mapper Version : spartan3 -- $Revision: 1.55 $
-Mapped Date    : Tue Mar 11 20:30:18 2014
+Mapped Date    : Wed May 17 12:09:00 2017
 
 Mapping design into LUTs...
 Running directed packing...
+WARNING:Pack:266 - The function generator mips_cpu/imem1/Mrom_rd101263_1 failed
+   to merge with F5 multiplexer mips_cpu/mips1/dp/srcbmux/y<6>1.  There is a
+   conflict for the FXMUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator mips_cpu/imem1/Mrom_rd251227 failed to
+   merge with F5 multiplexer mips_cpu/mips1/dp/srcbmux/y<11>1.  There is a
+   conflict for the FXMUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator mips_cpu/imem1/Mrom_rd281260 failed to
+   merge with F5 multiplexer mips_cpu/mips1/dp/srcbmux/y<12>1.  There is a
+   conflict for the FXMUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator mips_cpu/imem1/Mrom_rd342264 failed to
+   merge with F5 multiplexer mips_cpu/mips1/dp/srcbmux/y<14>1.  There is a
+   conflict for the FXMUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator mips_cpu/imem1/Mrom_rd44 failed to
+   merge with F5 multiplexer mips_cpu/imem1/Mrom_rd44_f6/MUXF5.I1.  There is a
+   conflict for the GYMUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator mips_cpu/instr<10> failed to merge
+   with F5 multiplexer mips_cpu/mips1/dp/srcbmux/y<10>11_f5.  There is a
+   conflict for the FXMUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator mips_cpu/imem1/Mrom_rd44 failed to
+   merge with F5 multiplexer mips_cpu/imem1/Mrom_rd56_f6/MUXF5.I1.  There is a
+   conflict for the GYMUX.  The design will exhibit suboptimal timing.
 Running delay-based LUT packing...
 Running related packing...
 Updating timing models...
@@ -23,19 +44,19 @@ Design Summary
 
 Design Summary:
 Number of errors:      0
-Number of warnings:    0
+Number of warnings:    7
 Logic Utilization:
-  Number of Slice Flip Flops:         2,096 out of  15,360   13%
-  Number of 4 input LUTs:             1,698 out of  15,360   11%
+  Number of Slice Flip Flops:         2,104 out of  15,360   13%
+  Number of 4 input LUTs:             2,126 out of  15,360   13%
 Logic Distribution:
-  Number of occupied Slices:          1,908 out of   7,680   24%
-    Number of Slices containing only related logic:   1,908 out of   1,908 100%
-    Number of Slices containing unrelated logic:          0 out of   1,908   0%
+  Number of occupied Slices:          2,151 out of   7,680   28%
+    Number of Slices containing only related logic:   2,151 out of   2,151 100%
+    Number of Slices containing unrelated logic:          0 out of   2,151   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
-  Total Number of 4 input LUTs:       1,773 out of  15,360   11%
-    Number used as logic:             1,570
-    Number used as a route-thru:         75
-    Number used for Dual Port RAMs:     128
+  Total Number of 4 input LUTs:       2,236 out of  15,360   14%
+    Number used as logic:             1,870
+    Number used as a route-thru:        110
+    Number used for Dual Port RAMs:     256
       (Two LUTs used per Dual Port RAM)
 
   The Slice Logic Distribution report is not meaningful if the design is
@@ -44,10 +65,10 @@ Logic Distribution:
   Number of bonded IOBs:                  9 out of     173    5%
   Number of BUFGMUXs:                     2 out of       8   25%
 
-Average Fanout of Non-Clock Nets:                3.18
+Average Fanout of Non-Clock Nets:                3.46
 
-Peak Memory Usage:  334 MB
-Total REAL time to MAP completion:  4 secs 
+Peak Memory Usage:  311 MB
+Total REAL time to MAP completion:  2 secs 
 Total CPU time to MAP completion:   2 secs 
 
 NOTES:

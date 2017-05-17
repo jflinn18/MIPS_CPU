@@ -1,0 +1,13 @@
+xst -intstyle ise -ifn "C:/Users/jflinn18/Desktop/MIPS_CPU/vgaBoxes2/vgaBoxes.xst" -ofn "C:/Users/jflinn18/Desktop/MIPS_CPU/vgaBoxes2/vgaBoxes.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc test1.ucf -p xc3s1000-ft256-4 vgaBoxes.ngc vgaBoxes.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o vgaBoxes_map.ncd vgaBoxes.ngd vgaBoxes.pcf 
+par -w -intstyle ise -ol high -t 1 vgaBoxes_map.ncd vgaBoxes.ncd vgaBoxes.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml vgaBoxes.twx vgaBoxes.ncd -o vgaBoxes.twr vgaBoxes.pcf -ucf test1.ucf 
+bitgen -intstyle ise -f vgaBoxes.ut vgaBoxes.ncd 
+xst -intstyle ise -ifn "C:/Users/jflinn18/Desktop/MIPS_CPU/vgaBoxes2/vgaBoxes.xst" -ofn "C:/Users/jflinn18/Desktop/MIPS_CPU/vgaBoxes2/vgaBoxes.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc test1.ucf -p xc3s1000-ft256-4 vgaBoxes.ngc vgaBoxes.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o vgaBoxes_map.ncd vgaBoxes.ngd vgaBoxes.pcf 
+par -w -intstyle ise -ol high -t 1 vgaBoxes_map.ncd vgaBoxes.ncd vgaBoxes.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml vgaBoxes.twx vgaBoxes.ncd -o vgaBoxes.twr vgaBoxes.pcf -ucf test1.ucf 
+bitgen -intstyle ise -f vgaBoxes.ut vgaBoxes.ncd 
+bitgen -intstyle ise -f vgaBoxes.ut vgaBoxes.ncd 

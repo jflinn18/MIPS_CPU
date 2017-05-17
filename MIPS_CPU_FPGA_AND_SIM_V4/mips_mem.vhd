@@ -147,7 +147,7 @@ begin
     -- use the impure function to read RAM from a file and store in the FPGA's ram memory
   	 
 	 --variable mem: ramtype := InitRamFromFile("memfile.dat");
-	 variable mem: ramtype := InitRamFromFile("RPM.dat");
+	 variable mem: ramtype := InitRamFromFile("RPM_new.dat");
   begin
       rd <= mem( to_integer(unsigned(a)) );
   end process;

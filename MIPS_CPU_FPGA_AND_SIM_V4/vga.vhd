@@ -29,7 +29,7 @@ architecture Behavioral of vga is
 begin
   process(tempVGAAddr, vgaReadAddr) begin
   -- This is where we just continuously read from VGA???
-    for I in 0 to 7 loop
+    for I in 0 to 3 loop
 	   tempVGAAddr <= std_logic_vector(to_unsigned(I, tempVGAAddr'length));
       vgaReadAddr <= "111111111111111111111111111" & tempVGAAddr & "00";
     end loop;

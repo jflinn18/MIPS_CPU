@@ -1,0 +1,2 @@
+vhdl work "vgaBoxes.vhd"
+vhdl work "vgaTest.vhd"

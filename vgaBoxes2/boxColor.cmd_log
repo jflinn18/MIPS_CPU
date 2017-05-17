@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "C:/Users/jflinn18/Desktop/MIPS_CPU/vgaBoxes2/boxColor.xst" -ofn "C:/Users/jflinn18/Desktop/MIPS_CPU/vgaBoxes2/boxColor.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1000-ft256-4 boxColor.ngc boxColor.ngd  
+map -intstyle ise -p xc3s1000-ft256-4 -cm area -ir off -pr off -c 100 -o boxColor_map.ncd boxColor.ngd boxColor.pcf 
+par -w -intstyle ise -ol high -t 1 boxColor_map.ncd boxColor.ncd boxColor.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml boxColor.twx boxColor.ncd -o boxColor.twr boxColor.pcf 
+bitgen -intstyle ise -f boxColor.ut boxColor.ncd 

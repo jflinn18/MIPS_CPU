@@ -13,6 +13,23 @@
 #NET      red<2>          LOC=B1;        
 #NET      vsync_n         LOC=D8;        
 
+
+
+NET "blue_out<0>"  LOC = "C9"  ;
+NET "blue_out<1>"  LOC = "E7"  ;
+NET "blue_out<2>"  LOC = "D5"  ;
+NET "clk50_in"  LOC = "P8"  ;
+NET "green_out<0>"  LOC = "A8"  ;
+NET "green_out<1>"  LOC = "a5"  ;
+NET "green_out<2>"  LOC = "c3"  ;
+NET "hs_out"  LOC = "b7"  ;
+NET "red_out<0>"  LOC = "C8"  ;
+NET "red_out<1>"  LOC = "d6"  ;
+NET "red_out<2>"  LOC = "b1"  ;
+NET "vs_out"  LOC = "d8"  ;
+
+
+
 NET      "clk"           TNM_NET="clk"; 
 TIMESPEC "TS_clk"=PERIOD "clk"          10 ns HIGH 50 %; 
 

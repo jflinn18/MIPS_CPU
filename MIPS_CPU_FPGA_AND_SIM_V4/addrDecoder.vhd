@@ -40,51 +40,42 @@ architecture Behavioral of addrDecoder is
   signal controls: STD_LOGIC_VECTOR(10 downto 0);
   --signal keyboard_write: STD_LOGIC;      -- Don't need to write to the keyboard....(think about it)
 begin
-  process(memwrite) begin
-    if (memwrite = '0') then vga_write <= '0';
-    end if;
-    if (memwrite = '0') then data_write <= '0';
-    end if;
-  end process;
-  
-  process(address) begin
-    case address is
-		when "11111111111111111111111111100000" => 
-			if memwrite = '1' then vga_write <= '1'; -- vga[0]
-			end if;
-		when "11111111111111111111111111100100" => 
-			if memwrite = '1' then vga_write <= '1'; -- vga[1] 
-			end if;
-		when "11111111111111111111111111101000" => 
-			if memwrite = '1' then vga_write <= '1'; -- vga[2]
-			end if;
-		when "11111111111111111111111111101100" => 
-			if memwrite = '1' then vga_write <= '1'; -- vga[3]
-			end if;
-		when "11111111111111111111111111110000" => 
-			if memwrite = '1' then vga_write <= '1'; -- vga[4]
-			end if;
-		when "11111111111111111111111111110100" => 
-			if memwrite = '1' then vga_write <= '1'; -- vga[5]
-			end if;
-		when "11111111111111111111111111111000" => 
-			if memwrite = '1' then vga_write <= '1'; -- vga[6]
-			end if;
-		when "11111111111111111111111111111100" => 
-			if memwrite = '1' then vga_write <= '1'; -- vga[7]
-			end if;
-	 
-		--when "11111111111111111111111111110100" => 
-		--	if memwrite = '1' then vga_write <= '1';  -- x
-		--when "11111111111111111111111111111000" => 
-		--	if memwrite = '1' then vga_write <= '1';  -- y
-	 
-		
-      when others => 
-			if memwrite = '1' then data_write <= '1';
-			end if;
+  process(address, memwrite) begin
+    if memwrite = '0' then
+	   vga_write <= '0';
+      data_write <= '0';
+	 elsif memwrite = '1' then
+      case address is
+		  when "11111111111111111111111111100000" =>  -- 0xFFFFFFE0
+			 vga_write <= '1'; -- vga[0]
+			 data_write <= '0';
+		  when "11111111111111111111111111100100" =>  -- 0xFFFFFFE4
+			 vga_write <= '1'; -- vga[1] 
+			 data_write <= '0';
+		  when "11111111111111111111111111101000" =>  -- 0xFFFFFFE8
+			 vga_write <= '1'; -- vga[2]
+			 data_write <= '0';
+		  when "11111111111111111111111111101100" =>  -- 0xFFFFFFEC
+			 vga_write <= '1'; -- vga[3]
+			 data_write <= '0';
+		  when "11111111111111111111111111110000" =>  -- 0xFFFFFFF0
+			 vga_write <= '1'; -- vga[4]
+			 data_write <= '0';
+		  when "11111111111111111111111111110100" =>  -- 0xFFFFFFF4
+			 vga_write <= '1'; -- vga[5]
+			 data_write <= '0';
+		  when "11111111111111111111111111111000" =>  -- 0xFFFFFFF8
+			 vga_write <= '1'; -- vga[6]
+			 data_write <= '0';
+		  when "11111111111111111111111111111100" =>  -- 0xFFFFFFFC
+			 vga_write <= '1'; -- vga[7]
+			 data_write <= '0';
+        when others => 
+          data_write <= '1';
+			 vga_write <= '0';
 			
-    end case;
+      end case;	 
+	 end if;
   end process;
 
 end Behavioral;

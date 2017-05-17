@@ -23,3 +23,7 @@ divide:
 	
 finish:
 	addi $t0, $t0, 0x0000  #Shows answer in waveform
+
+	
+	
+	

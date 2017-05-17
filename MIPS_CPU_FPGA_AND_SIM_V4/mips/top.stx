@@ -4,82 +4,75 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.08 secs
  
 --> Parameter xsthdpdir set to C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips/xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.08 secs
  
 --> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
 
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-WARNING:HDLParsers:3607 - Unit work/top is now defined in a different file.  It was defined in "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_top.vhd", and is now defined in "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_top.vhd".
-WARNING:HDLParsers:3607 - Unit work/top/test is now defined in a different file.  It was defined in "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_top.vhd", and is now defined in "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_top.vhd".
-WARNING:HDLParsers:3607 - Unit work/mips is now defined in a different file.  It was defined in "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips.vhd", and is now defined in "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips.vhd".
-WARNING:HDLParsers:3607 - Unit work/mips/struct is now defined in a different file.  It was defined in "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips.vhd", and is now defined in "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips.vhd".
-WARNING:HDLParsers:3607 - Unit work/dmem is now defined in a different file.  It was defined in "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd", and is now defined in "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd".
-WARNING:HDLParsers:3607 - Unit work/dmem/behave is now defined in a different file.  It was defined in "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd", and is now defined in "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd".
-WARNING:HDLParsers:3607 - Unit work/imem is now defined in a different file.  It was defined in "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd", and is now defined in "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd".
-WARNING:HDLParsers:3607 - Unit work/imem/behave is now defined in a different file.  It was defined in "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd", and is now defined in "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd".
-WARNING:HDLParsers:3607 - Unit work/controller is now defined in a different file.  It was defined in "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_controller.vhd", and is now defined in "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_controller.vhd".
-WARNING:HDLParsers:3607 - Unit work/controller/struct is now defined in a different file.  It was defined in "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_controller.vhd", and is now defined in "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_controller.vhd".
-WARNING:HDLParsers:3607 - Unit work/datapath is now defined in a different file.  It was defined in "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_datapath.vhd", and is now defined in "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_datapath.vhd".
-WARNING:HDLParsers:3607 - Unit work/datapath/struct is now defined in a different file.  It was defined in "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_datapath.vhd", and is now defined in "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_datapath.vhd".
-WARNING:HDLParsers:3607 - Unit work/alu is now defined in a different file.  It was defined in "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_alu.vhd", and is now defined in "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_alu.vhd".
-WARNING:HDLParsers:3607 - Unit work/alu/behave is now defined in a different file.  It was defined in "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_alu.vhd", and is now defined in "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_alu.vhd".
-WARNING:HDLParsers:3607 - Unit work/aludec is now defined in a different file.  It was defined in "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_decoder_alu.vhd", and is now defined in "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_decoder_alu.vhd".
-WARNING:HDLParsers:3607 - Unit work/aludec/behave is now defined in a different file.  It was defined in "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_decoder_alu.vhd", and is now defined in "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_decoder_alu.vhd".
-WARNING:HDLParsers:3607 - Unit work/maindec is now defined in a different file.  It was defined in "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_decoder_main.vhd", and is now defined in "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_decoder_main.vhd".
-WARNING:HDLParsers:3607 - Unit work/maindec/behave is now defined in a different file.  It was defined in "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_decoder_main.vhd", and is now defined in "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_decoder_main.vhd".
-WARNING:HDLParsers:3607 - Unit work/regfile is now defined in a different file.  It was defined in "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd", and is now defined in "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd".
-WARNING:HDLParsers:3607 - Unit work/adder is now defined in a different file.  It was defined in "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd", and is now defined in "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd".
-WARNING:HDLParsers:3607 - Unit work/sl2 is now defined in a different file.  It was defined in "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd", and is now defined in "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd".
-WARNING:HDLParsers:3607 - Unit work/signext is now defined in a different file.  It was defined in "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd", and is now defined in "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd".
-WARNING:HDLParsers:3607 - Unit work/flopr is now defined in a different file.  It was defined in "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd", and is now defined in "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd".
-WARNING:HDLParsers:3607 - Unit work/mux2 is now defined in a different file.  It was defined in "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd", and is now defined in "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd".
-WARNING:HDLParsers:3607 - Unit work/ShiftLeft is now defined in a different file.  It was defined in "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd", and is now defined in "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd".
-WARNING:HDLParsers:3607 - Unit work/ShiftRight is now defined in a different file.  It was defined in "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd", and is now defined in "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd".
-WARNING:HDLParsers:3607 - Unit work/regfile/behave is now defined in a different file.  It was defined in "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd", and is now defined in "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd".
-WARNING:HDLParsers:3607 - Unit work/adder/behave is now defined in a different file.  It was defined in "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd", and is now defined in "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd".
-WARNING:HDLParsers:3607 - Unit work/sl2/behave is now defined in a different file.  It was defined in "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd", and is now defined in "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd".
-WARNING:HDLParsers:3607 - Unit work/signext/behave is now defined in a different file.  It was defined in "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd", and is now defined in "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd".
-WARNING:HDLParsers:3607 - Unit work/flopr/asynchronous is now defined in a different file.  It was defined in "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd", and is now defined in "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd".
-WARNING:HDLParsers:3607 - Unit work/mux2/behave is now defined in a different file.  It was defined in "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd", and is now defined in "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd".
-WARNING:HDLParsers:3607 - Unit work/ShiftLeft/behave is now defined in a different file.  It was defined in "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd", and is now defined in "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd".
-WARNING:HDLParsers:3607 - Unit work/ShiftRight/behave is now defined in a different file.  It was defined in "C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd", and is now defined in "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd".
 Compiling vhdl file "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd" in Library work.
-Entity <regfile> compiled.
-Entity <adder> compiled.
-Entity <sl2> compiled.
-Entity <signext> compiled.
-Entity <flopr> compiled.
-Entity <mux2> compiled.
-Entity <mux4> compiled.
-Entity <shiftleft> compiled.
-Entity <shiftright> compiled.
-Entity <regfile> (Architecture <behave>) compiled.
-Entity <adder> (Architecture <behave>) compiled.
-Entity <sl2> (Architecture <behave>) compiled.
-Entity <signext> (Architecture <behave>) compiled.
-Entity <flopr> (Architecture <asynchronous>) compiled.
-Entity <mux2> (Architecture <behave>) compiled.
-ERROR:HDLParsers:1401 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd" Line 139. Object y of mode OUT can not be read.
-Entity <shiftleft> (Architecture <behave>) compiled.
-Entity <shiftright> (Architecture <behave>) compiled.
+Architecture behave of Entity regfile is up to date.
+Architecture behave of Entity adder is up to date.
+Architecture behave of Entity sl2 is up to date.
+Architecture behave of Entity signext is up to date.
+Architecture asynchronous of Entity flopr is up to date.
+Architecture behave of Entity mux2 is up to date.
+Architecture behave of Entity shiftleft is up to date.
+Architecture behave of Entity shiftright is up to date.
+Compiling vhdl file "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_alu.vhd" in Library work.
+Architecture behave of Entity alu is up to date.
+Compiling vhdl file "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_decoder_main.vhd" in Library work.
+Architecture behave of Entity maindec is up to date.
+Compiling vhdl file "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_decoder_alu.vhd" in Library work.
+Architecture behave of Entity aludec is up to date.
+Compiling vhdl file "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" in Library work.
+Architecture behave of Entity dmem is up to date.
+Architecture behave of Entity vgamem is up to date.
+Architecture behave of Entity imem is up to date.
+Compiling vhdl file "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/box.vhd" in Library work.
+Architecture behavioral of Entity boxcolor is up to date.
+Compiling vhdl file "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_controller.vhd" in Library work.
+Architecture struct of Entity controller is up to date.
+Compiling vhdl file "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_datapath.vhd" in Library work.
+Architecture struct of Entity datapath is up to date.
+Compiling vhdl file "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/addrDecoder.vhd" in Library work.
+Architecture behavioral of Entity addrdecoder is up to date.
+Compiling vhdl file "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips.vhd" in Library work.
+Architecture struct of Entity mips is up to date.
+Compiling vhdl file "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/vgaBoxes.vhd" in Library work.
+Architecture behavioral of Entity vgaboxes is up to date.
+Compiling vhdl file "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_top.vhd" in Library work.
+Entity <top> compiled.
+ERROR:HDLParsers:3312 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_top.vhd" Line 93. Undefined symbol 'clk50_in'.
+ERROR:HDLParsers:1209 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_top.vhd" Line 93. clk50_in: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_top.vhd" Line 93. Undefined symbol 'red_out'.
+ERROR:HDLParsers:1209 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_top.vhd" Line 93. red_out: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_top.vhd" Line 93. Undefined symbol 'green_out'.
+ERROR:HDLParsers:1209 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_top.vhd" Line 93. green_out: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_top.vhd" Line 93. Undefined symbol 'blue_out'.
+ERROR:HDLParsers:1209 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_top.vhd" Line 93. blue_out: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_top.vhd" Line 93. Undefined symbol 'hs_out'.
+ERROR:HDLParsers:1209 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_top.vhd" Line 93. hs_out: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_top.vhd" Line 93. Undefined symbol 'vs_out'.
+ERROR:HDLParsers:1209 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_top.vhd" Line 93. vs_out: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3324 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_top.vhd" Line 93. IN mode Formal clk50_in of vgaBoxes with no default value must be associated with an actual value.
 
 
 Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.47 secs
+Total CPU time to Xst completion: 0.33 secs
  
 --> 
 
-Total memory usage is 270076 kilobytes
+Total memory usage is 270124 kilobytes
 
-Number of errors   :    1 (   0 filtered)
-Number of warnings :   35 (   0 filtered)
+Number of errors   :   13 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 
