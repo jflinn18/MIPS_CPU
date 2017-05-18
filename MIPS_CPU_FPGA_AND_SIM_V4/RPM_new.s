@@ -31,21 +31,27 @@ finish:
 	#--------------------------------------------------------------------------
 	# these are the addresses that we want to store the solution into
 	
-	addi $t4, $0, 0xffff
-	sll $t4, $t4, 16
-	addi $t4, $t4, 0xffe0
+	#addi $t4, $0, 0xffff
+	#sll $t4, $t4, 16
+	#addi $t4, $t4, 0xffe0
 	
-	addi $t5, $0, 0xffff
-	sll $t5, $t5, 16
-	addi $t5, $t5, 0xffe4
+	#addi $t5, $0, 0xffff
+	#sll $t5, $t5, 16
+	#addi $t5, $t5, 0xffe4
 	
-	addi $t6, $0, 0xffff
-	sll $t6, $t6, 16
-	addi $t6, $t6, 0xffe8
+	#addi $t6, $0, 0xffff
+	#sll $t6, $t6, 16
+	#addi $t6, $t6, 0xffe8
 	
-	addi $t7, $0, 0xffff
-	sll $t7, $t7, 16
-	addi $t7, $t7, 0xffec
+	#addi $t7, $0, 0xffff
+	#sll $t7, $t7, 16
+	#addi $t7, $t7, 0xffec
+	
+	addi $t4, $0, 0xffe0
+	addi $t5, $0, 0xffe4
+	addi $t6, $0, 0xffe8
+	addi $t7, $0, 0xffec
+	
 	
 	#--------------------------------------------------------------------------
 	# Zeroing out the target registers

@@ -136,24 +136,500 @@ Architecture struct of Entity mips is up to date.
 Compiling vhdl file "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/vgaBoxes.vhd" in Library work.
 Architecture behavioral of Entity vgaboxes is up to date.
 Compiling vhdl file "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_top.vhd" in Library work.
-ERROR:HDLParsers:3312 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_top.vhd" Line 93. Undefined symbol 'clk50_in'.
-ERROR:HDLParsers:1209 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_top.vhd" Line 93. clk50_in: Undefined symbol (last report in this block)
-ERROR:HDLParsers:3312 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_top.vhd" Line 93. Undefined symbol 'red_out'.
-ERROR:HDLParsers:1209 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_top.vhd" Line 93. red_out: Undefined symbol (last report in this block)
-ERROR:HDLParsers:3312 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_top.vhd" Line 93. Undefined symbol 'green_out'.
-ERROR:HDLParsers:1209 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_top.vhd" Line 93. green_out: Undefined symbol (last report in this block)
-ERROR:HDLParsers:3312 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_top.vhd" Line 93. Undefined symbol 'blue_out'.
-ERROR:HDLParsers:1209 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_top.vhd" Line 93. blue_out: Undefined symbol (last report in this block)
-ERROR:HDLParsers:3312 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_top.vhd" Line 93. Undefined symbol 'hs_out'.
-ERROR:HDLParsers:1209 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_top.vhd" Line 93. hs_out: Undefined symbol (last report in this block)
-ERROR:HDLParsers:3312 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_top.vhd" Line 93. Undefined symbol 'vs_out'.
-ERROR:HDLParsers:1209 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_top.vhd" Line 93. vs_out: Undefined symbol (last report in this block)
-ERROR:HDLParsers:3324 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_top.vhd" Line 93. IN mode Formal clk50_in of vgaBoxes with no default value must be associated with an actual value.
+Architecture test of Entity top is up to date.
+Compiling vhdl file "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_fpga_interface.vhd" in Library work.
+Architecture test_fpga of Entity mips_fpga_interface is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <mips_fpga_interface> in library <work> (architecture <test_fpga>).
+
+Analyzing hierarchy for entity <top> in library <work> (architecture <test>).
+
+Analyzing hierarchy for entity <addrDecoder> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mips> in library <work> (architecture <struct>).
+
+Analyzing hierarchy for entity <imem> in library <work> (architecture <behave>).
+
+Analyzing hierarchy for entity <dmem> in library <work> (architecture <behave>).
+
+Analyzing hierarchy for entity <vgaBoxes> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <controller> in library <work> (architecture <struct>).
+
+Analyzing hierarchy for entity <datapath> in library <work> (architecture <struct>).
+
+Analyzing hierarchy for entity <vgaMem> in library <work> (architecture <behave>).
+
+Analyzing hierarchy for entity <boxColor> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <maindec> in library <work> (architecture <behave>).
+
+Analyzing hierarchy for entity <aludec> in library <work> (architecture <behave>).
+
+Analyzing hierarchy for entity <flopr> in library <work> (architecture <asynchronous>) with generics.
+	width = 32
+
+Analyzing hierarchy for entity <adder> in library <work> (architecture <behave>).
+
+Analyzing hierarchy for entity <sl2> in library <work> (architecture <behave>).
+
+Analyzing hierarchy for entity <mux2> in library <work> (architecture <behave>) with generics.
+	width = 32
+
+Analyzing hierarchy for entity <regfile> in library <work> (architecture <behave>).
+
+Analyzing hierarchy for entity <mux2> in library <work> (architecture <behave>) with generics.
+	width = 5
+
+Analyzing hierarchy for entity <signext> in library <work> (architecture <behave>).
+
+Analyzing hierarchy for entity <alu> in library <work> (architecture <behave>).
+
+Analyzing hierarchy for entity <ShiftLeft> in library <work> (architecture <behave>).
+
+Analyzing hierarchy for entity <ShiftRight> in library <work> (architecture <behave>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <mips_fpga_interface> in library <work> (Architecture <test_fpga>).
+Entity <mips_fpga_interface> analyzed. Unit <mips_fpga_interface> generated.
+
+Analyzing Entity <top> in library <work> (Architecture <test>).
+Entity <top> analyzed. Unit <top> generated.
+
+Analyzing Entity <addrDecoder> in library <work> (Architecture <behavioral>).
+Entity <addrDecoder> analyzed. Unit <addrDecoder> generated.
+
+Analyzing Entity <mips> in library <work> (Architecture <struct>).
+Entity <mips> analyzed. Unit <mips> generated.
+
+Analyzing Entity <controller> in library <work> (Architecture <struct>).
+Entity <controller> analyzed. Unit <controller> generated.
+
+Analyzing Entity <maindec> in library <work> (Architecture <behave>).
+Entity <maindec> analyzed. Unit <maindec> generated.
+
+Analyzing Entity <aludec> in library <work> (Architecture <behave>).
+Entity <aludec> analyzed. Unit <aludec> generated.
+
+Analyzing Entity <datapath> in library <work> (Architecture <struct>).
+Entity <datapath> analyzed. Unit <datapath> generated.
+
+Analyzing generic Entity <flopr> in library <work> (Architecture <asynchronous>).
+	width = 32
+Entity <flopr> analyzed. Unit <flopr> generated.
+
+Analyzing Entity <adder> in library <work> (Architecture <behave>).
+Entity <adder> analyzed. Unit <adder> generated.
+
+Analyzing Entity <sl2> in library <work> (Architecture <behave>).
+Entity <sl2> analyzed. Unit <sl2> generated.
+
+Analyzing generic Entity <mux2.1> in library <work> (Architecture <behave>).
+	width = 32
+Entity <mux2.1> analyzed. Unit <mux2.1> generated.
+
+Analyzing Entity <regfile> in library <work> (Architecture <behave>).
+Entity <regfile> analyzed. Unit <regfile> generated.
+
+Analyzing generic Entity <mux2.2> in library <work> (Architecture <behave>).
+	width = 5
+Entity <mux2.2> analyzed. Unit <mux2.2> generated.
+
+Analyzing Entity <signext> in library <work> (Architecture <behave>).
+Entity <signext> analyzed. Unit <signext> generated.
+
+Analyzing Entity <alu> in library <work> (Architecture <behave>).
+Entity <alu> analyzed. Unit <alu> generated.
+
+Analyzing Entity <ShiftLeft> in library <work> (Architecture <behave>).
+INFO:Xst:1561 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd" line 185: Mux is complete : default of case is discarded
+Entity <ShiftLeft> analyzed. Unit <ShiftLeft> generated.
+
+Analyzing Entity <ShiftRight> in library <work> (Architecture <behave>).
+INFO:Xst:1561 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd" line 228: Mux is complete : default of case is discarded
+Entity <ShiftRight> analyzed. Unit <ShiftRight> generated.
+
+Analyzing Entity <imem> in library <work> (Architecture <behave>).
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:2
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:8
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:2
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:9
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:2
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:1
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:2
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:a
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:3
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:2
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:d
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:1
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:3
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:1
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:2
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:b
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:1
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:1
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:1
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:6
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:d
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:1
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:8
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:9
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:1
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:a
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:4
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:2
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:1
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:1
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:2
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:d
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:3
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:9
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:4
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:8
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:4
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:2
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:a
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:5
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:4
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:8
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:4
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:2
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:1
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:1
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:8
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:2
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:1
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:9
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:a
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:2
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:1
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:8
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:c
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:f
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:f
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:e
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:2
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:1
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:a
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:d
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:f
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:f
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:e
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:4
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:2
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:1
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:c
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:e
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:f
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:f
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:e
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:8
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:2
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:1
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:e
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:f
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:f
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:f
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:e
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:c
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:2
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:8
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:2
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:9
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:2
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:a
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:2
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:b
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:1
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:3
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:1
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:2
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:2
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:3
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:1
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:8
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:f
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:f
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:f
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:f
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:2
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:1
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:8
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:1
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:1
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:1
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:1
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:9
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:1
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:8
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:1
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:6
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:2
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:1
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:2
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:9
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:1
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:2
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:8
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:1
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:1
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:3
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:9
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:1
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:8
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:1
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:6
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:2
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:1
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:4
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:a
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:1
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:2
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:9
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:1
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:1
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:5
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:9
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:1
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:8
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:1
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:6
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:2
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:1
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:6
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:b
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:1
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:2
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:a
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:1
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:1
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:7
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:9
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:1
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:8
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:1
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:6
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:2
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:b
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:8
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:1
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:6
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:a
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:d
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:8
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:8
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:a
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:d
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:a
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:9
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:a
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:d
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:c
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:a
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:a
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:d
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:e
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:b
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+INFO:Xst:1749 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 125: report: char:0
+ERROR:Xst:1923 - "C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd" line 124: Line <L> has not enough elements for target <ch>.
 --> 
 
-Total memory usage is 288360 kilobytes
+Total memory usage is 306028 kilobytes
 
-Number of errors   :   13 (   0 filtered)
+Number of errors   :    1 (   0 filtered)
 Number of warnings :    0 (   0 filtered)
-Number of infos    :    0 (   0 filtered)
+Number of infos    :  370 (   0 filtered)
 

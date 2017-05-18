@@ -46,152 +46,151 @@ FL C:/CS401/mips_cpu_v3_fpga/mips/mips_decoder_main.vhd 2014/03/09.13:56:42 P.20
 FL C:/CS401/mips_cpu_v3_fpga/mips/mips_fpga_interface.vhd 2014/03/09.16:35:30 P.20131013
 FL C:/CS401/mips_cpu_v3_fpga/mips/mips_mem.vhd 2014/03/09.14:45:30 P.20131013
 FL C:/CS401/mips_cpu_v3_fpga/mips/mips_top.vhd 2014/03/09.15:56:13 P.20131013
-FL C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/addrDecoder.vhd 2017/05/17.12:10:39 P.20131013
-EN work/addrDecoder 1495049654 \
+FL C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/addrDecoder.vhd 2017/05/17.19:18:39 P.20131013
+EN work/addrDecoder 1495075214 \
       FL C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/addrDecoder.vhd \
       PB ieee/std_logic_1164 1370735607
-AR work/addrDecoder/Behavioral 1495049655 \
+AR work/addrDecoder/Behavioral 1495075215 \
       FL C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/addrDecoder.vhd \
-      EN work/addrDecoder 1495049654
-FL C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/box.vhd 2017/05/17.08:39:11 P.20131013
-EN work/boxColor 1495049648 \
+      EN work/addrDecoder 1495075214
+FL C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/box.vhd 2017/05/17.18:27:29 P.20131013
+EN work/boxColor 1495075208 \
       FL C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/box.vhd \
       PB ieee/std_logic_1164 1370735607 PB ieee/std_logic_arith 1381692177 \
       PB ieee/STD_LOGIC_UNSIGNED 1370735609 PB ieee/NUMERIC_STD 1370735611
-AR work/boxColor/behavioral 1495049649 \
+AR work/boxColor/behavioral 1495075209 \
       FL C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/box.vhd \
-      EN work/boxColor 1495049648
-FL C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips.vhd 2017/05/11.09:41:19 P.20131013
-EN work/mips 1495049656 \
+      EN work/boxColor 1495075208
+FL C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips.vhd 2017/05/17.18:27:29 P.20131013
+EN work/mips 1495075216 \
       FL C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips.vhd \
       PB ieee/std_logic_1164 1370735607
-AR work/mips/struct 1495049657 \
+AR work/mips/struct 1495075217 \
       FL C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips.vhd \
-      EN work/mips 1495049656 CP controller CP datapath
-FL C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_alu.vhd 2017/04/20.10:44:04 P.20131013
-EN work/alu 1495049636 \
+      EN work/mips 1495075216 CP controller CP datapath
+FL C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_alu.vhd 2017/05/17.18:27:31 P.20131013
+EN work/alu 1495075196 \
       FL C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_alu.vhd \
       PB ieee/std_logic_1164 1370735607 PB ieee/STD_LOGIC_UNSIGNED 1370735609
-AR work/alu/behave 1495049637 \
+AR work/alu/behave 1495075197 \
       FL C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_alu.vhd \
-      EN work/alu 1495049636 CP ShiftLeft CP ShiftRight
-FL C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd 2017/05/11.09:34:08 P.20131013
-EN work/regfile 1495049620 \
+      EN work/alu 1495075196 CP ShiftLeft CP ShiftRight
+FL C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd 2017/05/17.18:27:31 P.20131013
+EN work/regfile 1495075180 \
       FL C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd \
       PB ieee/std_logic_1164 1370735607 PB ieee/STD_LOGIC_UNSIGNED 1370735609 \
       PB ieee/NUMERIC_STD 1370735611
-EN work/adder 1495049621 \
+EN work/adder 1495075181 \
       FL C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd \
       PB ieee/std_logic_1164 1370735607 PB ieee/STD_LOGIC_UNSIGNED 1370735609
-EN work/sl2 1495049622 \
+EN work/sl2 1495075182 \
       FL C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd \
       PB ieee/std_logic_1164 1370735607
-EN work/signext 1495049623 \
+EN work/signext 1495075183 \
       FL C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd \
       PB ieee/std_logic_1164 1370735607
-EN work/flopr 1495049624 \
+EN work/flopr 1495075184 \
       FL C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd \
       PB ieee/std_logic_1164 1370735607 PB ieee/NUMERIC_STD 1370735611
-EN work/mux2 1495049625 \
+EN work/mux2 1495075185 \
       FL C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd \
       PB ieee/std_logic_1164 1370735607
-EN work/ShiftLeft 1495049626 \
+EN work/ShiftLeft 1495075186 \
       FL C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd \
       PB ieee/std_logic_1164 1370735607 PB ieee/NUMERIC_STD 1370735611
-EN work/ShiftRight 1495049627 \
+EN work/ShiftRight 1495075187 \
       FL C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd \
       PB ieee/std_logic_1164 1370735607 PB ieee/NUMERIC_STD 1370735611
-AR work/regfile/behave 1495049628 \
+AR work/regfile/behave 1495075188 \
       FL C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd \
-      EN work/regfile 1495049620
-AR work/adder/behave 1495049629 \
+      EN work/regfile 1495075180
+AR work/adder/behave 1495075189 \
       FL C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd \
-      EN work/adder 1495049621
-AR work/sl2/behave 1495049630 \
+      EN work/adder 1495075181
+AR work/sl2/behave 1495075190 \
       FL C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd \
-      EN work/sl2 1495049622
-AR work/signext/behave 1495049631 \
+      EN work/sl2 1495075182
+AR work/signext/behave 1495075191 \
       FL C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd \
-      EN work/signext 1495049623
-AR work/flopr/asynchronous 1495049632 \
+      EN work/signext 1495075183
+AR work/flopr/asynchronous 1495075192 \
       FL C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd \
-      EN work/flopr 1495049624
-AR work/mux2/behave 1495049633 \
+      EN work/flopr 1495075184
+AR work/mux2/behave 1495075193 \
       FL C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd \
-      EN work/mux2 1495049625
-AR work/ShiftLeft/behave 1495049634 \
+      EN work/mux2 1495075185
+AR work/ShiftLeft/behave 1495075194 \
       FL C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd \
-      EN work/ShiftLeft 1495049626
-AR work/ShiftRight/behave 1495049635 \
+      EN work/ShiftLeft 1495075186
+AR work/ShiftRight/behave 1495075195 \
       FL C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_building_blocks.vhd \
-      EN work/ShiftRight 1495049627
-FL C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_controller.vhd 2017/05/11.09:41:39 P.20131013
-EN work/controller 1495049650 \
+      EN work/ShiftRight 1495075187
+FL C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_controller.vhd 2017/05/17.18:27:31 P.20131013
+EN work/controller 1495075210 \
       FL C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_controller.vhd \
       PB ieee/std_logic_1164 1370735607
-AR work/controller/struct 1495049651 \
+AR work/controller/struct 1495075211 \
       FL C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_controller.vhd \
-      EN work/controller 1495049650 CP maindec CP aludec
-FL C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_datapath.vhd 2017/05/11.09:44:54 P.20131013
-EN work/datapath 1495049652 \
+      EN work/controller 1495075210 CP maindec CP aludec
+FL C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_datapath.vhd 2017/05/17.18:27:31 P.20131013
+EN work/datapath 1495075212 \
       FL C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_datapath.vhd \
       PB ieee/std_logic_1164 1370735607 PB ieee/NUMERIC_STD 1370735611
-AR work/datapath/struct 1495049653 \
+AR work/datapath/struct 1495075213 \
       FL C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_datapath.vhd \
-      EN work/datapath 1495049652 CP flopr CP adder CP sl2 CP mux2 CP regfile \
+      EN work/datapath 1495075212 CP flopr CP adder CP sl2 CP mux2 CP regfile \
       CP signext CP alu
-FL C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_decoder_alu.vhd 2017/04/27.10:18:38 P.20131013
-EN work/aludec 1495049640 \
+FL C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_decoder_alu.vhd 2017/05/17.18:27:31 P.20131013
+EN work/aludec 1495075200 \
       FL C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_decoder_alu.vhd \
       PB ieee/std_logic_1164 1370735607
-AR work/aludec/behave 1495049641 \
+AR work/aludec/behave 1495075201 \
       FL C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_decoder_alu.vhd \
-      EN work/aludec 1495049640
-FL C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_decoder_main.vhd 2017/05/11.09:38:21 P.20131013
-EN work/maindec 1495049638 \
+      EN work/aludec 1495075200
+FL C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_decoder_main.vhd 2017/05/17.18:27:31 P.20131013
+EN work/maindec 1495075198 \
       FL C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_decoder_main.vhd \
       PB ieee/std_logic_1164 1370735607
-AR work/maindec/behave 1495049639 \
+AR work/maindec/behave 1495075199 \
       FL C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_decoder_main.vhd \
-      EN work/maindec 1495049638
-FL C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_fpga_interface.vhd 2017/03/16.09:10:53 P.20131013
-EN work/mips_fpga_interface 1495048625 \
+      EN work/maindec 1495075198
+FL C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_fpga_interface.vhd 2017/05/17.19:06:43 P.20131013
+EN work/mips_fpga_interface 1495075222 \
       FL C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_fpga_interface.vhd \
       PB ieee/std_logic_1164 1370735607 PB ieee/STD_LOGIC_UNSIGNED 1370735609 \
       PB ieee/NUMERIC_STD 1370735611
-AR work/mips_fpga_interface/test_fpga 1495048626 \
+AR work/mips_fpga_interface/test_fpga 1495075223 \
       FL C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_fpga_interface.vhd \
-      EN work/mips_fpga_interface 1495048625 CP top
-FL C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd 2017/05/17.11:45:25 P.20131013
-EN work/dmem 1495049642 \
+      EN work/mips_fpga_interface 1495075222 CP top
+FL C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd 2017/05/17.19:28:54 P.20131013
+EN work/dmem 1495075202 \
       FL C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd \
       PB ieee/std_logic_1164 1370735607 PB std/TEXTIO 1370735606 \
       PB ieee/STD_LOGIC_UNSIGNED 1370735609 PB ieee/NUMERIC_STD 1370735611
-AR work/dmem/behave 1495049643 \
+AR work/dmem/behave 1495075203 \
       FL C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd \
-      EN work/dmem 1495049642
-EN work/vgaMem 1495049644 \
-      FL C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd \
-      PB ieee/std_logic_1164 1370735607 PB std/TEXTIO 1370735606 \
-      PB ieee/STD_LOGIC_UNSIGNED 1370735609 PB ieee/NUMERIC_STD 1370735611
-AR work/vgaMem/behave 1495049645 \
-      FL C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd \
-      EN work/vgaMem 1495049644
-EN work/imem 1495049646 \
+      EN work/dmem 1495075202
+EN work/vgaMem 1495075204 \
       FL C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd \
       PB ieee/std_logic_1164 1370735607 PB std/TEXTIO 1370735606 \
       PB ieee/STD_LOGIC_UNSIGNED 1370735609 PB ieee/NUMERIC_STD 1370735611
-AR work/imem/behave 1495049647 \
+AR work/vgaMem/behave 1495075205 \
       FL C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd \
-      EN work/imem 1495049646
-FL C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_top.vhd 2017/05/17.11:46:40 P.20131013
-EN work/top 1495048623 \
+      EN work/vgaMem 1495075204
+EN work/imem 1495075206 \
+      FL C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd \
+      PB ieee/std_logic_1164 1370735607 PB std/TEXTIO 1370735606 \
+      PB ieee/STD_LOGIC_UNSIGNED 1370735609 PB ieee/NUMERIC_STD 1370735611
+AR work/imem/behave 1495075207 \
+      FL C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_mem.vhd \
+      EN work/imem 1495075206
+FL C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_top.vhd 2017/05/17.19:03:36 P.20131013
+EN work/top 1495075220 \
       FL C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_top.vhd \
       PB ieee/std_logic_1164 1370735607 PB ieee/STD_LOGIC_UNSIGNED 1370735609
-AR work/top/test 1495048624 \
+AR work/top/test 1495075221 \
       FL C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/mips_top.vhd \
-      EN work/top 1495048623 CP addrDecoder CP mips CP imem CP dmem CP vgaMem \
-      CP vgaBoxes
+      EN work/top 1495075220 CP addrDecoder CP mips CP imem CP dmem CP vgaBoxes
 FL C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/vga.vhd 2017/05/11.09:58:42 P.20131013
 EN work/vga 1495039341 \
       FL C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/vga.vhd \
@@ -199,13 +198,13 @@ EN work/vga 1495039341 \
 AR work/vga/Behavioral 1495039342 \
       FL C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/vga.vhd \
       EN work/vga 1495039341
-FL C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/vgaBoxes.vhd 2017/05/17.10:51:36 P.20131013
-EN work/vgaBoxes 1495049658 \
+FL C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/vgaBoxes.vhd 2017/05/17.19:29:02 P.20131013
+EN work/vgaBoxes 1495075218 \
       FL C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/vgaBoxes.vhd \
       PB ieee/std_logic_1164 1370735607 PB ieee/NUMERIC_STD 1370735611
-AR work/vgaBoxes/Behavioral 1495049659 \
+AR work/vgaBoxes/Behavioral 1495075219 \
       FL C:/Users/jflinn18/Desktop/MIPS_CPU/MIPS_CPU_FPGA_AND_SIM_V4/vgaBoxes.vhd \
-      EN work/vgaBoxes 1495049658 CP vgaMem CP boxColor
+      EN work/vgaBoxes 1495075218 CP vgaMem CP boxColor
 FL C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips.vhd 2017/03/23.10:32:13 P.20131013
 FL C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips/vga.vhd 2017/05/04.09:11:48 P.20131013
 FL C:/Users/jflinn18/Desktop/MIPS_CPU_FPGA_AND_SIM_V4/mips_alu.vhd 2017/03/23.10:55:28 P.20131013

@@ -15,6 +15,9 @@ use IEEE.NUMERIC_STD.ALL;
 
 entity vgaBoxes is port(
   clk50_in :  in std_logic;
+  clk, we:    in std_logic;
+  wa, wd:     in std_logic_vector(31 downto 0);
+  
   red_out :   out std_logic_vector(2 downto 0);
   green_out : out std_logic_vector(2 downto 0);
   blue_out :  out std_logic_vector(2 downto 0);
@@ -72,16 +75,11 @@ architecture Behavioral of vgaBoxes is
   signal clk25  	 : std_logic;
   signal hcounter  : integer range 0 to 800;
   signal vcounter  : integer range 0 to 521;
-  signal color: std_logic_vector(8 downto 0);
   
   signal vgaReadAddr, vgaReadData: STD_LOGIC_VECTOR(31 downto 0);
   --signal tempVGAAddr: STD_LOGIC_VECTOR(2 downto 0);
   
   signal vgaOne, vgaTwo, vgaThree, vgaFour: std_logic_vector(31 downto 0);
-  
-  --temp signals
-  signal we: std_logic;
-  signal wa, wd: std_logic_vector(31 downto 0);
 
 begin
   
@@ -91,7 +89,7 @@ begin
 -- is significantly slower than the MIPS clock (clk25)
 
 
-  vgaMemory: vgaMem port map(clk25, we, vgaReadAddr, wa, wd, vgaReadData);
+  vgaMemory: vgaMem port map(clk, we, vgaReadAddr, wa, wd, vgaReadData);
   
   process(clk25, vgaReadData)
     variable cnt: integer;
@@ -99,16 +97,16 @@ begin
 	 if clk25'event and clk25='1' then 
       cnt := cnt + 1;
 		if cnt = 6750000 then
-		  vgaReadAddr <= x"FFFFFFE0";
+		  vgaReadAddr <= x"0000FFE0";
 		  vgaOne <= vgaReadData;
 		elsif cnt = 12500000 then
-		  vgaReadAddr <= x"FFFFFFE4";
+		  vgaReadAddr <= x"0000FFE4";
 		  vgaTwo <= vgaReadData;
 		elsif cnt = 18250000 then
-		  vgaReadAddr <= x"FFFFFFE8";
+		  vgaReadAddr <= x"0000FFE8";
 		  vgaThree <= vgaReadData;
       elsif cnt = 25000000 then 
-        vgaReadAddr <= x"FFFFFFEC";
+        vgaReadAddr <= x"0000FFEC";
 		  vgaFour <= vgaReadData;
         cnt := 0;
       end if;

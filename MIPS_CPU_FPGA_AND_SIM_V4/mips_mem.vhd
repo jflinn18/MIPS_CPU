@@ -60,9 +60,10 @@ begin
     end if;
   end process;
   process(a) begin
-    if ( to_integer(unsigned(a(4 downto 2))) = 0) then rd <= X"00000000"; -- register 0 holds 0
-    else rd <= mem(to_integer(unsigned(a(4 downto 2))));
-    end if;
+--    if ( to_integer(unsigned(a(4 downto 2))) = 0) then rd <= X"00000000"; -- register 0 holds 0
+--    else rd <= mem(to_integer(unsigned(a(4 downto 2))));
+--    end if;
+    rd <= mem(to_integer(unsigned(a(4 downto 2))));
   end process;
   
   

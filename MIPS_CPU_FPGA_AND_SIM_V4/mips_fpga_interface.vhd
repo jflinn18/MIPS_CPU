@@ -10,7 +10,13 @@ use IEEE.NUMERIC_STD.all;
 
 entity mips_fpga_interface is
  port(clk, rst_n: in  STD_LOGIC;
-		led            : out STD_LOGIC_VECTOR(6 downto 0)
+	   clk50_in:   in std_logic;
+      red_out:    out std_logic_vector(2 downto 0);
+      green_out:  out std_logic_vector(2 downto 0);
+      blue_out:   out std_logic_vector(2 downto 0);
+      hs_out:     out std_logic;
+      vs_out:     out std_logic;
+		led:        out STD_LOGIC_VECTOR(6 downto 0)
 		);
 end;
 
@@ -18,6 +24,14 @@ architecture test_fpga of mips_fpga_interface is
   
   component top
   port(clk, reset:         in     STD_LOGIC;
+  
+		 clk50_in:           in std_logic;
+		 red_out:            out std_logic_vector(2 downto 0);
+		 green_out:          out std_logic_vector(2 downto 0);
+		 blue_out:           out std_logic_vector(2 downto 0);
+		 hs_out:             out std_logic;
+		 vs_out:             out std_logic;
+		 
        writedata, dataadr: inout STD_LOGIC_VECTOR(31 downto 0);
        memwrite:           inout STD_LOGIC;
 		 pc:                 inout STD_LOGIC_VECTOR(31 downto 0) );
@@ -56,7 +70,7 @@ begin
 	end process;
 
   -- instantiate the mips CPU
-  mips_cpu: top port map( mips_clk_input, reset, writedata, dataadr, memwrite, pc);
+  mips_cpu: top port map( mips_clk_input, reset, clk50_in, red_out, green_out, blue_out, hs_out, vs_out, writedata, dataadr, memwrite, pc);
   
   -- debug signals - this simply outputs the program counter address and the 
   -- signal for memory write.

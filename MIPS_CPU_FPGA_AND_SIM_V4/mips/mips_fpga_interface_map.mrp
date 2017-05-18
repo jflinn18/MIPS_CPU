@@ -10,33 +10,33 @@ Target Device  : xc3s1000
 Target Package : ft256
 Target Speed   : -5
 Mapper Version : spartan3 -- $Revision: 1.55 $
-Mapped Date    : Wed May 17 12:09:00 2017
+Mapped Date    : Wed May 17 19:29:34 2017
 
 Design Summary
 --------------
 Number of errors:      0
-Number of warnings:    7
+Number of warnings:    3
 Logic Utilization:
-  Number of Slice Flip Flops:         2,104 out of  15,360   13%
-  Number of 4 input LUTs:             2,126 out of  15,360   13%
+  Number of Slice Flip Flops:         2,183 out of  15,360   14%
+  Number of 4 input LUTs:             2,293 out of  15,360   14%
 Logic Distribution:
-  Number of occupied Slices:          2,151 out of   7,680   28%
-    Number of Slices containing only related logic:   2,151 out of   2,151 100%
-    Number of Slices containing unrelated logic:          0 out of   2,151   0%
+  Number of occupied Slices:          2,267 out of   7,680   29%
+    Number of Slices containing only related logic:   2,267 out of   2,267 100%
+    Number of Slices containing unrelated logic:          0 out of   2,267   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
-  Total Number of 4 input LUTs:       2,236 out of  15,360   14%
-    Number used as logic:             1,870
-    Number used as a route-thru:        110
-    Number used for Dual Port RAMs:     256
+  Total Number of 4 input LUTs:       2,449 out of  15,360   15%
+    Number used as logic:             2,029
+    Number used as a route-thru:        156
+    Number used for Dual Port RAMs:     264
       (Two LUTs used per Dual Port RAM)
 
   The Slice Logic Distribution report is not meaningful if the design is
   over-mapped for a non-slice resource or if Placement fails.
 
-  Number of bonded IOBs:                  9 out of     173    5%
-  Number of BUFGMUXs:                     2 out of       8   25%
+  Number of bonded IOBs:                 21 out of     173   12%
+  Number of BUFGMUXs:                     4 out of       8   50%
 
-Average Fanout of Non-Clock Nets:                3.46
+Average Fanout of Non-Clock Nets:                3.43
 
 Peak Memory Usage:  311 MB
 Total REAL time to MAP completion:  2 secs 
@@ -81,38 +81,27 @@ Section 1 - Errors
 
 Section 2 - Warnings
 --------------------
-WARNING:Pack:266 - The function generator mips_cpu/imem1/Mrom_rd101263_1 failed
-   to merge with F5 multiplexer mips_cpu/mips1/dp/srcbmux/y<6>1.  There is a
-   conflict for the FXMUX.  The design will exhibit suboptimal timing.
-WARNING:Pack:266 - The function generator mips_cpu/imem1/Mrom_rd251227 failed to
-   merge with F5 multiplexer mips_cpu/mips1/dp/srcbmux/y<11>1.  There is a
-   conflict for the FXMUX.  The design will exhibit suboptimal timing.
-WARNING:Pack:266 - The function generator mips_cpu/imem1/Mrom_rd281260 failed to
+WARNING:Pack:266 - The function generator mips_cpu/imem1/Mrom_rd281225 failed to
    merge with F5 multiplexer mips_cpu/mips1/dp/srcbmux/y<12>1.  There is a
-   conflict for the FXMUX.  The design will exhibit suboptimal timing.
-WARNING:Pack:266 - The function generator mips_cpu/imem1/Mrom_rd342264 failed to
-   merge with F5 multiplexer mips_cpu/mips1/dp/srcbmux/y<14>1.  There is a
    conflict for the FXMUX.  The design will exhibit suboptimal timing.
 WARNING:Pack:266 - The function generator mips_cpu/imem1/Mrom_rd44 failed to
    merge with F5 multiplexer mips_cpu/imem1/Mrom_rd44_f6/MUXF5.I1.  There is a
    conflict for the GYMUX.  The design will exhibit suboptimal timing.
-WARNING:Pack:266 - The function generator mips_cpu/instr<10> failed to merge
-   with F5 multiplexer mips_cpu/mips1/dp/srcbmux/y<10>11_f5.  There is a
-   conflict for the FXMUX.  The design will exhibit suboptimal timing.
 WARNING:Pack:266 - The function generator mips_cpu/imem1/Mrom_rd44 failed to
    merge with F5 multiplexer mips_cpu/imem1/Mrom_rd56_f6/MUXF5.I1.  There is a
    conflict for the GYMUX.  The design will exhibit suboptimal timing.
 
 Section 3 - Informational
 -------------------------
-INFO:LIT:243 - Logical network mips_cpu/mips1/dp/rf/Mram_mem1/SPO has no load.
-INFO:LIT:395 - The above info message is repeated 127 more times for the
+INFO:LIT:243 - Logical network mips_cpu/vgaBoxes1/vgaMemory/Mram_mem4/SPO has no
+   load.
+INFO:LIT:395 - The above info message is repeated 131 more times for the
    following (max. 5 shown):
-   mips_cpu/mips1/dp/rf/Mram_mem2/SPO,
-   mips_cpu/mips1/dp/rf/Mram_mem3/SPO,
-   mips_cpu/mips1/dp/rf/Mram_mem6/SPO,
-   mips_cpu/mips1/dp/rf/Mram_mem4/SPO,
-   mips_cpu/mips1/dp/rf/Mram_mem5/SPO
+   mips_cpu/vgaBoxes1/vgaMemory/Mram_mem3/SPO,
+   mips_cpu/vgaBoxes1/vgaMemory/Mram_mem1/SPO,
+   mips_cpu/vgaBoxes1/vgaMemory/Mram_mem2/SPO,
+   mips_cpu/mips1/dp/rf/Mram_mem1/SPO,
+   mips_cpu/mips1/dp/rf/Mram_mem2/SPO
    To see the details of these info messages, please use the -detail switch.
 INFO:MapLib:562 - No environment variables are currently set.
 INFO:LIT:244 - All of the single ended outputs in this design are using slew
@@ -141,7 +130,15 @@ Section 6 - IOB Properties
 | IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
 |                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
 +---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| blue_out<0>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| blue_out<1>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| blue_out<2>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | clk                                | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| clk50_in                           | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| green_out<0>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| green_out<1>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| green_out<2>                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| hs_out                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | led<0>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | led<1>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | led<2>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
@@ -149,7 +146,11 @@ Section 6 - IOB Properties
 | led<4>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | led<5>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | led<6>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| red_out<0>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| red_out<1>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| red_out<2>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | rst_n                              | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| vs_out                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 +---------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Section 7 - RPMs
